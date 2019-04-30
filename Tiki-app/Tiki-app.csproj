@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE2077D2-068B-4B6C-847C-F757B22AF7F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tiki_app</RootNamespace>
+    <AssemblyName>Tiki-app</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\..\Downloads\Bunifu\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuyProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BuyProduct.Designer.cs">
+      <DependentUpon>BuyProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CategoryTemplate.Designer.cs">
+      <DependentUpon>CategoryTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContactUs.Designer.cs">
+      <DependentUpon>ContactUs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerComment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomerComment.Designer.cs">
+      <DependentUpon>CustomerComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DetailsProduct.Designer.cs">
+      <DependentUpon>DetailsProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageNew.Designer.cs">
+      <DependentUpon>PageNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PageProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PageProduct.Designer.cs">
+      <DependentUpon>PageProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductTemplate.Designer.cs">
+      <DependentUpon>ProductTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TabNew.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TabNew.Designer.cs">
+      <DependentUpon>TabNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAllComment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewAllComment.Designer.cs">
+      <DependentUpon>ViewAllComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewComment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewComment.Designer.cs">
+      <DependentUpon>ViewComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WriteComment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WriteComment.Designer.cs">
+      <DependentUpon>WriteComment.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BuyProduct.resx">
+      <DependentUpon>BuyProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryTemplate.resx">
+      <DependentUpon>CategoryTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactUs.resx">
+      <DependentUpon>ContactUs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerComment.resx">
+      <DependentUpon>CustomerComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailsProduct.resx">
+      <DependentUpon>DetailsProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageNew.resx">
+      <DependentUpon>PageNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PageProduct.resx">
+      <DependentUpon>PageProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductTemplate.resx">
+      <DependentUpon>ProductTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="TabNew.resx">
+      <DependentUpon>TabNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAllComment.resx">
+      <DependentUpon>ViewAllComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewComment.resx">
+      <DependentUpon>ViewComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WriteComment.resx">
+      <DependentUpon>WriteComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_pays.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_connects.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appstore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_product.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_buy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_store.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_laptop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_motorbike.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_shirt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_start.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
