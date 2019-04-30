@@ -16,5 +16,21 @@ namespace Tiki_app
         {
             InitializeComponent();
         }
+
+        private void btnComment_Click(object sender, EventArgs e)
+        {
+            if (btnComment.Tag.Equals("open"))
+            {
+                btnComment.ButtonText = "Đóng";
+                btnComment.Tag = "close";
+                writeComment1.BringToFront();
+            }
+            else
+            {
+                btnComment.ButtonText = "Viết nhận xét của bạn";
+                btnComment.Tag = "open";
+                viewAllComment1.BringToFront();
+            }
+        }
     }
 }

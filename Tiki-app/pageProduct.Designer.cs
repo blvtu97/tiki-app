@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageProduct));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -215,104 +216,157 @@
             // productTemplate9
             // 
             this.productTemplate9.BackColor = System.Drawing.Color.White;
+            this.productTemplate9.ImageProduct = ((System.Drawing.Image)(resources.GetObject("productTemplate9.ImageProduct")));
             this.productTemplate9.Location = new System.Drawing.Point(16, 2177);
             this.productTemplate9.Name = "productTemplate9";
+            this.productTemplate9.nameProduct = "Tên sản phẩm";
+            this.productTemplate9.priceCurrent = "Giá hiện tại";
+            this.productTemplate9.priceOld = "Giá cũ";
+            this.productTemplate9.ratingInfoProduct = 0;
             this.productTemplate9.Size = new System.Drawing.Size(220, 333);
             this.productTemplate9.TabIndex = 23;
             // 
             // productTemplate8
             // 
             this.productTemplate8.BackColor = System.Drawing.Color.White;
+            this.productTemplate8.ImageProduct = ((System.Drawing.Image)(resources.GetObject("productTemplate8.ImageProduct")));
             this.productTemplate8.Location = new System.Drawing.Point(16, 1680);
             this.productTemplate8.Name = "productTemplate8";
+            this.productTemplate8.nameProduct = "Tên sản phẩm";
+            this.productTemplate8.priceCurrent = "Giá hiện tại";
+            this.productTemplate8.priceOld = "Giá cũ";
+            this.productTemplate8.ratingInfoProduct = 0;
             this.productTemplate8.Size = new System.Drawing.Size(220, 333);
             this.productTemplate8.TabIndex = 22;
             // 
             // productTemplate7
             // 
             this.productTemplate7.BackColor = System.Drawing.Color.White;
+            this.productTemplate7.ImageProduct = ((System.Drawing.Image)(resources.GetObject("productTemplate7.ImageProduct")));
             this.productTemplate7.Location = new System.Drawing.Point(16, 1330);
             this.productTemplate7.Name = "productTemplate7";
+            this.productTemplate7.nameProduct = "Tên sản phẩm";
+            this.productTemplate7.priceCurrent = "Giá hiện tại";
+            this.productTemplate7.priceOld = "Giá cũ";
+            this.productTemplate7.ratingInfoProduct = 0;
             this.productTemplate7.Size = new System.Drawing.Size(220, 333);
             this.productTemplate7.TabIndex = 21;
             // 
             // productTemplate6
             // 
             this.productTemplate6.BackColor = System.Drawing.Color.White;
+            this.productTemplate6.ImageProduct = ((System.Drawing.Image)(resources.GetObject("productTemplate6.ImageProduct")));
             this.productTemplate6.Location = new System.Drawing.Point(16, 980);
             this.productTemplate6.Name = "productTemplate6";
+            this.productTemplate6.nameProduct = "Tên sản phẩm";
+            this.productTemplate6.priceCurrent = "Giá hiện tại";
+            this.productTemplate6.priceOld = "Giá cũ";
+            this.productTemplate6.ratingInfoProduct = 0;
             this.productTemplate6.Size = new System.Drawing.Size(220, 333);
             this.productTemplate6.TabIndex = 20;
             // 
             // productTemplate5
             // 
             this.productTemplate5.BackColor = System.Drawing.Color.White;
+            this.productTemplate5.ImageProduct = ((System.Drawing.Image)(resources.GetObject("productTemplate5.ImageProduct")));
             this.productTemplate5.Location = new System.Drawing.Point(16, 630);
             this.productTemplate5.Name = "productTemplate5";
+            this.productTemplate5.nameProduct = "Tên sản phẩm";
+            this.productTemplate5.priceCurrent = "Giá hiện tại";
+            this.productTemplate5.priceOld = "Giá cũ";
+            this.productTemplate5.ratingInfoProduct = 0;
             this.productTemplate5.Size = new System.Drawing.Size(220, 333);
             this.productTemplate5.TabIndex = 19;
             // 
             // productTemplate4
             // 
             this.productTemplate4.BackColor = System.Drawing.Color.White;
+            this.productTemplate4.ImageProduct = ((System.Drawing.Image)(resources.GetObject("productTemplate4.ImageProduct")));
             this.productTemplate4.Location = new System.Drawing.Point(758, 280);
             this.productTemplate4.Name = "productTemplate4";
+            this.productTemplate4.nameProduct = "Tên sản phẩm";
+            this.productTemplate4.priceCurrent = "Giá hiện tại";
+            this.productTemplate4.priceOld = "Giá cũ";
+            this.productTemplate4.ratingInfoProduct = 0;
             this.productTemplate4.Size = new System.Drawing.Size(220, 333);
             this.productTemplate4.TabIndex = 18;
             // 
             // productTemplate3
             // 
             this.productTemplate3.BackColor = System.Drawing.Color.White;
+            this.productTemplate3.ImageProduct = ((System.Drawing.Image)(resources.GetObject("productTemplate3.ImageProduct")));
             this.productTemplate3.Location = new System.Drawing.Point(511, 280);
             this.productTemplate3.Name = "productTemplate3";
+            this.productTemplate3.nameProduct = "Tên sản phẩm";
+            this.productTemplate3.priceCurrent = "Giá hiện tại";
+            this.productTemplate3.priceOld = "Giá cũ";
+            this.productTemplate3.ratingInfoProduct = 0;
             this.productTemplate3.Size = new System.Drawing.Size(220, 333);
             this.productTemplate3.TabIndex = 17;
             // 
             // productTemplate2
             // 
             this.productTemplate2.BackColor = System.Drawing.Color.White;
+            this.productTemplate2.ImageProduct = ((System.Drawing.Image)(resources.GetObject("productTemplate2.ImageProduct")));
             this.productTemplate2.Location = new System.Drawing.Point(264, 280);
             this.productTemplate2.Name = "productTemplate2";
+            this.productTemplate2.nameProduct = "Tên sản phẩm";
+            this.productTemplate2.priceCurrent = "Giá hiện tại";
+            this.productTemplate2.priceOld = "Giá cũ";
+            this.productTemplate2.ratingInfoProduct = 0;
             this.productTemplate2.Size = new System.Drawing.Size(220, 333);
             this.productTemplate2.TabIndex = 16;
             // 
             // productTemplate1
             // 
             this.productTemplate1.BackColor = System.Drawing.Color.White;
+            this.productTemplate1.ImageProduct = ((System.Drawing.Image)(resources.GetObject("productTemplate1.ImageProduct")));
             this.productTemplate1.Location = new System.Drawing.Point(16, 280);
             this.productTemplate1.Name = "productTemplate1";
+            this.productTemplate1.nameProduct = "Tên sản phẩm";
+            this.productTemplate1.priceCurrent = "Giá hiện tại";
+            this.productTemplate1.priceOld = "Giá cũ";
+            this.productTemplate1.ratingInfoProduct = 0;
             this.productTemplate1.Size = new System.Drawing.Size(220, 333);
             this.productTemplate1.TabIndex = 15;
             // 
             // categoryTemplate4
             // 
             this.categoryTemplate4.BackColor = System.Drawing.Color.Green;
+            this.categoryTemplate4.ImageCategory = ((System.Drawing.Image)(resources.GetObject("categoryTemplate4.ImageCategory")));
             this.categoryTemplate4.Location = new System.Drawing.Point(783, 8);
             this.categoryTemplate4.Name = "categoryTemplate4";
+            this.categoryTemplate4.NameCategory = "Name Category";
             this.categoryTemplate4.Size = new System.Drawing.Size(180, 180);
             this.categoryTemplate4.TabIndex = 14;
             // 
             // categoryTemplate3
             // 
             this.categoryTemplate3.BackColor = System.Drawing.Color.Green;
+            this.categoryTemplate3.ImageCategory = ((System.Drawing.Image)(resources.GetObject("categoryTemplate3.ImageCategory")));
             this.categoryTemplate3.Location = new System.Drawing.Point(539, 8);
             this.categoryTemplate3.Name = "categoryTemplate3";
+            this.categoryTemplate3.NameCategory = "Name Category";
             this.categoryTemplate3.Size = new System.Drawing.Size(180, 180);
             this.categoryTemplate3.TabIndex = 13;
             // 
             // categoryTemplate2
             // 
             this.categoryTemplate2.BackColor = System.Drawing.Color.Green;
+            this.categoryTemplate2.ImageCategory = ((System.Drawing.Image)(resources.GetObject("categoryTemplate2.ImageCategory")));
             this.categoryTemplate2.Location = new System.Drawing.Point(289, 8);
             this.categoryTemplate2.Name = "categoryTemplate2";
+            this.categoryTemplate2.NameCategory = "Name Category";
             this.categoryTemplate2.Size = new System.Drawing.Size(180, 180);
             this.categoryTemplate2.TabIndex = 12;
             // 
             // categoryTemplate1
             // 
             this.categoryTemplate1.BackColor = System.Drawing.Color.Green;
+            this.categoryTemplate1.ImageCategory = ((System.Drawing.Image)(resources.GetObject("categoryTemplate1.ImageCategory")));
             this.categoryTemplate1.Location = new System.Drawing.Point(37, 8);
             this.categoryTemplate1.Name = "categoryTemplate1";
+            this.categoryTemplate1.NameCategory = "Name Category";
             this.categoryTemplate1.Size = new System.Drawing.Size(180, 180);
             this.categoryTemplate1.TabIndex = 11;
             // 

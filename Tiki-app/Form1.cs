@@ -15,8 +15,24 @@ namespace Tiki_app
         public Form1()
         {
             InitializeComponent();
+            initializeViews();
         }
 
+        private void initializeViews()
+        {
+            foreach(Control item in pageProduct1.Controls)
+            {
+                if (item is ProductTemplate)
+                {
+                    item.Click += item_Click;
+                }
+            }
+        }
+
+        void item_Click(object sender, EventArgs e)
+        {
+            detailsProduct1.BringToFront();
+        }
         private void tab2_Click(object sender, EventArgs e)
         {
             pageNew1.BringToFront();

@@ -34,10 +34,10 @@
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.viewComment4 = new Tiki_app.ViewComment();
             this.viewComment3 = new Tiki_app.ViewComment();
             this.viewComment2 = new Tiki_app.ViewComment();
             this.viewComment1 = new Tiki_app.ViewComment();
-            this.viewComment4 = new Tiki_app.ViewComment();
             this.contactUs1 = new Tiki_app.ContactUs();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -48,9 +48,9 @@
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Tất cả các sao"});
-            this.comboBox3.Location = new System.Drawing.Point(468, 12);
+            this.comboBox3.Location = new System.Drawing.Point(572, 12);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.Size = new System.Drawing.Size(150, 21);
             this.comboBox3.TabIndex = 33;
             // 
             // comboBox2
@@ -58,9 +58,9 @@
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Tất cả các khách hàng"});
-            this.comboBox2.Location = new System.Drawing.Point(330, 12);
+            this.comboBox2.Location = new System.Drawing.Point(382, 12);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(150, 21);
             this.comboBox2.TabIndex = 32;
             // 
             // comboBox1
@@ -70,7 +70,7 @@
             "Hữu ích"});
             this.comboBox1.Location = new System.Drawing.Point(183, 12);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(150, 21);
             this.comboBox1.TabIndex = 31;
             // 
             // bunifuCustomLabel10
@@ -92,7 +92,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(983, 47);
+            this.panel1.Size = new System.Drawing.Size(966, 47);
             this.panel1.TabIndex = 34;
             // 
             // panel2
@@ -105,44 +105,72 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 47);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(983, 684);
+            this.panel2.Size = new System.Drawing.Size(966, 684);
             this.panel2.TabIndex = 35;
+            // 
+            // viewComment4
+            // 
+            this.viewComment4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.viewComment4.CommentProduct = "Nhận xét";
+            this.viewComment4.DayCommentProduct = "Ngày comment";
+            this.viewComment4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.viewComment4.ImageCustomer = null;
+            this.viewComment4.IsBuyProduct = "Đã mua sản phẩm";
+            this.viewComment4.Location = new System.Drawing.Point(0, 510);
+            this.viewComment4.Name = "viewComment4";
+            this.viewComment4.NameCustomer = "Họ và tên";
+            this.viewComment4.RatingProduct = 0;
+            this.viewComment4.ReactionProduct = "Hài lòng";
+            this.viewComment4.Size = new System.Drawing.Size(966, 168);
+            this.viewComment4.TabIndex = 3;
             // 
             // viewComment3
             // 
             this.viewComment3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.viewComment3.CommentProduct = "Nhận xét";
+            this.viewComment3.DayCommentProduct = "Ngày comment";
             this.viewComment3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.viewComment3.ImageCustomer = null;
+            this.viewComment3.IsBuyProduct = "Đã mua sản phẩm";
             this.viewComment3.Location = new System.Drawing.Point(0, 340);
             this.viewComment3.Name = "viewComment3";
-            this.viewComment3.Size = new System.Drawing.Size(983, 170);
+            this.viewComment3.NameCustomer = "Họ và tên";
+            this.viewComment3.RatingProduct = 0;
+            this.viewComment3.ReactionProduct = "Hài lòng";
+            this.viewComment3.Size = new System.Drawing.Size(966, 170);
             this.viewComment3.TabIndex = 2;
             // 
             // viewComment2
             // 
             this.viewComment2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.viewComment2.CommentProduct = "Nhận xét";
+            this.viewComment2.DayCommentProduct = "Ngày comment";
             this.viewComment2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.viewComment2.ImageCustomer = null;
+            this.viewComment2.IsBuyProduct = "Đã mua sản phẩm";
             this.viewComment2.Location = new System.Drawing.Point(0, 170);
             this.viewComment2.Name = "viewComment2";
-            this.viewComment2.Size = new System.Drawing.Size(983, 170);
+            this.viewComment2.NameCustomer = "Họ và tên";
+            this.viewComment2.RatingProduct = 0;
+            this.viewComment2.ReactionProduct = "Hài lòng";
+            this.viewComment2.Size = new System.Drawing.Size(966, 170);
             this.viewComment2.TabIndex = 1;
             // 
             // viewComment1
             // 
             this.viewComment1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.viewComment1.CommentProduct = "Nhận xét";
+            this.viewComment1.DayCommentProduct = "Ngày comment";
             this.viewComment1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.viewComment1.ImageCustomer = null;
+            this.viewComment1.IsBuyProduct = "Đã mua sản phẩm";
             this.viewComment1.Location = new System.Drawing.Point(0, 0);
             this.viewComment1.Name = "viewComment1";
-            this.viewComment1.Size = new System.Drawing.Size(983, 170);
+            this.viewComment1.NameCustomer = "Họ và tên";
+            this.viewComment1.RatingProduct = 0;
+            this.viewComment1.ReactionProduct = "Hài lòng";
+            this.viewComment1.Size = new System.Drawing.Size(966, 170);
             this.viewComment1.TabIndex = 0;
-            // 
-            // viewComment4
-            // 
-            this.viewComment4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.viewComment4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.viewComment4.Location = new System.Drawing.Point(0, 510);
-            this.viewComment4.Name = "viewComment4";
-            this.viewComment4.Size = new System.Drawing.Size(983, 168);
-            this.viewComment4.TabIndex = 3;
             // 
             // contactUs1
             // 
@@ -150,7 +178,7 @@
             this.contactUs1.Dock = System.Windows.Forms.DockStyle.Top;
             this.contactUs1.Location = new System.Drawing.Point(0, 731);
             this.contactUs1.Name = "contactUs1";
-            this.contactUs1.Size = new System.Drawing.Size(983, 458);
+            this.contactUs1.Size = new System.Drawing.Size(966, 458);
             this.contactUs1.TabIndex = 36;
             // 
             // ViewAllComment
@@ -162,7 +190,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ViewAllComment";
-            this.Size = new System.Drawing.Size(983, 1182);
+            this.Size = new System.Drawing.Size(966, 1182);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

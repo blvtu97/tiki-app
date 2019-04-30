@@ -28,99 +28,99 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.bunifuRating1 = new Bunifu.Framework.UI.BunifuRating();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.ratingProduct = new Bunifu.Framework.UI.BunifuRating();
+            this.lbReactionProduct = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lbIsBuyProduct = new System.Windows.Forms.Label();
+            this.lbNameCustomer = new System.Windows.Forms.Label();
+            this.lbDayCommentProduct = new System.Windows.Forms.Label();
+            this.lbCommentProduct = new System.Windows.Forms.Label();
+            this.imgCustomer = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCustomer)).BeginInit();
             this.SuspendLayout();
             // 
-            // bunifuRating1
+            // ratingProduct
             // 
-            this.bunifuRating1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuRating1.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuRating1.Location = new System.Drawing.Point(153, 24);
-            this.bunifuRating1.Name = "bunifuRating1";
-            this.bunifuRating1.Size = new System.Drawing.Size(215, 27);
-            this.bunifuRating1.TabIndex = 1;
-            this.bunifuRating1.Value = 0;
+            this.ratingProduct.BackColor = System.Drawing.Color.Transparent;
+            this.ratingProduct.ForeColor = System.Drawing.Color.SeaGreen;
+            this.ratingProduct.Location = new System.Drawing.Point(153, 24);
+            this.ratingProduct.Name = "ratingProduct";
+            this.ratingProduct.Size = new System.Drawing.Size(215, 27);
+            this.ratingProduct.TabIndex = 1;
+            this.ratingProduct.Value = 0;
             // 
-            // bunifuCustomLabel1
+            // lbReactionProduct
             // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(401, 30);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(68, 21);
-            this.bunifuCustomLabel1.TabIndex = 2;
-            this.bunifuCustomLabel1.Text = "Hài lòng";
+            this.lbReactionProduct.AutoSize = true;
+            this.lbReactionProduct.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbReactionProduct.Location = new System.Drawing.Point(401, 30);
+            this.lbReactionProduct.Name = "lbReactionProduct";
+            this.lbReactionProduct.Size = new System.Drawing.Size(68, 21);
+            this.lbReactionProduct.TabIndex = 2;
+            this.lbReactionProduct.Text = "Hài lòng";
             // 
-            // label1
+            // lbIsBuyProduct
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(162, 63);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 21);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Đã mua sản phẩm";
+            this.lbIsBuyProduct.AutoSize = true;
+            this.lbIsBuyProduct.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbIsBuyProduct.Location = new System.Drawing.Point(162, 63);
+            this.lbIsBuyProduct.Name = "lbIsBuyProduct";
+            this.lbIsBuyProduct.Size = new System.Drawing.Size(136, 21);
+            this.lbIsBuyProduct.TabIndex = 3;
+            this.lbIsBuyProduct.Text = "Đã mua sản phẩm";
             // 
-            // label2
+            // lbNameCustomer
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(22, 107);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 21);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Họ và tên";
+            this.lbNameCustomer.AutoSize = true;
+            this.lbNameCustomer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNameCustomer.Location = new System.Drawing.Point(22, 107);
+            this.lbNameCustomer.Name = "lbNameCustomer";
+            this.lbNameCustomer.Size = new System.Drawing.Size(76, 21);
+            this.lbNameCustomer.TabIndex = 4;
+            this.lbNameCustomer.Text = "Họ và tên";
             // 
-            // label3
+            // lbDayCommentProduct
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(13, 138);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 21);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Ngày comment";
+            this.lbDayCommentProduct.AutoSize = true;
+            this.lbDayCommentProduct.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDayCommentProduct.Location = new System.Drawing.Point(13, 138);
+            this.lbDayCommentProduct.Name = "lbDayCommentProduct";
+            this.lbDayCommentProduct.Size = new System.Drawing.Size(117, 21);
+            this.lbDayCommentProduct.TabIndex = 5;
+            this.lbDayCommentProduct.Text = "Ngày comment";
             // 
-            // label4
+            // lbCommentProduct
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(162, 107);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 21);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Nhận xét";
+            this.lbCommentProduct.AutoSize = true;
+            this.lbCommentProduct.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCommentProduct.Location = new System.Drawing.Point(162, 107);
+            this.lbCommentProduct.Name = "lbCommentProduct";
+            this.lbCommentProduct.Size = new System.Drawing.Size(72, 21);
+            this.lbCommentProduct.TabIndex = 6;
+            this.lbCommentProduct.Text = "Nhận xét";
             // 
-            // pictureBox1
+            // imgCustomer
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(17, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 80);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.imgCustomer.Location = new System.Drawing.Point(17, 24);
+            this.imgCustomer.Name = "imgCustomer";
+            this.imgCustomer.Size = new System.Drawing.Size(80, 80);
+            this.imgCustomer.TabIndex = 0;
+            this.imgCustomer.TabStop = false;
             // 
             // ViewComment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.bunifuCustomLabel1);
-            this.Controls.Add(this.bunifuRating1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lbCommentProduct);
+            this.Controls.Add(this.lbDayCommentProduct);
+            this.Controls.Add(this.lbNameCustomer);
+            this.Controls.Add(this.lbIsBuyProduct);
+            this.Controls.Add(this.lbReactionProduct);
+            this.Controls.Add(this.ratingProduct);
+            this.Controls.Add(this.imgCustomer);
             this.Name = "ViewComment";
             this.Size = new System.Drawing.Size(998, 168);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgCustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,12 +128,12 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Bunifu.Framework.UI.BunifuRating bunifuRating1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox imgCustomer;
+        private Bunifu.Framework.UI.BunifuRating ratingProduct;
+        private Bunifu.Framework.UI.BunifuCustomLabel lbReactionProduct;
+        private System.Windows.Forms.Label lbIsBuyProduct;
+        private System.Windows.Forms.Label lbNameCustomer;
+        private System.Windows.Forms.Label lbDayCommentProduct;
+        private System.Windows.Forms.Label lbCommentProduct;
     }
 }

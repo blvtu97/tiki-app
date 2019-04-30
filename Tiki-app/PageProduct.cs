@@ -16,5 +16,21 @@ namespace Tiki_app
         {
             InitializeComponent();        
         }
+
+        private void productTemplate1_Click(object sender, EventArgs e)
+        {
+        }
+
+        public ProductTemplate SeenProduct
+        {
+            get
+            {
+                return productTemplate1;
+            }
+            set
+            {
+                productTemplate1 = value;
+            }
+        }
     }
 }

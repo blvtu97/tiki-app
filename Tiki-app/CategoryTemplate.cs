@@ -23,6 +23,18 @@ namespace Tiki_app
                 lbNameCategory.Text = value;
             }
         }
+
+        public Image ImageCategory
+        {
+            get
+            {
+                return imgCategory.Image;
+            }
+            set
+            {
+                imgCategory.Image = value;
+            }
+        }
         public CategoryTemplate()
         {
             InitializeComponent();

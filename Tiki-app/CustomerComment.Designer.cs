@@ -30,34 +30,34 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerComment));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuRating1 = new Bunifu.Framework.UI.BunifuRating();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuProgressBar1 = new Bunifu.Framework.UI.BunifuProgressBar();
-            this.bunifuProgressBar2 = new Bunifu.Framework.UI.BunifuProgressBar();
-            this.bunifuProgressBar3 = new Bunifu.Framework.UI.BunifuProgressBar();
-            this.bunifuProgressBar4 = new Bunifu.Framework.UI.BunifuProgressBar();
-            this.bunifuProgressBar5 = new Bunifu.Framework.UI.BunifuProgressBar();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbPercent1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lbPercent2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lbPercent3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lbPercent4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lbPercent5 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnComment = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.writeComment1 = new Tiki_app.WriteComment();
+            this.pgrStar1 = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.pgrStar2 = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.pgrStar3 = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.pgrStar4 = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.pgrStar5 = new Bunifu.Framework.UI.BunifuProgressBar();
+            this.lbCountComment = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.lbScoreRating = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.ratingProduct = new Bunifu.Framework.UI.BunifuRating();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.viewAllComment1 = new Tiki_app.ViewAllComment();
+            this.writeComment1 = new Tiki_app.WriteComment();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -68,31 +68,31 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.bunifuCustomLabel9);
-            this.panel1.Controls.Add(this.bunifuCustomLabel8);
-            this.panel1.Controls.Add(this.bunifuCustomLabel7);
-            this.panel1.Controls.Add(this.bunifuCustomLabel6);
-            this.panel1.Controls.Add(this.bunifuCustomLabel5);
+            this.panel1.Controls.Add(this.lbPercent1);
+            this.panel1.Controls.Add(this.lbPercent2);
+            this.panel1.Controls.Add(this.lbPercent3);
+            this.panel1.Controls.Add(this.lbPercent4);
+            this.panel1.Controls.Add(this.lbPercent5);
             this.panel1.Controls.Add(this.bunifuCustomLabel4);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.bunifuThinButton21);
+            this.panel1.Controls.Add(this.btnComment);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.bunifuProgressBar5);
-            this.panel1.Controls.Add(this.bunifuProgressBar4);
-            this.panel1.Controls.Add(this.bunifuProgressBar3);
-            this.panel1.Controls.Add(this.bunifuProgressBar2);
-            this.panel1.Controls.Add(this.bunifuProgressBar1);
-            this.panel1.Controls.Add(this.bunifuCustomLabel3);
-            this.panel1.Controls.Add(this.bunifuCustomLabel2);
-            this.panel1.Controls.Add(this.bunifuRating1);
+            this.panel1.Controls.Add(this.pgrStar1);
+            this.panel1.Controls.Add(this.pgrStar2);
+            this.panel1.Controls.Add(this.pgrStar3);
+            this.panel1.Controls.Add(this.pgrStar4);
+            this.panel1.Controls.Add(this.pgrStar5);
+            this.panel1.Controls.Add(this.lbCountComment);
+            this.panel1.Controls.Add(this.lbScoreRating);
+            this.panel1.Controls.Add(this.ratingProduct);
             this.panel1.Controls.Add(this.bunifuCustomLabel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -100,156 +100,55 @@
             this.panel1.Size = new System.Drawing.Size(1000, 257);
             this.panel1.TabIndex = 0;
             // 
-            // bunifuCustomLabel1
+            // lbPercent1
             // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(63, 57);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(192, 25);
-            this.bunifuCustomLabel1.TabIndex = 0;
-            this.bunifuCustomLabel1.Text = "Đánh giá trung bình";
+            this.lbPercent1.AutoSize = true;
+            this.lbPercent1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lbPercent1.Location = new System.Drawing.Point(713, 200);
+            this.lbPercent1.Name = "lbPercent1";
+            this.lbPercent1.Size = new System.Drawing.Size(23, 15);
+            this.lbPercent1.TabIndex = 25;
+            this.lbPercent1.Text = "0%";
             // 
-            // bunifuRating1
+            // lbPercent2
             // 
-            this.bunifuRating1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuRating1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(32)))));
-            this.bunifuRating1.Location = new System.Drawing.Point(51, 160);
-            this.bunifuRating1.Name = "bunifuRating1";
-            this.bunifuRating1.Size = new System.Drawing.Size(223, 32);
-            this.bunifuRating1.TabIndex = 1;
-            this.bunifuRating1.Value = 0;
+            this.lbPercent2.AutoSize = true;
+            this.lbPercent2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lbPercent2.Location = new System.Drawing.Point(713, 172);
+            this.lbPercent2.Name = "lbPercent2";
+            this.lbPercent2.Size = new System.Drawing.Size(23, 15);
+            this.lbPercent2.TabIndex = 24;
+            this.lbPercent2.Text = "1%";
             // 
-            // bunifuCustomLabel2
+            // lbPercent3
             // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Red;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(114, 98);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(97, 45);
-            this.bunifuCustomLabel2.TabIndex = 2;
-            this.bunifuCustomLabel2.Text = "4.5/5";
+            this.lbPercent3.AutoSize = true;
+            this.lbPercent3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lbPercent3.Location = new System.Drawing.Point(713, 142);
+            this.lbPercent3.Name = "lbPercent3";
+            this.lbPercent3.Size = new System.Drawing.Size(23, 15);
+            this.lbPercent3.TabIndex = 23;
+            this.lbPercent3.Text = "3%";
             // 
-            // bunifuCustomLabel3
+            // lbPercent4
             // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(118, 207);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(114, 21);
-            this.bunifuCustomLabel3.TabIndex = 3;
-            this.bunifuCustomLabel3.Text = "(n Số nhận xét)";
+            this.lbPercent4.AutoSize = true;
+            this.lbPercent4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lbPercent4.Location = new System.Drawing.Point(713, 110);
+            this.lbPercent4.Name = "lbPercent4";
+            this.lbPercent4.Size = new System.Drawing.Size(29, 15);
+            this.lbPercent4.TabIndex = 22;
+            this.lbPercent4.Text = "15%";
             // 
-            // bunifuProgressBar1
+            // lbPercent5
             // 
-            this.bunifuProgressBar1.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuProgressBar1.BorderRadius = 8;
-            this.bunifuProgressBar1.Location = new System.Drawing.Point(407, 85);
-            this.bunifuProgressBar1.MaximumValue = 100;
-            this.bunifuProgressBar1.Name = "bunifuProgressBar1";
-            this.bunifuProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(180)))), ((int)(((byte)(69)))));
-            this.bunifuProgressBar1.Size = new System.Drawing.Size(300, 10);
-            this.bunifuProgressBar1.TabIndex = 4;
-            this.bunifuProgressBar1.Value = 85;
-            // 
-            // bunifuProgressBar2
-            // 
-            this.bunifuProgressBar2.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuProgressBar2.BorderRadius = 8;
-            this.bunifuProgressBar2.Location = new System.Drawing.Point(407, 115);
-            this.bunifuProgressBar2.MaximumValue = 100;
-            this.bunifuProgressBar2.Name = "bunifuProgressBar2";
-            this.bunifuProgressBar2.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(180)))), ((int)(((byte)(69)))));
-            this.bunifuProgressBar2.Size = new System.Drawing.Size(300, 10);
-            this.bunifuProgressBar2.TabIndex = 5;
-            this.bunifuProgressBar2.Value = 9;
-            // 
-            // bunifuProgressBar3
-            // 
-            this.bunifuProgressBar3.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuProgressBar3.BorderRadius = 8;
-            this.bunifuProgressBar3.Location = new System.Drawing.Point(407, 145);
-            this.bunifuProgressBar3.MaximumValue = 100;
-            this.bunifuProgressBar3.Name = "bunifuProgressBar3";
-            this.bunifuProgressBar3.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(180)))), ((int)(((byte)(69)))));
-            this.bunifuProgressBar3.Size = new System.Drawing.Size(300, 10);
-            this.bunifuProgressBar3.TabIndex = 6;
-            this.bunifuProgressBar3.Value = 3;
-            // 
-            // bunifuProgressBar4
-            // 
-            this.bunifuProgressBar4.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuProgressBar4.BorderRadius = 8;
-            this.bunifuProgressBar4.Location = new System.Drawing.Point(407, 175);
-            this.bunifuProgressBar4.MaximumValue = 100;
-            this.bunifuProgressBar4.Name = "bunifuProgressBar4";
-            this.bunifuProgressBar4.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(180)))), ((int)(((byte)(69)))));
-            this.bunifuProgressBar4.Size = new System.Drawing.Size(300, 10);
-            this.bunifuProgressBar4.TabIndex = 7;
-            this.bunifuProgressBar4.Value = 1;
-            // 
-            // bunifuProgressBar5
-            // 
-            this.bunifuProgressBar5.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuProgressBar5.BorderRadius = 8;
-            this.bunifuProgressBar5.Location = new System.Drawing.Point(407, 205);
-            this.bunifuProgressBar5.MaximumValue = 100;
-            this.bunifuProgressBar5.Name = "bunifuProgressBar5";
-            this.bunifuProgressBar5.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(180)))), ((int)(((byte)(69)))));
-            this.bunifuProgressBar5.Size = new System.Drawing.Size(300, 10);
-            this.bunifuProgressBar5.TabIndex = 8;
-            this.bunifuProgressBar5.Value = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(354, 82);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(14, 15);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "5";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(354, 115);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(14, 15);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "4";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(354, 142);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(14, 15);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "3";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(354, 172);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(14, 15);
-            this.label4.TabIndex = 18;
-            this.label4.Text = "2";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(354, 200);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(14, 15);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "1";
+            this.lbPercent5.AutoSize = true;
+            this.lbPercent5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lbPercent5.Location = new System.Drawing.Point(713, 80);
+            this.lbPercent5.Name = "lbPercent5";
+            this.lbPercent5.Size = new System.Drawing.Size(29, 15);
+            this.lbPercent5.TabIndex = 21;
+            this.lbPercent5.Text = "85%";
             // 
             // bunifuCustomLabel4
             // 
@@ -261,80 +160,82 @@
             this.bunifuCustomLabel4.TabIndex = 20;
             this.bunifuCustomLabel4.Text = "Viết nhận xét của bạn";
             // 
-            // bunifuCustomLabel5
+            // label5
             // 
-            this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(713, 80);
-            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(29, 15);
-            this.bunifuCustomLabel5.TabIndex = 21;
-            this.bunifuCustomLabel5.Text = "85%";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(354, 200);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(14, 15);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "1";
             // 
-            // bunifuCustomLabel6
+            // label4
             // 
-            this.bunifuCustomLabel6.AutoSize = true;
-            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(713, 110);
-            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(29, 15);
-            this.bunifuCustomLabel6.TabIndex = 22;
-            this.bunifuCustomLabel6.Text = "15%";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(354, 172);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(14, 15);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "2";
             // 
-            // bunifuCustomLabel7
+            // label3
             // 
-            this.bunifuCustomLabel7.AutoSize = true;
-            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(713, 142);
-            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(23, 15);
-            this.bunifuCustomLabel7.TabIndex = 23;
-            this.bunifuCustomLabel7.Text = "3%";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(354, 142);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(14, 15);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "3";
             // 
-            // bunifuCustomLabel8
+            // label2
             // 
-            this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(713, 172);
-            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(23, 15);
-            this.bunifuCustomLabel8.TabIndex = 24;
-            this.bunifuCustomLabel8.Text = "1%";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(354, 115);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(14, 15);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "4";
             // 
-            // bunifuCustomLabel9
+            // label1
             // 
-            this.bunifuCustomLabel9.AutoSize = true;
-            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(713, 200);
-            this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(23, 15);
-            this.bunifuCustomLabel9.TabIndex = 25;
-            this.bunifuCustomLabel9.Text = "0%";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(354, 82);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(14, 15);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "5";
             // 
-            // bunifuThinButton21
+            // btnComment
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Viết nhận xét của bạn";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(767, 110);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(204, 60);
-            this.bunifuThinButton21.TabIndex = 14;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnComment.ActiveBorderThickness = 1;
+            this.btnComment.ActiveCornerRadius = 20;
+            this.btnComment.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnComment.ActiveForecolor = System.Drawing.Color.White;
+            this.btnComment.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnComment.BackColor = System.Drawing.Color.White;
+            this.btnComment.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnComment.BackgroundImage")));
+            this.btnComment.ButtonText = "Viết nhận xét của bạn";
+            this.btnComment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnComment.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnComment.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnComment.IdleBorderThickness = 1;
+            this.btnComment.IdleCornerRadius = 20;
+            this.btnComment.IdleFillColor = System.Drawing.Color.White;
+            this.btnComment.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnComment.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnComment.Location = new System.Drawing.Point(767, 110);
+            this.btnComment.Margin = new System.Windows.Forms.Padding(5);
+            this.btnComment.Name = "btnComment";
+            this.btnComment.Size = new System.Drawing.Size(204, 60);
+            this.btnComment.TabIndex = 14;
+            this.btnComment.Tag = "open";
+            this.btnComment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnComment.Click += new System.EventHandler(this.btnComment_Click);
             // 
             // pictureBox5
             // 
@@ -391,12 +292,107 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
-            // writeComment1
+            // pgrStar1
             // 
-            this.writeComment1.Location = new System.Drawing.Point(0, 263);
-            this.writeComment1.Name = "writeComment1";
-            this.writeComment1.Size = new System.Drawing.Size(1000, 963);
-            this.writeComment1.TabIndex = 1;
+            this.pgrStar1.BackColor = System.Drawing.SystemColors.Control;
+            this.pgrStar1.BorderRadius = 8;
+            this.pgrStar1.Location = new System.Drawing.Point(407, 205);
+            this.pgrStar1.MaximumValue = 100;
+            this.pgrStar1.Name = "pgrStar1";
+            this.pgrStar1.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(180)))), ((int)(((byte)(69)))));
+            this.pgrStar1.Size = new System.Drawing.Size(300, 10);
+            this.pgrStar1.TabIndex = 8;
+            this.pgrStar1.Value = 0;
+            // 
+            // pgrStar2
+            // 
+            this.pgrStar2.BackColor = System.Drawing.SystemColors.Control;
+            this.pgrStar2.BorderRadius = 8;
+            this.pgrStar2.Location = new System.Drawing.Point(407, 175);
+            this.pgrStar2.MaximumValue = 100;
+            this.pgrStar2.Name = "pgrStar2";
+            this.pgrStar2.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(180)))), ((int)(((byte)(69)))));
+            this.pgrStar2.Size = new System.Drawing.Size(300, 10);
+            this.pgrStar2.TabIndex = 7;
+            this.pgrStar2.Value = 1;
+            // 
+            // pgrStar3
+            // 
+            this.pgrStar3.BackColor = System.Drawing.SystemColors.Control;
+            this.pgrStar3.BorderRadius = 8;
+            this.pgrStar3.Location = new System.Drawing.Point(407, 145);
+            this.pgrStar3.MaximumValue = 100;
+            this.pgrStar3.Name = "pgrStar3";
+            this.pgrStar3.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(180)))), ((int)(((byte)(69)))));
+            this.pgrStar3.Size = new System.Drawing.Size(300, 10);
+            this.pgrStar3.TabIndex = 6;
+            this.pgrStar3.Value = 3;
+            // 
+            // pgrStar4
+            // 
+            this.pgrStar4.BackColor = System.Drawing.SystemColors.Control;
+            this.pgrStar4.BorderRadius = 8;
+            this.pgrStar4.Location = new System.Drawing.Point(407, 115);
+            this.pgrStar4.MaximumValue = 100;
+            this.pgrStar4.Name = "pgrStar4";
+            this.pgrStar4.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(180)))), ((int)(((byte)(69)))));
+            this.pgrStar4.Size = new System.Drawing.Size(300, 10);
+            this.pgrStar4.TabIndex = 5;
+            this.pgrStar4.Value = 9;
+            // 
+            // pgrStar5
+            // 
+            this.pgrStar5.BackColor = System.Drawing.SystemColors.Control;
+            this.pgrStar5.BorderRadius = 8;
+            this.pgrStar5.Location = new System.Drawing.Point(407, 85);
+            this.pgrStar5.MaximumValue = 100;
+            this.pgrStar5.Name = "pgrStar5";
+            this.pgrStar5.ProgressColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(180)))), ((int)(((byte)(69)))));
+            this.pgrStar5.Size = new System.Drawing.Size(300, 10);
+            this.pgrStar5.TabIndex = 4;
+            this.pgrStar5.Value = 85;
+            // 
+            // lbCountComment
+            // 
+            this.lbCountComment.AutoSize = true;
+            this.lbCountComment.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCountComment.Location = new System.Drawing.Point(118, 207);
+            this.lbCountComment.Name = "lbCountComment";
+            this.lbCountComment.Size = new System.Drawing.Size(114, 21);
+            this.lbCountComment.TabIndex = 3;
+            this.lbCountComment.Text = "(n Số nhận xét)";
+            // 
+            // lbScoreRating
+            // 
+            this.lbScoreRating.AutoSize = true;
+            this.lbScoreRating.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbScoreRating.ForeColor = System.Drawing.Color.Red;
+            this.lbScoreRating.Location = new System.Drawing.Point(114, 98);
+            this.lbScoreRating.Name = "lbScoreRating";
+            this.lbScoreRating.Size = new System.Drawing.Size(97, 45);
+            this.lbScoreRating.TabIndex = 2;
+            this.lbScoreRating.Text = "4.5/5";
+            // 
+            // ratingProduct
+            // 
+            this.ratingProduct.BackColor = System.Drawing.Color.Transparent;
+            this.ratingProduct.Enabled = false;
+            this.ratingProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(193)))), ((int)(((byte)(32)))));
+            this.ratingProduct.Location = new System.Drawing.Point(51, 160);
+            this.ratingProduct.Name = "ratingProduct";
+            this.ratingProduct.Size = new System.Drawing.Size(223, 32);
+            this.ratingProduct.TabIndex = 1;
+            this.ratingProduct.Value = 0;
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(63, 57);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(192, 25);
+            this.bunifuCustomLabel1.TabIndex = 0;
+            this.bunifuCustomLabel1.Text = "Đánh giá trung bình";
             // 
             // viewAllComment1
             // 
@@ -406,6 +402,16 @@
             this.viewAllComment1.Size = new System.Drawing.Size(1000, 1182);
             this.viewAllComment1.TabIndex = 2;
             // 
+            // writeComment1
+            // 
+            this.writeComment1.CustomerCommentText = "";
+            this.writeComment1.Location = new System.Drawing.Point(0, 263);
+            this.writeComment1.Name = "writeComment1";
+            this.writeComment1.RatingProduct = 0;
+            this.writeComment1.Size = new System.Drawing.Size(1000, 963);
+            this.writeComment1.TabIndex = 1;
+            this.writeComment1.TitleComment = "";
+            // 
             // CustomerComment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -414,6 +420,7 @@
             this.Controls.Add(this.viewAllComment1);
             this.Controls.Add(this.writeComment1);
             this.Controls.Add(this.panel1);
+            this.DoubleBuffered = true;
             this.Name = "CustomerComment";
             this.Size = new System.Drawing.Size(1000, 1450);
             this.panel1.ResumeLayout(false);
@@ -430,27 +437,27 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
-        private Bunifu.Framework.UI.BunifuRating bunifuRating1;
+        private Bunifu.Framework.UI.BunifuProgressBar pgrStar5;
+        private Bunifu.Framework.UI.BunifuCustomLabel lbCountComment;
+        private Bunifu.Framework.UI.BunifuCustomLabel lbScoreRating;
+        private Bunifu.Framework.UI.BunifuRating ratingProduct;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
-        private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar5;
-        private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar4;
-        private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar3;
-        private Bunifu.Framework.UI.BunifuProgressBar bunifuProgressBar2;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel5;
+        private Bunifu.Framework.UI.BunifuProgressBar pgrStar1;
+        private Bunifu.Framework.UI.BunifuProgressBar pgrStar2;
+        private Bunifu.Framework.UI.BunifuProgressBar pgrStar3;
+        private Bunifu.Framework.UI.BunifuProgressBar pgrStar4;
+        private Bunifu.Framework.UI.BunifuCustomLabel lbPercent1;
+        private Bunifu.Framework.UI.BunifuCustomLabel lbPercent2;
+        private Bunifu.Framework.UI.BunifuCustomLabel lbPercent3;
+        private Bunifu.Framework.UI.BunifuCustomLabel lbPercent4;
+        private Bunifu.Framework.UI.BunifuCustomLabel lbPercent5;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnComment;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;

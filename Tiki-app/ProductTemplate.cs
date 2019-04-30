@@ -61,9 +61,22 @@ namespace Tiki_app
             }
         }
 
+        public Image ImageProduct
+        {
+            get
+            {
+                return imgProduct.Image;
+            }
+            set
+            {
+                imgProduct.Image = value;
+            }
+        }
         public ProductTemplate()
         {
             InitializeComponent();
         }
+
+   
     }
 }
