@@ -49,112 +49,194 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuyProduct.cs">
+    <Compile Include="BLL\BLogicCategory.cs" />
+    <Compile Include="BLL\BLogicProduct.cs" />
+    <Compile Include="DAL\DataConnector.cs" />
+    <Compile Include="DTO\BillManager.cs" />
+    <Compile Include="DTO\Customer.cs" />
+    <Compile Include="DTO\DataType.cs" />
+    <Compile Include="DTO\DanhMucSanPham.cs" />
+    <Compile Include="DTO\DataManager.cs" />
+    <Compile Include="DTO\DienThoai.cs" />
+    <Compile Include="DTO\R.cs" />
+    <Compile Include="DTO\SanPham.cs" />
+    <Compile Include="GUI\VIEW.cs" />
+    <Compile Include="pagePayProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="BuyProduct.Designer.cs">
-      <DependentUpon>BuyProduct.cs</DependentUpon>
+    <Compile Include="pagePayProduct.Designer.cs">
+      <DependentUpon>pagePayProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="CategoryTemplate.cs">
+    <Compile Include="tabChooseToBuy.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CategoryTemplate.Designer.cs">
-      <DependentUpon>CategoryTemplate.cs</DependentUpon>
+    <Compile Include="tabChooseToBuy.Designer.cs">
+      <DependentUpon>tabChooseToBuy.cs</DependentUpon>
     </Compile>
-    <Compile Include="ContactUs.cs">
+    <Compile Include="tabCategorySamples.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ContactUs.Designer.cs">
-      <DependentUpon>ContactUs.cs</DependentUpon>
+    <Compile Include="tabCategorySamples.Designer.cs">
+      <DependentUpon>tabCategorySamples.cs</DependentUpon>
     </Compile>
-    <Compile Include="CustomerComment.cs">
+    <Compile Include="tabChoseDeliveryMethod.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="CustomerComment.Designer.cs">
-      <DependentUpon>CustomerComment.cs</DependentUpon>
+    <Compile Include="tabChoseDeliveryMethod.Designer.cs">
+      <DependentUpon>tabChoseDeliveryMethod.cs</DependentUpon>
     </Compile>
-    <Compile Include="DetailsProduct.cs">
+    <Compile Include="tabContactUs.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="DetailsProduct.Designer.cs">
-      <DependentUpon>DetailsProduct.cs</DependentUpon>
+    <Compile Include="tabContactUs.Designer.cs">
+      <DependentUpon>tabContactUs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="tabCustomerComment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabCustomerComment.Designer.cs">
+      <DependentUpon>tabCustomerComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pageDetailsProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pageDetailsProduct.Designer.cs">
+      <DependentUpon>pageDetailsProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHomePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="frmHomePage.Designer.cs">
+      <DependentUpon>frmHomePage.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageNew.cs">
+    <Compile Include="tabFilterProducts.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PageNew.Designer.cs">
-      <DependentUpon>PageNew.cs</DependentUpon>
+    <Compile Include="tabFilterProducts.Designer.cs">
+      <DependentUpon>tabFilterProducts.cs</DependentUpon>
     </Compile>
-    <Compile Include="PageProduct.cs">
+    <Compile Include="tabGood.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="PageProduct.Designer.cs">
-      <DependentUpon>PageProduct.cs</DependentUpon>
+    <Compile Include="tabGood.Designer.cs">
+      <DependentUpon>tabGood.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProductTemplate.cs">
+    <Compile Include="pageNoProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ProductTemplate.Designer.cs">
-      <DependentUpon>ProductTemplate.cs</DependentUpon>
+    <Compile Include="pageNoProduct.Designer.cs">
+      <DependentUpon>pageNoProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pageNews.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pageNews.Designer.cs">
+      <DependentUpon>pageNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pageProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pageProducts.Designer.cs">
+      <DependentUpon>pageProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabInfoCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabInfoCustomer.Designer.cs">
+      <DependentUpon>tabInfoCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabOrder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabOrder.Designer.cs">
+      <DependentUpon>tabOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabProductSamples.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabProductSamples.Designer.cs">
+      <DependentUpon>tabProductSamples.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TabNew.cs">
+    <Compile Include="tabNews.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="TabNew.Designer.cs">
-      <DependentUpon>TabNew.cs</DependentUpon>
+    <Compile Include="tabNews.Designer.cs">
+      <DependentUpon>tabNews.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewAllComment.cs">
+    <Compile Include="tabThankyou.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ViewAllComment.Designer.cs">
-      <DependentUpon>ViewAllComment.cs</DependentUpon>
+    <Compile Include="tabThankyou.Designer.cs">
+      <DependentUpon>tabThankyou.cs</DependentUpon>
     </Compile>
-    <Compile Include="ViewComment.cs">
+    <Compile Include="tabViewAllComment.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ViewComment.Designer.cs">
-      <DependentUpon>ViewComment.cs</DependentUpon>
+    <Compile Include="tabViewAllComment.Designer.cs">
+      <DependentUpon>tabViewAllComment.cs</DependentUpon>
     </Compile>
-    <Compile Include="WriteComment.cs">
+    <Compile Include="tabViewOneComment.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="WriteComment.Designer.cs">
-      <DependentUpon>WriteComment.cs</DependentUpon>
+    <Compile Include="tabViewOneComment.Designer.cs">
+      <DependentUpon>tabViewOneComment.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="BuyProduct.resx">
-      <DependentUpon>BuyProduct.cs</DependentUpon>
+    <Compile Include="tabWriteComment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabWriteComment.Designer.cs">
+      <DependentUpon>tabWriteComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\App.cs" />
+    <EmbeddedResource Include="pagePayProduct.resx">
+      <DependentUpon>pagePayProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CategoryTemplate.resx">
-      <DependentUpon>CategoryTemplate.cs</DependentUpon>
+    <EmbeddedResource Include="tabChooseToBuy.resx">
+      <DependentUpon>tabChooseToBuy.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ContactUs.resx">
-      <DependentUpon>ContactUs.cs</DependentUpon>
+    <EmbeddedResource Include="tabCategorySamples.resx">
+      <DependentUpon>tabCategorySamples.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CustomerComment.resx">
-      <DependentUpon>CustomerComment.cs</DependentUpon>
+    <EmbeddedResource Include="tabChoseDeliveryMethod.resx">
+      <DependentUpon>tabChoseDeliveryMethod.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DetailsProduct.resx">
-      <DependentUpon>DetailsProduct.cs</DependentUpon>
+    <EmbeddedResource Include="tabContactUs.resx">
+      <DependentUpon>tabContactUs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="tabCustomerComment.resx">
+      <DependentUpon>tabCustomerComment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PageNew.resx">
-      <DependentUpon>PageNew.cs</DependentUpon>
+    <EmbeddedResource Include="pageDetailsProduct.resx">
+      <DependentUpon>pageDetailsProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PageProduct.resx">
-      <DependentUpon>PageProduct.cs</DependentUpon>
+    <EmbeddedResource Include="frmHomePage.resx">
+      <DependentUpon>frmHomePage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProductTemplate.resx">
-      <DependentUpon>ProductTemplate.cs</DependentUpon>
+    <EmbeddedResource Include="tabFilterProducts.resx">
+      <DependentUpon>tabFilterProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabGood.resx">
+      <DependentUpon>tabGood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pageNoProduct.resx">
+      <DependentUpon>pageNoProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pageNews.resx">
+      <DependentUpon>pageNews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pageProducts.resx">
+      <DependentUpon>pageProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabInfoCustomer.resx">
+      <DependentUpon>tabInfoCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabOrder.resx">
+      <DependentUpon>tabOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabProductSamples.resx">
+      <DependentUpon>tabProductSamples.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -166,17 +248,20 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="TabNew.resx">
-      <DependentUpon>TabNew.cs</DependentUpon>
+    <EmbeddedResource Include="tabNews.resx">
+      <DependentUpon>tabNews.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewAllComment.resx">
-      <DependentUpon>ViewAllComment.cs</DependentUpon>
+    <EmbeddedResource Include="tabThankyou.resx">
+      <DependentUpon>tabThankyou.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ViewComment.resx">
-      <DependentUpon>ViewComment.cs</DependentUpon>
+    <EmbeddedResource Include="tabViewAllComment.resx">
+      <DependentUpon>tabViewAllComment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WriteComment.resx">
-      <DependentUpon>WriteComment.cs</DependentUpon>
+    <EmbeddedResource Include="tabViewOneComment.resx">
+      <DependentUpon>tabViewOneComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabWriteComment.resx">
+      <DependentUpon>tabWriteComment.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -247,6 +332,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ic_start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_shopping.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_zoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background %2824%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

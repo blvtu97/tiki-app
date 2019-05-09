@@ -1,23 +1,63 @@
 C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\bin\Debug\Tiki-app.exe.config
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.pagePayProduct.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabChooseToBuy.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabCategorySamples.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabChoseDeliveryMethod.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabContactUs.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabCustomerComment.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.pageDetailsProduct.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.frmHomePage.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabFilterProducts.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabGood.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.pageNoProduct.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.pageNews.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.pageProducts.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabInfoCustomer.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabOrder.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabProductSamples.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.Properties.Resources.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabNews.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabThankyou.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabViewAllComment.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabViewOneComment.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabWriteComment.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki-app.csproj.GenerateResource.Cache
 C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\bin\Debug\Tiki-app.exe
 C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\bin\Debug\Tiki-app.pdb
 C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\bin\Debug\Bunifu_UI_v1.5.3.dll
 C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\bin\Debug\Bunifu.Core.dll
 C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\bin\Debug\Bunifu_UI_v1.5.3.xml
-C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.Form1.resources
-C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.Properties.Resources.resources
-C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki-app.csproj.GenerateResource.Cache
 C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki-app.exe
 C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki-app.pdb
-C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.pageNew.resources
-C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.pageProduct.resources
-C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.tabNew.resources
-C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.ProductTemplate.resources
-C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.CategoryTemplate.resources
-C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.BuyProduct.resources
-C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.DetailsProduct.resources
-C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.CustomerComment.resources
-C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.ViewAllComment.resources
-C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.ViewComment.resources
-C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.WriteComment.resources
-C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app\Tiki-app\obj\Debug\Tiki_app.ContactUs.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\bin\Debug\Tiki-app.exe.config
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki-app.exe
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki-app.pdb
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\bin\Debug\Tiki-app.exe
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\bin\Debug\Tiki-app.pdb
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\bin\Debug\Bunifu.Core.dll
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.pagePayProduct.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabChooseToBuy.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabCategorySamples.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabChoseDeliveryMethod.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabContactUs.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabCustomerComment.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.pageDetailsProduct.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.frmHomePage.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabFilterProducts.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabGood.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.pageNoProduct.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.pageNews.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.pageProducts.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabInfoCustomer.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabOrder.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabProductSamples.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.Properties.Resources.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabNews.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabThankyou.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabViewAllComment.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabViewOneComment.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabWriteComment.resources
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki-app.csproj.GenerateResource.Cache
+C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki-app.csprojResolveAssemblyReference.cache
