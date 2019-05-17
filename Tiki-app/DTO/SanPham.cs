@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Drawing;
 namespace Tiki_app.DTO
 {
     public class SanPham
@@ -24,7 +24,7 @@ namespace Tiki_app.DTO
 
         public int Count { get; set; }
 
-        public string UrlImage { get; set; }
+        public Image[] Image { get; set; }
 
         public SanPham Clone()
         {
@@ -38,7 +38,7 @@ namespace Tiki_app.DTO
                 GiaTT = GiaTT,
                 Rate = Rate,
                 Count = Count,
-                UrlImage = UrlImage,
+                Image = Image,
             };
         }
     }

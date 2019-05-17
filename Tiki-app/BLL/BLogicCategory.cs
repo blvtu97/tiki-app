@@ -5,44 +5,54 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows.Forms;
 
 using Tiki_app.DAL;
 using Tiki_app.DTO;
-using Tiki_app.Utils;
+using System.Drawing;
+using System.Diagnostics;
+using System.IO;
 
 namespace Tiki_app.BLL
 {
     public class BLogicCategory
     {
         DataConnector dataConnector;
-
         public BLogicCategory()
         {
             dataConnector = new DataConnector();
         }
 
-        public List<DanhMucSanPham> getCategory(DataType type)
+        public List<DanhMucSanPham> getCategory(DataType type, ref bool flag)
         {
-            SqlDataReader dr = null;
-            List<DanhMucSanPham> dm = null;
             try
             {
-                dm = new List<DanhMucSanPham>();
-                dr = dataConnector.getDataReader(type);
-                while (dr.Read())
+                Debug.WriteLine("Lay category");
+                //DataTable table = dataConnector.GetTable("CATEGORY_PHONE", ref flag);
+                DataConnector.ConnectToServer();
+                DataConnector.SendRequest("CATEGORY_PHONE");
+                DataTable table = DataConnector.ReceiveResponse();
+                DataConnector.Exit();
+                Debug.WriteLine("Lay category thanh cong");
+
+                List<DanhMucSanPham> sanPhams = new List<DanhMucSanPham>();
+
+                for (int i = 0; i < table.Rows.Count; i++)
                 {
-                    DanhMucSanPham u = new DanhMucSanPham();
-                    u.Loai = dr.GetString(0).Trim();
-                    u.UrlImage = App.mkdir(dr.GetString(1).Trim());
-                    dm.Add(u);
+                    MemoryStream mem = new MemoryStream((byte[])table.Rows[i][1]);
+                    Image image = Image.FromStream(mem);
+                    DanhMucSanPham sp = new DanhMucSanPham((string)table.Rows[i][0], image);
+                    sanPhams.Add(sp);
+                    Debug.WriteLine(i + " " + sp.Loai);
                 }
-                dataConnector.CloseConnection();
-            }
-            catch (SqlException e)
+
+                return sanPhams;
+            }catch(Exception e)
             {
-                throw e;
+                Debug.WriteLine("Err Get du lieu Category :" + e);
+                flag = false;
             }
-            return dm;
+            return null;
         }
 
        

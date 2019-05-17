@@ -49,7 +49,7 @@ namespace Tiki_app
             lbPriceCurrent.Text = "Giá hiện tại: " + sanPham.GiaSP + "đ";
             lbPriceOld.Text = "Giá cũ: " + sanPham.GiaTT + "đ";
             ratingProduct.Value = sanPham.Rate;
-            imgProduct.Image = Image.FromFile(sanPham.UrlImage);
+            imgProduct.Image = sanPham.Image[0];
         }
 
         public tabProductSamples Clone()
@@ -59,7 +59,7 @@ namespace Tiki_app
                 sanPham = sanPham
             };
 
-            temp.imgProduct.Image = Image.FromFile(temp.sanPham.UrlImage);
+            temp.imgProduct.Image = temp.sanPham.Image[0];
             return temp;
         }
 

@@ -12,7 +12,6 @@ using System.Threading;
 
 using Tiki_app.BLL;
 using Tiki_app.DTO;
-using Tiki_app.Utils;
 using Tiki_app.GUI;
 
 namespace Tiki_app
@@ -25,7 +24,8 @@ namespace Tiki_app
 
         tabNews tabs;
 
-        bool done = false;
+        public bool done = false;
+        public  bool doneCategory = false;
 
         List<SanPham> vax;
 
@@ -43,6 +43,7 @@ namespace Tiki_app
             initializeData();
         }
 
+
         /// <summary>
         /// Hàm đăng kí sự kiện cho các controls
         /// </summary>
@@ -54,7 +55,7 @@ namespace Tiki_app
             pageNoProducts.setOnClickListener(this);
             tabInfoCustomer.setOnClickListener(this);
             tabInfoCustomer.setOnClickListener(this);
-            tabChoosePayMethod.setOnClickListener(this);           
+            tabChoosePayMethod.setOnClickListener(this);
         }
 
         /// <summary>
@@ -149,8 +150,8 @@ namespace Tiki_app
         /// </summary>
         private void initializeData()
         {
-            createProducts(pageProducts.TabProducts, dataManager.listProduct);
-            createCategory(pageProducts.TabCategory, dataManager.listCategory);
+            //createProducts(pageProducts.TabProducts, dataManager.listProduct);
+            // createCategory(pageProducts.TabCategory, dataManager.listCategory);
         }
 
         /// <summary>
@@ -392,13 +393,18 @@ namespace Tiki_app
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            if (done)
+            if (done && doneCategory)
             {
-                timer.Stop();
+               // timer.Stop();
                 circleProgress.Visible = false;
                 circleProgress.animated = false;
-                tabs.BringToFront();
-                tabs.Focus();
+
+                createProducts(pageProducts.TabProducts, dataManager.listProduct);
+                createCategory(pageProducts.TabCategory, dataManager.listCategory);
+
+                //createCategory(pageProducts.TabCategory, dataManager.listCategory);
+                //tabs.BringToFront();
+                //tabs.Focus();
                 done = false;
             }
         }
@@ -468,6 +474,22 @@ namespace Tiki_app
             {
                 updateBill(false);
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Thread thread = new Thread(new ThreadStart(laydulieu));
+            thread.Start();
+            //dataManager = DataManager.getInstance();
+            showCircleProgress();
+        }
+
+        private void laydulieu()
+        {
+
+            //dataManager = DataManager.getInstance();
+            done = doneCategory = dataManager.loadData();
+
         }
     }
 }

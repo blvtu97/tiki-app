@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{054F0A90-ABF8-482A-839C-3D292F33DB69}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Server</RootNamespace>
+    <AssemblyName>Server</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.10.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9" />
+    <Reference Include="Bunifu.UI.WinForm.BunifuShadowPanel">
+      <HintPath>C:\Users\quanl\Downloads\Compressed\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForm.BunifuShadowPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>C:\Users\quanl\Downloads\Compressed\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
+      <HintPath>C:\Users\quanl\Downloads\Compressed\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>C:\Users\quanl\Downloads\Compressed\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>C:\Users\quanl\Downloads\Compressed\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>C:\Users\quanl\Downloads\Compressed\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>C:\Users\quanl\Downloads\Compressed\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
+      <HintPath>C:\Users\quanl\Downloads\Compressed\Bunifu Ui WinForms v1.10.0.0\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\quanl\Downloads\Compressed\Bunifu .NET UI Framework 1.5.3\Crack\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\CATEGORY\BLCategoryBook.cs" />
+    <Compile Include="BLL\CATEGORY\BLCategory_Car.cs" />
+    <Compile Include="BLL\CATEGORY\BLCategory_Fashion.cs" />
+    <Compile Include="BLL\CATEGORY\BLCategory_Laptop.cs" />
+    <Compile Include="BLL\CATEGORY\BLCategory_Smartphone_Tablet.cs" />
+    <Compile Include="BLL\BLCustomer.cs" />
+    <Compile Include="BLL\DETAIL\BLDetailBook.cs" />
+    <Compile Include="BLL\DETAIL\BLDetailCar.cs" />
+    <Compile Include="BLL\DETAIL\BLDetailFashion.cs" />
+    <Compile Include="BLL\DETAIL\BLDetailLaptop.cs" />
+    <Compile Include="BLL\DETAIL\BLDetailSmartPhone.cs" />
+    <Compile Include="BLL\IMAGE\BLImageBook.cs" />
+    <Compile Include="BLL\IMAGE\BLImageCar.cs" />
+    <Compile Include="BLL\IMAGE\BLImageLaptop.cs" />
+    <Compile Include="BLL\PRODUCT\BLProductBook.cs" />
+    <Compile Include="BLL\PRODUCT\BLProductCar.cs" />
+    <Compile Include="BLL\PRODUCT\BLProductFashion.cs" />
+    <Compile Include="BLL\IMAGE\BLImageFahion.cs" />
+    <Compile Include="BLL\PRODUCT\BLProductLaptop.cs" />
+    <Compile Include="BLL\PRODUCT\BLProductSmart.cs" />
+    <Compile Include="BLL\IMAGE\BLImageSmartPhone.cs" />
+    <Compile Include="DAL\DBConnectDatabase.cs" />
+    <Compile Include="DTO\HinhAnhSanPham.cs" />
+    <Compile Include="ENUMS.cs" />
+    <Compile Include="FormBook_Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBook_Manager.Designer.cs">
+      <DependentUpon>FormBook_Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCar_Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCar_Manager.Designer.cs">
+      <DependentUpon>FormCar_Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFashion_Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFashion_Manager.Designer.cs">
+      <DependentUpon>FormFashion_Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLaptop_Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLaptop_Manager.Designer.cs">
+      <DependentUpon>FormLaptop_Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhone_Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhone_Manager.Designer.cs">
+      <DependentUpon>FormPhone_Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormServer.Designer.cs">
+      <DependentUpon>FormServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUser_Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUser_Manager.Designer.cs">
+      <DependentUpon>FormUser_Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\OnClickListener.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormBook_Manager.resx">
+      <DependentUpon>FormBook_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCar_Manager.resx">
+      <DependentUpon>FormCar_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFashion_Manager.resx">
+      <DependentUpon>FormFashion_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLaptop_Manager.resx">
+      <DependentUpon>FormLaptop_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPhone_Manager.resx">
+      <DependentUpon>FormPhone_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormServer.resx">
+      <DependentUpon>FormServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noimage.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -41,29 +41,17 @@ namespace Tiki_app
             InitializeComponent();
         }
 
-        private void showImageProduct(string urlImage)
+        private void showImageProduct(Image[] image)
         {
-            string url;
-            if (File.Exists(urlImage))
-            {
-                imgBigProduct.BackgroundImage = Image.FromFile(urlImage);
-                btnSmallProduct1.Image = Image.FromFile(urlImage);
-            }
-            url = urlImage.Replace(".", "B.");
-            if (File.Exists(url))
-                btnSmallProduct2.Image = Image.FromFile(url);
-            else
-                btnSmallProduct2.Image = null;
-            url = urlImage.Replace(".", "C.");
-            if (File.Exists(url))
-                btnSmallProduct3.Image = Image.FromFile(url);
-            else
-                btnSmallProduct3.Image = null;
-            url = urlImage.Replace(".", "D.");
-            if (File.Exists(url))
-                btnSmallProduct4.Image = Image.FromFile(url);
-            else
-                btnSmallProduct4.Image = null;
+            imgBigProduct.BackgroundImage = image[0];
+            btnSmallProduct1.Image = image[0];
+
+            btnSmallProduct2.Image = image[1];
+
+            btnSmallProduct3.Image = image[2];
+
+            btnSmallProduct4.Image = image[3];
+
         }
 
         public void attachInfoProduct(SanPham sanPham)
@@ -76,7 +64,7 @@ namespace Tiki_app
             ratingProduct.Value = sanPham.Rate;
             customerComment.RatingProduct = sanPham.Rate;
             customerComment.ScoreRating = sanPham.Rate + "/5";
-            showImageProduct(sanPham.UrlImage);
+            showImageProduct(sanPham.Image);
             tabBuyProduct.Focus();
         }
 

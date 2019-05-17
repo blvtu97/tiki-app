@@ -341,6 +341,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel2
             // 
@@ -599,6 +600,7 @@
             this.tabInfoCustomer.AutoScroll = true;
             this.tabInfoCustomer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
             this.tabInfoCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabInfoCustomer.KhachHang = null;
             this.tabInfoCustomer.Location = new System.Drawing.Point(0, 0);
             this.tabInfoCustomer.Name = "tabInfoCustomer";
             this.tabInfoCustomer.NameCustomer = "";

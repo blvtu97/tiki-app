@@ -15,7 +15,7 @@ namespace Tiki_app.DTO
 
         private DataManager()
         {
-            loadData();
+            //loadData();
         }
 
         public static DataManager getInstance()
@@ -36,10 +36,27 @@ namespace Tiki_app.DTO
 
         public List<SanPham> listPurchased = new List<SanPham>();
 
-        private void loadData()
+        public bool loadData()
         {
-            listProduct = logicProduct.getProducts(DataType.DIENTHOAI);
-            listCategory = logicCategory.getCategory(DataType.CATEGORY_DIENTHOAI_TABLET);
+            bool flag = true;
+            listCategory = logicCategory.getCategory(DataType.CATEGORY_DIENTHOAI_TABLET, ref flag);
+            //listProduct = logicProduct.getProducts(DataType.DIENTHOAI, ref flag);
+            return flag;
+            //while (!flag)
+            //{
+            //    listProduct = logicProduct.getProducts(DataType.DIENTHOAI,ref flag);
+            //    if (listProduct != null)
+            //        break;
+            //}
+            //flag = false;
+            //while (!flag)
+            //{
+            //    listCategory = logicCategory.getCategory(DataType.CATEGORY_DIENTHOAI_TABLET, ref flag);
+            //    if (listCategory != null)
+            //        return true;
+            //}
+            //return false;
+
         }
 
         public List<SanPham> findProductFollowCategory(string type)
