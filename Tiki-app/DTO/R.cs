@@ -72,6 +72,17 @@ namespace Tiki_app.DTO
             /// id = 12345690
             /// </summary>
             public static int FILTER_FOLLOW_KEYWORD = 12345690;
+
+            /// <summary>
+            /// id = 12345691
+            /// </summary>
+            public static int REGISTER_USER = 12345691;
+
+             /// <summary>
+            /// id = 12345692
+            /// </summary>
+            public static int REQUEST_LOGIN = 12345692;
         }
+        
     }
 }

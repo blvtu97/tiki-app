@@ -60,7 +60,19 @@
     <Compile Include="DTO\DienThoai.cs" />
     <Compile Include="DTO\R.cs" />
     <Compile Include="DTO\SanPham.cs" />
+    <Compile Include="frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\VIEW.cs" />
+    <Compile Include="pageLogin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="pageLogin.Designer.cs">
+      <DependentUpon>pageLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="pagePayProduct.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -145,6 +157,12 @@
     <Compile Include="tabInfoCustomer.Designer.cs">
       <DependentUpon>tabInfoCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="tabInfoUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tabInfoUser.Designer.cs">
+      <DependentUpon>tabInfoUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="tabOrder.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -189,6 +207,12 @@
     <Compile Include="tabWriteComment.Designer.cs">
       <DependentUpon>tabWriteComment.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pageLogin.resx">
+      <DependentUpon>pageLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="pagePayProduct.resx">
       <DependentUpon>pagePayProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -230,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="tabInfoCustomer.resx">
       <DependentUpon>tabInfoCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabInfoUser.resx">
+      <DependentUpon>tabInfoUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="tabOrder.resx">
       <DependentUpon>tabOrder.cs</DependentUpon>
@@ -349,6 +376,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_bell.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_user_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_zalo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgr_register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_address.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_comment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_manage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_qcode.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_upload.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

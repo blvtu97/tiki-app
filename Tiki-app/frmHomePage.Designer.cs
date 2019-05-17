@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHomePage));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.tabFilterProducts = new Tiki_app.tabFilterProducts();
             this.tabPhone = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tabLaptop = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tabFashion = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -42,6 +41,8 @@
             this.bar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lbNotification = new System.Windows.Forms.Label();
+            this.btnNotification = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lbCountProduct = new System.Windows.Forms.Label();
             this.btnBuyProduct = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnLogin = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -55,12 +56,15 @@
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.pageProducts = new Tiki_app.pageProducts();
             this.pageNews = new Tiki_app.pageNews();
+            this.tabFilterProducts = new Tiki_app.tabFilterProducts();
             this.pageDetailsProducts = new Tiki_app.pageDetailsProduct();
             this.pageNoProducts = new Tiki_app.pageNoProduct();
             this.pagePayProducts = new Tiki_app.pagePayProduct();
             this.tabInfoCustomer = new Tiki_app.tabInfoCustomer();
             this.tabThankyou1 = new Tiki_app.tabThankyou();
             this.tabChoosePayMethod = new Tiki_app.tabChoseDeliveryMethod();
+            this.pageLogin = new Tiki_app.pageLogin();
+            this.tabInfoUser = new Tiki_app.tabInfoUser();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bar)).BeginInit();
@@ -96,17 +100,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(284, 231);
             this.panel4.TabIndex = 18;
-            // 
-            // tabFilterProducts
-            // 
-            this.tabFilterProducts.AutoScroll = true;
-            this.tabFilterProducts.BackColor = System.Drawing.Color.White;
-            this.tabFilterProducts.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabFilterProducts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabFilterProducts.Location = new System.Drawing.Point(0, 0);
-            this.tabFilterProducts.Name = "tabFilterProducts";
-            this.tabFilterProducts.Size = new System.Drawing.Size(284, 231);
-            this.tabFilterProducts.TabIndex = 0;
             // 
             // tabPhone
             // 
@@ -346,6 +339,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.panel2.Controls.Add(this.lbNotification);
+            this.panel2.Controls.Add(this.btnNotification);
             this.panel2.Controls.Add(this.lbCountProduct);
             this.panel2.Controls.Add(this.btnBuyProduct);
             this.panel2.Controls.Add(this.btnLogin);
@@ -358,12 +353,59 @@
             this.panel2.Size = new System.Drawing.Size(1015, 65);
             this.panel2.TabIndex = 6;
             // 
+            // lbNotification
+            // 
+            this.lbNotification.BackColor = System.Drawing.Color.Red;
+            this.lbNotification.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNotification.ForeColor = System.Drawing.Color.White;
+            this.lbNotification.Location = new System.Drawing.Point(572, 16);
+            this.lbNotification.Name = "lbNotification";
+            this.lbNotification.Size = new System.Drawing.Size(15, 15);
+            this.lbNotification.TabIndex = 12;
+            this.lbNotification.Text = "0";
+            this.lbNotification.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnNotification
+            // 
+            this.btnNotification.Active = false;
+            this.btnNotification.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.btnNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.btnNotification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNotification.BorderRadius = 5;
+            this.btnNotification.ButtonText = "     Thông báo";
+            this.btnNotification.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNotification.DisabledColor = System.Drawing.Color.Gray;
+            this.btnNotification.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnNotification.Iconimage = global::Tiki_app.Properties.Resources.ic_bell;
+            this.btnNotification.Iconimage_right = null;
+            this.btnNotification.Iconimage_right_Selected = null;
+            this.btnNotification.Iconimage_Selected = null;
+            this.btnNotification.IconMarginLeft = 0;
+            this.btnNotification.IconMarginRight = 0;
+            this.btnNotification.IconRightVisible = true;
+            this.btnNotification.IconRightZoom = 0D;
+            this.btnNotification.IconVisible = true;
+            this.btnNotification.IconZoom = 50D;
+            this.btnNotification.IsTab = false;
+            this.btnNotification.Location = new System.Drawing.Point(547, 10);
+            this.btnNotification.Name = "btnNotification";
+            this.btnNotification.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
+            this.btnNotification.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(109)))), ((int)(((byte)(172)))));
+            this.btnNotification.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnNotification.selected = false;
+            this.btnNotification.Size = new System.Drawing.Size(140, 45);
+            this.btnNotification.TabIndex = 11;
+            this.btnNotification.Text = "     Thông báo";
+            this.btnNotification.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNotification.Textcolor = System.Drawing.Color.White;
+            this.btnNotification.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
             // lbCountProduct
             // 
             this.lbCountProduct.BackColor = System.Drawing.Color.Red;
             this.lbCountProduct.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCountProduct.ForeColor = System.Drawing.Color.White;
-            this.lbCountProduct.Location = new System.Drawing.Point(935, 18);
+            this.lbCountProduct.Location = new System.Drawing.Point(965, 18);
             this.lbCountProduct.Name = "lbCountProduct";
             this.lbCountProduct.Size = new System.Drawing.Size(20, 25);
             this.lbCountProduct.TabIndex = 10;
@@ -378,7 +420,7 @@
             this.btnBuyProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.btnBuyProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnBuyProduct.BorderRadius = 5;
-            this.btnBuyProduct.ButtonText = "       Giỏ hàng";
+            this.btnBuyProduct.ButtonText = "     Giỏ hàng";
             this.btnBuyProduct.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuyProduct.DisabledColor = System.Drawing.Color.Gray;
             this.btnBuyProduct.Iconcolor = System.Drawing.Color.Transparent;
@@ -393,15 +435,15 @@
             this.btnBuyProduct.IconVisible = true;
             this.btnBuyProduct.IconZoom = 60D;
             this.btnBuyProduct.IsTab = false;
-            this.btnBuyProduct.Location = new System.Drawing.Point(813, 10);
+            this.btnBuyProduct.Location = new System.Drawing.Point(852, 10);
             this.btnBuyProduct.Name = "btnBuyProduct";
             this.btnBuyProduct.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.btnBuyProduct.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(109)))), ((int)(((byte)(172)))));
             this.btnBuyProduct.OnHoverTextColor = System.Drawing.Color.White;
             this.btnBuyProduct.selected = false;
-            this.btnBuyProduct.Size = new System.Drawing.Size(151, 45);
+            this.btnBuyProduct.Size = new System.Drawing.Size(140, 45);
             this.btnBuyProduct.TabIndex = 9;
-            this.btnBuyProduct.Text = "       Giỏ hàng";
+            this.btnBuyProduct.Text = "     Giỏ hàng";
             this.btnBuyProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuyProduct.Textcolor = System.Drawing.Color.White;
             this.btnBuyProduct.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -414,7 +456,7 @@
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnLogin.BorderRadius = 5;
-            this.btnLogin.ButtonText = "      Đăng nhập";
+            this.btnLogin.ButtonText = "     Đăng nhập";
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.DisabledColor = System.Drawing.Color.Gray;
             this.btnLogin.Iconcolor = System.Drawing.Color.Transparent;
@@ -429,25 +471,26 @@
             this.btnLogin.IconVisible = true;
             this.btnLogin.IconZoom = 50D;
             this.btnLogin.IsTab = false;
-            this.btnLogin.Location = new System.Drawing.Point(626, 10);
+            this.btnLogin.Location = new System.Drawing.Point(700, 10);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.btnLogin.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(109)))), ((int)(((byte)(172)))));
             this.btnLogin.OnHoverTextColor = System.Drawing.Color.White;
             this.btnLogin.selected = false;
-            this.btnLogin.Size = new System.Drawing.Size(148, 45);
+            this.btnLogin.Size = new System.Drawing.Size(140, 45);
             this.btnLogin.TabIndex = 8;
-            this.btnLogin.Text = "      Đăng nhập";
+            this.btnLogin.Text = "     Đăng nhập";
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogin.Textcolor = System.Drawing.Color.White;
             this.btnLogin.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI", 15.25F);
             this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(465, 18);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(409, 15);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(97, 30);
             this.bunifuCustomLabel1.TabIndex = 7;
@@ -469,7 +512,7 @@
             this.edtFindProduct.LineIdleColor = System.Drawing.Color.Navy;
             this.edtFindProduct.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.edtFindProduct.LineThickness = 2;
-            this.edtFindProduct.Location = new System.Drawing.Point(73, 10);
+            this.edtFindProduct.Location = new System.Drawing.Point(24, 10);
             this.edtFindProduct.Margin = new System.Windows.Forms.Padding(4);
             this.edtFindProduct.MaxLength = 32767;
             this.edtFindProduct.Name = "edtFindProduct";
@@ -482,7 +525,7 @@
             this.btnFind.BackColor = System.Drawing.Color.Transparent;
             this.btnFind.Image = ((System.Drawing.Image)(resources.GetObject("btnFind.Image")));
             this.btnFind.ImageActive = null;
-            this.btnFind.Location = new System.Drawing.Point(417, 16);
+            this.btnFind.Location = new System.Drawing.Point(368, 14);
             this.btnFind.Name = "btnFind";
             this.btnFind.Size = new System.Drawing.Size(35, 35);
             this.btnFind.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -566,6 +609,17 @@
             this.pageNews.Size = new System.Drawing.Size(1015, 551);
             this.pageNews.TabIndex = 8;
             // 
+            // tabFilterProducts
+            // 
+            this.tabFilterProducts.AutoScroll = true;
+            this.tabFilterProducts.BackColor = System.Drawing.Color.White;
+            this.tabFilterProducts.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabFilterProducts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabFilterProducts.Location = new System.Drawing.Point(0, 0);
+            this.tabFilterProducts.Name = "tabFilterProducts";
+            this.tabFilterProducts.Size = new System.Drawing.Size(284, 231);
+            this.tabFilterProducts.TabIndex = 0;
+            // 
             // pageDetailsProducts
             // 
             this.pageDetailsProducts.AutoScroll = true;
@@ -627,6 +681,26 @@
             this.tabChoosePayMethod.Size = new System.Drawing.Size(1299, 681);
             this.tabChoosePayMethod.TabIndex = 15;
             // 
+            // pageLogin
+            // 
+            this.pageLogin.AutoScroll = true;
+            this.pageLogin.BackColor = System.Drawing.Color.White;
+            this.pageLogin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pageLogin.Location = new System.Drawing.Point(0, 0);
+            this.pageLogin.Name = "pageLogin";
+            this.pageLogin.Size = new System.Drawing.Size(1299, 681);
+            this.pageLogin.TabIndex = 16;
+            // 
+            // tabInfoUser
+            // 
+            this.tabInfoUser.AutoScroll = true;
+            this.tabInfoUser.BackColor = System.Drawing.Color.White;
+            this.tabInfoUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabInfoUser.Location = new System.Drawing.Point(0, 0);
+            this.tabInfoUser.Name = "tabInfoUser";
+            this.tabInfoUser.Size = new System.Drawing.Size(1299, 681);
+            this.tabInfoUser.TabIndex = 17;
+            // 
             // frmHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -643,6 +717,8 @@
             this.Controls.Add(this.tabInfoCustomer);
             this.Controls.Add(this.tabThankyou1);
             this.Controls.Add(this.tabChoosePayMethod);
+            this.Controls.Add(this.pageLogin);
+            this.Controls.Add(this.tabInfoUser);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmHomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -693,6 +769,10 @@
         private tabChoseDeliveryMethod tabChoosePayMethod;
         private Bunifu.Framework.UI.BunifuCircleProgressbar circleProgress;
         private System.Windows.Forms.Timer timer;
+        private Bunifu.Framework.UI.BunifuFlatButton btnNotification;
+        private System.Windows.Forms.Label lbNotification;
+        private pageLogin pageLogin;
+        private tabInfoUser tabInfoUser;
     }
 }
 
