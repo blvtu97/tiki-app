@@ -37,7 +37,7 @@ namespace Tiki_app
         }
         private void showInfoCategory()
         {
-            this.BackgroundImage = Image.FromFile(danhMuc.UrlImage);
+            this.BackgroundImage = danhMuc.Image;
         }
 
         private void tabCategorySamples_Click(object sender, EventArgs e)

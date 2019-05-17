@@ -10,7 +10,6 @@ using System.Windows.Forms;
 
 using Tiki_app.DTO;
 using Tiki_app.GUI;
-using Tiki_app.Utils;
 
 namespace Tiki_app
 {
@@ -51,7 +50,7 @@ namespace Tiki_app
             lbNameProduct.Text = sanPham.TenSP;
             edtCountProduct.Text = sanPham.Count.ToString();
             edtCountProduct.TextChanged += edtCountProduct_TextChanged;
-            imgProduct.Image = Image.FromFile(sanPham.UrlImage);
+            imgProduct.Image = sanPham.Image[0];
         }
 
         private void btnMinus_Click(object sender, EventArgs e)

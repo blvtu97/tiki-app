@@ -5,159 +5,153 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-
+using System.Diagnostics;
 using Tiki_app.DTO;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Net;
+using System.Net.Sockets;
+using System.Windows.Forms;
+using System.Threading;
 
 namespace Tiki_app.DAL
 {
     public class DataConnector
     {
-        //The connection string is placed in the app.config file
-        private string stringConnection =
-         "Server = DESKTOP-BSUQ8EF; Database = DBTIKI; UID = sa; PWD = 123456";
+        //const string ADRRESS = "localhost";
+        //const string IPENDPOINT = "192.168.1.5";
+        //const int PORT = 100;
+        //ASCIIEncoding encoding = new ASCIIEncoding();
+        //IPAddress[] ipAddress;
+        //IPEndPoint ipEnd;
+        //Socket clientSock;
+        private static readonly Socket ClientSocket = new Socket
+            (AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
-        private SqlCommand cmd;
-
-        private SqlConnection conn;
-
-        private SqlDataAdapter da;
+        private const int PORT = 5656;
 
         public DataConnector()
         {
-            conn = new SqlConnection(stringConnection);
         }
 
-        /// <summary>
-        /// This is the method of opening the connection and throwing an exception 
-        /// if an error occurs
-        /// </summary>
-        public void OpenConnection()
+        public static void ConnectToServer()
         {
-            try
+            int attempts = 0;
+
+            while (!ClientSocket.Connected)
             {
-                if (conn.State == ConnectionState.Closed) conn.Open();
+                try
+                {
+                    attempts++;
+                    Debug.WriteLine("Connection attempt " + attempts);
+                    // Change IPAddress.Loopback to a remote IP to connect to a remote host.
+                    ClientSocket.Connect(IPAddress.Loopback, PORT);
+                }
+                catch (SocketException sk)
+                {
+                    //Console.Clear();
+                    Debug.WriteLine(sk);
+                }
             }
-            catch (SqlException e)
+
+            Debug.WriteLine("Connected");
+        }
+
+        public static void Exit()
+        {
+            SendString("exit"); // Tell the server we are exiting
+            ClientSocket.Shutdown(SocketShutdown.Both);
+            ClientSocket.Close();
+            Environment.Exit(0);
+        }
+        public static void SendRequest(string mess)
+        {
+            SendString(mess);
+
+            if (mess.Trim().ToLower() == "exit")
             {
-                throw e;
+                Exit();
             }
         }
 
-        /// <summary>
-        /// This is the method of closing the connection and throwing an exception 
-        /// if an error occurs
-        /// </summary>
-        public void CloseConnection()
+        private static void SendString(string text)
         {
-            try
-            {
-                if (conn.State == ConnectionState.Open) conn.Close();
-            }
-            catch (SqlException e)
-            {
-                throw e;
-            }
+            byte[] buffer = Encoding.ASCII.GetBytes(text);
+            ClientSocket.Send(buffer, 0, buffer.Length, SocketFlags.None);
         }
 
-        /// <summary>
-        /// This is method takes data from any table
-        /// </summary>
-        /// <param name="name">name of table</param>
-        /// <returns>DataTable</returns>
-        public DataTable getDataTable(string name)
+        public static DataTable ReceiveResponse()
         {
-            DataTable dt = null;
-            try
+            var buffer = new byte[2048];
+            int received = ClientSocket.Receive(buffer, SocketFlags.None);
+            if (received == 0) return null;
+            byte[] data = new byte[received];
+            Array.Copy(buffer, data, received);
+            //string text = Encoding.ASCII.GetString(data);
+            //Console.WriteLine(text);
+            
+            int listSize = (int)DeserializeData(data);
+            List<DataTable> myData = new List<DataTable>();
+            //get list
+            for (int i = 0; i < listSize; i++)
             {
-                string query = "SELECT * FROM " + name;
-                cmd = new SqlCommand(query, conn);
-                OpenConnection();
-                dt = new DataTable();
-                da = new SqlDataAdapter(cmd);
-                da.Fill(dt);
+                var buffers = new byte[10000*10000];
+                int rec = ClientSocket.Receive(buffer, SocketFlags.None);
+                if (rec == 0) return null;
+                byte[] datas = new byte[rec];
+                Array.Copy(buffers, datas, rec);
+                myData.Add((DataTable)DeserializeData(data));
             }
-            catch (SqlException e)
+            DataTable result = MergeTable(myData);
+            if (result != null)   //kiểm tra gán table thành công
             {
-                throw e;
+                return result;
             }
-            return dt;
+            return null;
         }
 
-        /// <summary>
-        /// This is method takes data from any table
-        /// </summary>
-        /// <param name="tableName">name of table</param>
-        /// <returns>data has type SqlDataReader</returns>
-        public SqlDataReader getDataReader(DataType type)
+        //Giải mã mảng byte thành object ban đầu
+        static private object DeserializeData(byte[] theByteArray)
         {
-            SqlDataReader dr;
-            try
-            {
-                string query = "SELECT * FROM " + type.ToString();
-                cmd = new SqlCommand(query);
-                cmd.Connection = conn;
-                OpenConnection();
-                dr = cmd.ExecuteReader();
-            }
-            catch (SqlException ex)
-            {
-                throw ex;
-            }
-            return dr;
+            MemoryStream ms = new MemoryStream(theByteArray);
+            BinaryFormatter bf1 = new BinaryFormatter();
+            ms.Position = 0;
+            return bf1.Deserialize(ms);
         }
 
-        public SqlDataReader getDataReader(string[] tables, string[] args1)
+
+        // Nối nhiều table con lại thành một table lớn
+        static private DataTable MergeTable(List<DataTable> child)
         {
-            string table = formatArgs(tables);
-            string arg = formatArgs(args1);
-            SqlDataReader dr;
-            try
+            DataTable parent = new DataTable();
+            parent = child[0].Copy();
+            for (int i = 1; i < child.Count; i++)
             {
-                string query = "SELECT " + arg + "FROM " + tables;
-                cmd = new SqlCommand(query);
-                cmd.Connection = conn;
-                OpenConnection();
-                dr = cmd.ExecuteReader();
+                parent.Merge(child[i]);
             }
-            catch (SqlException ex)
-            {
-                throw ex;
-            }
-            return dr;
+            return parent;
+
         }
 
-        private string formatArgs(string[] var)
+        //Gửi dữ liệu về server
+        public void SendMessage(string massege)
         {
-            string temp = "";
-            for (int i = 0; i < var.Count(); i++)
-            {
-                temp += var[i] + ",";
-            }
-            if (!temp.Equals(""))
-            {
-                temp.Remove(temp.Length - 1);
-            }
-            return temp;
-        }
+            //try
+            //{
+            //    IPAddress[] ipAddress = Dns.GetHostAddresses(ADRRESS);
+            //    IPEndPoint ipEnd = new IPEndPoint(IPAddress.Parse(IPENDPOINT), PORT);
+            //    Socket clientSock = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
+            //    clientSock.Connect(ipEnd);
 
-        /// <summary>
-        /// This is the method of executing a query to the database
-        /// </summary>
-        /// <param name="query">query statement</param>
-        /// <returns>true if the query succeeds, if not returned false</returns>
-        public bool MyExcuteNonquery(string query)
-        {
-            try
-            {
-                cmd = new SqlCommand(query, conn);
-                OpenConnection();
-                cmd.ExecuteNonQuery();
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            //    //Send 
+            //    clientSock.Send(encoding.GetBytes("MASSAGE :"+massege));
+
+            //    clientSock.Close();
+            //}
+            //catch (Exception ex)
+            //{
+            //    Debug.WriteLine("Can't Send Massage To Server!\n\n" + ex);
+            //}
         }
     }
 }

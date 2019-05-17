@@ -189,7 +189,6 @@
     <Compile Include="tabWriteComment.Designer.cs">
       <DependentUpon>tabWriteComment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Utils\App.cs" />
     <EmbeddedResource Include="pagePayProduct.resx">
       <DependentUpon>pagePayProduct.cs</DependentUpon>
     </EmbeddedResource>

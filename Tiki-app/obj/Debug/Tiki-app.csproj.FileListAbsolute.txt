@@ -61,3 +61,34 @@ C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2
 C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki_app.tabWriteComment.resources
 C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki-app.csproj.GenerateResource.Cache
 C:\Users\blvtu\Documents\Visual Studio 2013\Projects\Tutorial\Tiki-app - Copy (2)\Tiki-app\obj\Debug\Tiki-app.csprojResolveAssemblyReference.cache
+E:\Git\tiki-app\Tiki-app\bin\Debug\Tiki-app.exe.config
+E:\Git\tiki-app\Tiki-app\bin\Debug\Tiki-app.exe
+E:\Git\tiki-app\Tiki-app\bin\Debug\Tiki-app.pdb
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki-app.csprojAssemblyReference.cache
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.pagePayProduct.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabChooseToBuy.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabCategorySamples.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabChoseDeliveryMethod.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabContactUs.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabCustomerComment.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.pageDetailsProduct.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.frmHomePage.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabFilterProducts.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabGood.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.pageNoProduct.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.pageNews.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.pageProducts.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabInfoCustomer.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabOrder.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabProductSamples.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.Properties.Resources.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabNews.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabThankyou.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabViewAllComment.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabViewOneComment.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabWriteComment.resources
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki-app.csproj.GenerateResource.cache
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki-app.csproj.CoreCompileInputs.cache
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki-app.csproj.CopyComplete
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki-app.exe
+E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki-app.pdb
