@@ -53,6 +53,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnGenerate = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lbEmail = new System.Windows.Forms.Label();
+            this.lbPhone = new System.Windows.Forms.Label();
+            this.lbPassword = new System.Windows.Forms.Label();
+            this.lbName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -138,6 +142,7 @@
             // rdMale
             // 
             this.rdMale.AutoSize = true;
+            this.rdMale.Checked = true;
             this.rdMale.Font = new System.Drawing.Font("Segoe UI", 14F);
             this.rdMale.Location = new System.Drawing.Point(477, 359);
             this.rdMale.Name = "rdMale";
@@ -155,7 +160,6 @@
             this.rdFemale.Name = "rdFemale";
             this.rdFemale.Size = new System.Drawing.Size(55, 29);
             this.rdFemale.TabIndex = 6;
-            this.rdFemale.TabStop = true;
             this.rdFemale.Text = "Nữ";
             this.rdFemale.UseVisualStyleBackColor = true;
             // 
@@ -163,6 +167,38 @@
             // 
             this.cbDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDate.FormattingEnabled = true;
+            this.cbDate.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
             this.cbDate.Location = new System.Drawing.Point(477, 409);
             this.cbDate.Name = "cbDate";
             this.cbDate.Size = new System.Drawing.Size(90, 29);
@@ -173,11 +209,25 @@
             // 
             this.cbMonth.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMonth.FormattingEnabled = true;
+            this.cbMonth.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
             this.cbMonth.Location = new System.Drawing.Point(584, 409);
             this.cbMonth.Name = "cbMonth";
             this.cbMonth.Size = new System.Drawing.Size(90, 29);
             this.cbMonth.TabIndex = 8;
             this.cbMonth.Text = "Tháng ";
+            this.cbMonth.SelectedIndexChanged += new System.EventHandler(this.cbMonth_SelectedIndexChanged);
             // 
             // cbYear
             // 
@@ -187,7 +237,8 @@
             this.cbYear.Name = "cbYear";
             this.cbYear.Size = new System.Drawing.Size(90, 29);
             this.cbYear.TabIndex = 9;
-            this.cbYear.Text = "Tháng ";
+            this.cbYear.Text = "Năm";
+            this.cbYear.SelectedIndexChanged += new System.EventHandler(this.cbYear_SelectedIndexChanged);
             // 
             // cbConfirm
             // 
@@ -365,12 +416,64 @@
             this.pictureBox2.TabIndex = 20;
             this.pictureBox2.TabStop = false;
             // 
+            // lbEmail
+            // 
+            this.lbEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lbEmail.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmail.Location = new System.Drawing.Point(481, 208);
+            this.lbEmail.Name = "lbEmail";
+            this.lbEmail.Size = new System.Drawing.Size(292, 35);
+            this.lbEmail.TabIndex = 21;
+            this.lbEmail.Text = "Nhập email";
+            this.lbEmail.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbEmail.Click += new System.EventHandler(this.lbEmail_Click);
+            // 
+            // lbPhone
+            // 
+            this.lbPhone.BackColor = System.Drawing.Color.Transparent;
+            this.lbPhone.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPhone.Location = new System.Drawing.Point(481, 119);
+            this.lbPhone.Name = "lbPhone";
+            this.lbPhone.Size = new System.Drawing.Size(292, 35);
+            this.lbPhone.TabIndex = 22;
+            this.lbPhone.Text = "Nhập số điện thoại";
+            this.lbPhone.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbPhone.Click += new System.EventHandler(this.lbPhone_Click);
+            // 
+            // lbPassword
+            // 
+            this.lbPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lbPassword.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPassword.Location = new System.Drawing.Point(480, 292);
+            this.lbPassword.Name = "lbPassword";
+            this.lbPassword.Size = new System.Drawing.Size(292, 35);
+            this.lbPassword.TabIndex = 23;
+            this.lbPassword.Text = "Mật khẩu tối thiểu 8 kí tự và phải chứa ít nhật một chữ viết hoa và viết thường";
+            this.lbPassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbPassword.Click += new System.EventHandler(this.lbPassword_Click);
+            // 
+            // lbName
+            // 
+            this.lbName.BackColor = System.Drawing.Color.Transparent;
+            this.lbName.Font = new System.Drawing.Font("Segoe UI Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbName.Location = new System.Drawing.Point(481, 36);
+            this.lbName.Name = "lbName";
+            this.lbName.Size = new System.Drawing.Size(292, 35);
+            this.lbName.TabIndex = 24;
+            this.lbName.Text = "Nhập họ và tên";
+            this.lbName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lbName.Click += new System.EventHandler(this.lbName_Click);
+            // 
             // frmRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 600);
+            this.Controls.Add(this.lbName);
+            this.Controls.Add(this.lbPassword);
+            this.Controls.Add(this.lbPhone);
+            this.Controls.Add(this.lbEmail);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label9);
@@ -396,6 +499,7 @@
             this.Name = "frmRegister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmRegister";
+            this.Load += new System.EventHandler(this.frmRegister_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
@@ -432,5 +536,9 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox btnClose;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lbEmail;
+        private System.Windows.Forms.Label lbPhone;
+        private System.Windows.Forms.Label lbPassword;
+        private System.Windows.Forms.Label lbName;
     }
 }
