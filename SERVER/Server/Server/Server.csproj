@@ -77,7 +77,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLL\CATEGORY\BLCategoryBook.cs" />
+    <Compile Include="BLL\CATEGORY\BLCategory_Book.cs" />
     <Compile Include="BLL\CATEGORY\BLCategory_Car.cs" />
     <Compile Include="BLL\CATEGORY\BLCategory_Fashion.cs" />
     <Compile Include="BLL\CATEGORY\BLCategory_Laptop.cs" />

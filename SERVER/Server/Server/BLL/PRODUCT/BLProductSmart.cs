@@ -26,7 +26,7 @@ namespace Server.BLL
                             byte[] image1,byte[] image2, byte[] image3, byte[] image4, DateTime ngayThem, ref string err)
         {
             //Inert image
-            string sqlStringImg = "Insert Into HINHANH_SANPHAM(IdImage, Image1, Image2, Image3, Image4) VALUES (@id,@img1,@img2,@img3,@img4)";
+            string sqlStringImg = "Insert Into HINHANH_DIENTHOAI(IdImage, Image1, Image2, Image3, Image4) VALUES (@id,@img1,@img2,@img3,@img4)";
 
             db.AddParameters("@id", SqlDbType.NChar, maSP);
             db.AddParameters("@img1", SqlDbType.Image, image1);
@@ -47,7 +47,7 @@ namespace Server.BLL
                             float giaSP, float giaTT, int rate, string idImage,
                             byte[] image1, byte[] image2, byte[] image3, byte[] image4, DateTime ngayThem, ref string err)
         {
-            string sqlStringImg = "UPDATE HINHANH_SANPHAM SET Image1=@img1,Image2=@img2,Image3=@img3,Image4=@img4 WHERE IdImage = @id";
+            string sqlStringImg = "UPDATE HINHANH_DIENTHOAI SET Image1=@img1,Image2=@img2,Image3=@img3,Image4=@img4 WHERE IdImage = @id";
 
             db.AddParameters("@id", SqlDbType.NChar, maSP);
             db.AddParameters("@img1", SqlDbType.Image, image1);
@@ -66,7 +66,7 @@ namespace Server.BLL
         {
             string sqlString = "Delete From DIENTHOAI Where MaSP='" + maSP + "'";
 
-            string sqlStringImg = "Delete From HINHANH_SANPHAM Where IdImage='" + idImage + "'";
+            string sqlStringImg = "Delete From HINHANH_DIENTHOAI Where IdImage='" + idImage + "'";
 
             // Delete to HINHANH_SANPHAM
             if (!db.MyExecuteNonQuery(sqlStringImg, CommandType.Text, ref err))

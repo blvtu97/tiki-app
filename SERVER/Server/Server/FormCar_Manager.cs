@@ -1,4 +1,5 @@
 ﻿using Server.BLL;
+using Server.BLL.CATEGORY;
 using Server.GUI;
 using System;
 using System.Collections.Generic;
@@ -65,8 +66,7 @@ namespace Server
                 case DataManager.CATEGORY_CAR:
                     controls = new List<Control>() { txbCatCarLoai, btnCatCarChangeImg };
                     btnCatCarSua.Enabled = btnCatCarLuu.Enabled = btnCatCarHuy.Enabled = btnCatCarXoa.Enabled = false;
-                    //NOTE
-                    //table = new BLCA().GetData().Tables[0];
+                    table = new BLCategory_Car().GetData().Tables[0];
                     pnlCategoryCar.Enabled = true;
                     pnlCategoryCar.BringToFront();
                     break;

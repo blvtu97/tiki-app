@@ -54,20 +54,6 @@ namespace Tiki_app.DTO
 
 
             return flag;
-            //while (!flag)
-            //{
-            //    listProduct = logicProduct.getProducts(DataType.DIENTHOAI,ref flag);
-            //    if (listProduct != null)
-            //        break;
-            //}
-            //flag = false;
-            //while (!flag)
-            //{
-            //    listCategory = logicCategory.getCategory(DataType.CATEGORY_DIENTHOAI_TABLET, ref flag);
-            //    if (listCategory != null)
-            //        return true;
-            //}
-            //return false;
 
         }
 

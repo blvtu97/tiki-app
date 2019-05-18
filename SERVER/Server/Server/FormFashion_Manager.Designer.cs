@@ -32,16 +32,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.btnCatFashionReload = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnCatFahionXoa = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnCatFashionHuy = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -257,9 +257,9 @@
             // 
             // pnlParent
             // 
+            this.pnlParent.Controls.Add(this.pnlDetailFashion);
             this.pnlParent.Controls.Add(this.pnlProductFashion);
             this.pnlParent.Controls.Add(this.pnlCategoryFashion);
-            this.pnlParent.Controls.Add(this.pnlDetailFashion);
             this.pnlParent.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlParent.Location = new System.Drawing.Point(0, 0);
             this.pnlParent.Name = "pnlParent";
@@ -351,13 +351,13 @@
             this.btnProFashionThayAnh4.IdleIconRightImage = null;
             this.btnProFashionThayAnh4.Location = new System.Drawing.Point(875, 135);
             this.btnProFashionThayAnh4.Name = "btnProFashionThayAnh4";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.BorderRadius = 1;
-            stateProperties1.BorderThickness = 1;
-            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties1.IconLeftImage = null;
-            stateProperties1.IconRightImage = null;
-            this.btnProFashionThayAnh4.onHoverState = stateProperties1;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties7.BorderRadius = 1;
+            stateProperties7.BorderThickness = 1;
+            stateProperties7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties7.IconLeftImage = null;
+            stateProperties7.IconRightImage = null;
+            this.btnProFashionThayAnh4.onHoverState = stateProperties7;
             this.btnProFashionThayAnh4.Size = new System.Drawing.Size(75, 23);
             this.btnProFashionThayAnh4.TabIndex = 41;
             this.btnProFashionThayAnh4.Tag = "4";
@@ -386,13 +386,13 @@
             this.btnProFashionThayAnh3.IdleIconRightImage = null;
             this.btnProFashionThayAnh3.Location = new System.Drawing.Point(771, 135);
             this.btnProFashionThayAnh3.Name = "btnProFashionThayAnh3";
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.BorderRadius = 1;
-            stateProperties2.BorderThickness = 1;
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties2.IconLeftImage = null;
-            stateProperties2.IconRightImage = null;
-            this.btnProFashionThayAnh3.onHoverState = stateProperties2;
+            stateProperties8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties8.BorderRadius = 1;
+            stateProperties8.BorderThickness = 1;
+            stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties8.IconLeftImage = null;
+            stateProperties8.IconRightImage = null;
+            this.btnProFashionThayAnh3.onHoverState = stateProperties8;
             this.btnProFashionThayAnh3.Size = new System.Drawing.Size(75, 23);
             this.btnProFashionThayAnh3.TabIndex = 40;
             this.btnProFashionThayAnh3.Tag = "3";
@@ -421,13 +421,13 @@
             this.btnProFashionThayAnh2.IdleIconRightImage = null;
             this.btnProFashionThayAnh2.Location = new System.Drawing.Point(665, 135);
             this.btnProFashionThayAnh2.Name = "btnProFashionThayAnh2";
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties3.BorderRadius = 1;
-            stateProperties3.BorderThickness = 1;
-            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties3.IconLeftImage = null;
-            stateProperties3.IconRightImage = null;
-            this.btnProFashionThayAnh2.onHoverState = stateProperties3;
+            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties9.BorderRadius = 1;
+            stateProperties9.BorderThickness = 1;
+            stateProperties9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties9.IconLeftImage = null;
+            stateProperties9.IconRightImage = null;
+            this.btnProFashionThayAnh2.onHoverState = stateProperties9;
             this.btnProFashionThayAnh2.Size = new System.Drawing.Size(75, 23);
             this.btnProFashionThayAnh2.TabIndex = 39;
             this.btnProFashionThayAnh2.Tag = "2";
@@ -456,13 +456,13 @@
             this.btnProFashionThayAnh1.IdleIconRightImage = null;
             this.btnProFashionThayAnh1.Location = new System.Drawing.Point(559, 135);
             this.btnProFashionThayAnh1.Name = "btnProFashionThayAnh1";
-            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties4.BorderRadius = 1;
-            stateProperties4.BorderThickness = 1;
-            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties4.IconLeftImage = null;
-            stateProperties4.IconRightImage = null;
-            this.btnProFashionThayAnh1.onHoverState = stateProperties4;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties10.BorderRadius = 1;
+            stateProperties10.BorderThickness = 1;
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties10.IconLeftImage = null;
+            stateProperties10.IconRightImage = null;
+            this.btnProFashionThayAnh1.onHoverState = stateProperties10;
             this.btnProFashionThayAnh1.Size = new System.Drawing.Size(75, 23);
             this.btnProFashionThayAnh1.TabIndex = 5;
             this.btnProFashionThayAnh1.Tag = "1";
@@ -769,13 +769,9 @@
             this.cbbProFashionLoai.ItemHeight = 26;
             this.cbbProFashionLoai.ItemHighLightColor = System.Drawing.Color.Thistle;
             this.cbbProFashionLoai.Items.AddRange(new object[] {
-            "S",
-            "M",
-            "L",
-            "XL",
-            "XXL",
-            "XXL",
-            "Free"});
+            "Thời trang nam",
+            "Thời trang nữ",
+            "Trời trang trẻ em"});
             this.cbbProFashionLoai.Location = new System.Drawing.Point(320, 6);
             this.cbbProFashionLoai.Name = "cbbProFashionLoai";
             this.cbbProFashionLoai.Size = new System.Drawing.Size(103, 32);
@@ -1204,13 +1200,13 @@
             this.btnDetFashionLuu.IdleIconRightImage = null;
             this.btnDetFashionLuu.Location = new System.Drawing.Point(853, 9);
             this.btnDetFashionLuu.Name = "btnDetFashionLuu";
-            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties5.BorderRadius = 1;
-            stateProperties5.BorderThickness = 1;
-            stateProperties5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties5.IconLeftImage = null;
-            stateProperties5.IconRightImage = null;
-            this.btnDetFashionLuu.onHoverState = stateProperties5;
+            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.BorderRadius = 1;
+            stateProperties1.BorderThickness = 1;
+            stateProperties1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties1.IconLeftImage = null;
+            stateProperties1.IconRightImage = null;
+            this.btnDetFashionLuu.onHoverState = stateProperties1;
             this.btnDetFashionLuu.Size = new System.Drawing.Size(75, 35);
             this.btnDetFashionLuu.TabIndex = 48;
             this.btnDetFashionLuu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1413,11 +1409,12 @@
             this.cbbDetFashionSize.ItemHeight = 26;
             this.cbbDetFashionSize.ItemHighLightColor = System.Drawing.Color.Thistle;
             this.cbbDetFashionSize.Items.AddRange(new object[] {
-            "Windows 10 Home bản quyền",
-            "MacOS Sierra",
-            "Windows 10 Home",
-            " Windows 10 Home SL 64-bit",
-            "Windows 10 Home Edition"});
+            "S",
+            "M",
+            "L",
+            "XL",
+            "XXL",
+            "Free"});
             this.cbbDetFashionSize.Location = new System.Drawing.Point(320, 21);
             this.cbbDetFashionSize.Name = "cbbDetFashionSize";
             this.cbbDetFashionSize.Size = new System.Drawing.Size(121, 32);
@@ -1446,13 +1443,13 @@
             this.btnDetFashionReload.IdleIconRightImage = null;
             this.btnDetFashionReload.Location = new System.Drawing.Point(853, 103);
             this.btnDetFashionReload.Name = "btnDetFashionReload";
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties6.BorderRadius = 1;
-            stateProperties6.BorderThickness = 1;
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties6.IconLeftImage = null;
-            stateProperties6.IconRightImage = null;
-            this.btnDetFashionReload.onHoverState = stateProperties6;
+            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.BorderRadius = 1;
+            stateProperties2.BorderThickness = 1;
+            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties2.IconLeftImage = null;
+            stateProperties2.IconRightImage = null;
+            this.btnDetFashionReload.onHoverState = stateProperties2;
             this.btnDetFashionReload.Size = new System.Drawing.Size(75, 35);
             this.btnDetFashionReload.TabIndex = 39;
             this.btnDetFashionReload.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1480,13 +1477,13 @@
             this.btnDetFashionXoa.IdleIconRightImage = null;
             this.btnDetFashionXoa.Location = new System.Drawing.Point(853, 56);
             this.btnDetFashionXoa.Name = "btnDetFashionXoa";
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties7.BorderRadius = 1;
-            stateProperties7.BorderThickness = 1;
-            stateProperties7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties7.IconLeftImage = null;
-            stateProperties7.IconRightImage = null;
-            this.btnDetFashionXoa.onHoverState = stateProperties7;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties3.BorderRadius = 1;
+            stateProperties3.BorderThickness = 1;
+            stateProperties3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties3.IconLeftImage = null;
+            stateProperties3.IconRightImage = null;
+            this.btnDetFashionXoa.onHoverState = stateProperties3;
             this.btnDetFashionXoa.Size = new System.Drawing.Size(75, 35);
             this.btnDetFashionXoa.TabIndex = 38;
             this.btnDetFashionXoa.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1514,13 +1511,13 @@
             this.btnDetFashionHuy.IdleIconRightImage = null;
             this.btnDetFashionHuy.Location = new System.Drawing.Point(745, 103);
             this.btnDetFashionHuy.Name = "btnDetFashionHuy";
-            stateProperties8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties8.BorderRadius = 1;
-            stateProperties8.BorderThickness = 1;
-            stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties8.IconLeftImage = null;
-            stateProperties8.IconRightImage = null;
-            this.btnDetFashionHuy.onHoverState = stateProperties8;
+            stateProperties4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties4.BorderRadius = 1;
+            stateProperties4.BorderThickness = 1;
+            stateProperties4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties4.IconLeftImage = null;
+            stateProperties4.IconRightImage = null;
+            this.btnDetFashionHuy.onHoverState = stateProperties4;
             this.btnDetFashionHuy.Size = new System.Drawing.Size(75, 35);
             this.btnDetFashionHuy.TabIndex = 37;
             this.btnDetFashionHuy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1548,13 +1545,13 @@
             this.btnDetFashionSua.IdleIconRightImage = null;
             this.btnDetFashionSua.Location = new System.Drawing.Point(745, 56);
             this.btnDetFashionSua.Name = "btnDetFashionSua";
-            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties9.BorderRadius = 1;
-            stateProperties9.BorderThickness = 1;
-            stateProperties9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties9.IconLeftImage = null;
-            stateProperties9.IconRightImage = null;
-            this.btnDetFashionSua.onHoverState = stateProperties9;
+            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties5.BorderRadius = 1;
+            stateProperties5.BorderThickness = 1;
+            stateProperties5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties5.IconLeftImage = null;
+            stateProperties5.IconRightImage = null;
+            this.btnDetFashionSua.onHoverState = stateProperties5;
             this.btnDetFashionSua.Size = new System.Drawing.Size(75, 35);
             this.btnDetFashionSua.TabIndex = 36;
             this.btnDetFashionSua.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1582,13 +1579,13 @@
             this.btnDetFashionThem.IdleIconRightImage = null;
             this.btnDetFashionThem.Location = new System.Drawing.Point(745, 9);
             this.btnDetFashionThem.Name = "btnDetFashionThem";
-            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties10.BorderRadius = 1;
-            stateProperties10.BorderThickness = 1;
-            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            stateProperties10.IconLeftImage = null;
-            stateProperties10.IconRightImage = null;
-            this.btnDetFashionThem.onHoverState = stateProperties10;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties6.BorderRadius = 1;
+            stateProperties6.BorderThickness = 1;
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties6.IconLeftImage = null;
+            stateProperties6.IconRightImage = null;
+            this.btnDetFashionThem.onHoverState = stateProperties6;
             this.btnDetFashionThem.Size = new System.Drawing.Size(75, 35);
             this.btnDetFashionThem.TabIndex = 4;
             this.btnDetFashionThem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

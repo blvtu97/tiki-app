@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Server.DAL;
 
-namespace Server.BLL
+namespace Server.BLL.CATEGORY
 {
     class BLCategory_Smartphone_Tablet
     {

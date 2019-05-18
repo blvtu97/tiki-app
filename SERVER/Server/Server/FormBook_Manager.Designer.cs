@@ -71,7 +71,7 @@
             this.ptbProBookImage1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.txbProBookGiaTT = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.txbProBookGiaSP = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
-            this.txbProBookThuongHieu = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.txbProBookTacGia = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.txbProBookMaSP = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.btnDetBookReload = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.dgvData = new Bunifu.UI.WinForms.BunifuDataGridView();
@@ -88,10 +88,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pnlCategoryBook = new System.Windows.Forms.Panel();
-            this.label23 = new System.Windows.Forms.Label();
-            this.txbCatBookLoai = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label22 = new System.Windows.Forms.Label();
             this.pnlDetailBook = new System.Windows.Forms.Panel();
             this.txbDetBookDichGia = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -104,6 +100,10 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.pnlCategoryBook = new System.Windows.Forms.Panel();
+            this.label23 = new System.Windows.Forms.Label();
+            this.txbCatBookLoai = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.label22 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnCatBookChangeImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbProBookImage4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbProBookImage3)).BeginInit();
@@ -113,8 +113,8 @@
             this.pnlParent.SuspendLayout();
             this.pnlProductBook.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrProBookRate)).BeginInit();
-            this.pnlCategoryBook.SuspendLayout();
             this.pnlDetailBook.SuspendLayout();
+            this.pnlCategoryBook.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCatBookReload
@@ -980,48 +980,48 @@
             this.txbProBookGiaSP.TextPlaceholder = "";
             this.txbProBookGiaSP.UseSystemPasswordChar = false;
             // 
-            // txbProBookThuongHieu
+            // txbProBookTacGia
             // 
-            this.txbProBookThuongHieu.AcceptsReturn = false;
-            this.txbProBookThuongHieu.AcceptsTab = false;
-            this.txbProBookThuongHieu.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txbProBookThuongHieu.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txbProBookThuongHieu.BackColor = System.Drawing.Color.Transparent;
-            this.txbProBookThuongHieu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txbProBookThuongHieu.BackgroundImage")));
-            this.txbProBookThuongHieu.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(45)))), ((int)(((byte)(145)))));
-            this.txbProBookThuongHieu.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
-            this.txbProBookThuongHieu.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(38)))), ((int)(((byte)(157)))));
-            this.txbProBookThuongHieu.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
-            this.txbProBookThuongHieu.BorderRadius = 1;
-            this.txbProBookThuongHieu.BorderThickness = 2;
-            this.txbProBookThuongHieu.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txbProBookThuongHieu.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbProBookThuongHieu.DefaultText = "";
-            this.txbProBookThuongHieu.FillColor = System.Drawing.Color.White;
-            this.txbProBookThuongHieu.HideSelection = true;
-            this.txbProBookThuongHieu.IconLeft = null;
-            this.txbProBookThuongHieu.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.txbProBookThuongHieu.IconPadding = 10;
-            this.txbProBookThuongHieu.IconRight = null;
-            this.txbProBookThuongHieu.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.txbProBookThuongHieu.Location = new System.Drawing.Point(113, 82);
-            this.txbProBookThuongHieu.MaxLength = 32767;
-            this.txbProBookThuongHieu.MinimumSize = new System.Drawing.Size(100, 35);
-            this.txbProBookThuongHieu.Modified = false;
-            this.txbProBookThuongHieu.Name = "txbProBookThuongHieu";
-            this.txbProBookThuongHieu.PasswordChar = '\0';
-            this.txbProBookThuongHieu.ReadOnly = false;
-            this.txbProBookThuongHieu.SelectedText = "";
-            this.txbProBookThuongHieu.SelectionLength = 0;
-            this.txbProBookThuongHieu.SelectionStart = 0;
-            this.txbProBookThuongHieu.ShortcutsEnabled = true;
-            this.txbProBookThuongHieu.Size = new System.Drawing.Size(140, 35);
-            this.txbProBookThuongHieu.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
-            this.txbProBookThuongHieu.TabIndex = 29;
-            this.txbProBookThuongHieu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txbProBookThuongHieu.TextMarginLeft = 5;
-            this.txbProBookThuongHieu.TextPlaceholder = "";
-            this.txbProBookThuongHieu.UseSystemPasswordChar = false;
+            this.txbProBookTacGia.AcceptsReturn = false;
+            this.txbProBookTacGia.AcceptsTab = false;
+            this.txbProBookTacGia.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txbProBookTacGia.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txbProBookTacGia.BackColor = System.Drawing.Color.Transparent;
+            this.txbProBookTacGia.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txbProBookTacGia.BackgroundImage")));
+            this.txbProBookTacGia.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(45)))), ((int)(((byte)(145)))));
+            this.txbProBookTacGia.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.txbProBookTacGia.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(38)))), ((int)(((byte)(157)))));
+            this.txbProBookTacGia.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(107)))), ((int)(((byte)(107)))));
+            this.txbProBookTacGia.BorderRadius = 1;
+            this.txbProBookTacGia.BorderThickness = 2;
+            this.txbProBookTacGia.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txbProBookTacGia.DefaultFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbProBookTacGia.DefaultText = "";
+            this.txbProBookTacGia.FillColor = System.Drawing.Color.White;
+            this.txbProBookTacGia.HideSelection = true;
+            this.txbProBookTacGia.IconLeft = null;
+            this.txbProBookTacGia.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.txbProBookTacGia.IconPadding = 10;
+            this.txbProBookTacGia.IconRight = null;
+            this.txbProBookTacGia.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.txbProBookTacGia.Location = new System.Drawing.Point(113, 82);
+            this.txbProBookTacGia.MaxLength = 32767;
+            this.txbProBookTacGia.MinimumSize = new System.Drawing.Size(100, 35);
+            this.txbProBookTacGia.Modified = false;
+            this.txbProBookTacGia.Name = "txbProBookTacGia";
+            this.txbProBookTacGia.PasswordChar = '\0';
+            this.txbProBookTacGia.ReadOnly = false;
+            this.txbProBookTacGia.SelectedText = "";
+            this.txbProBookTacGia.SelectionLength = 0;
+            this.txbProBookTacGia.SelectionStart = 0;
+            this.txbProBookTacGia.ShortcutsEnabled = true;
+            this.txbProBookTacGia.Size = new System.Drawing.Size(140, 35);
+            this.txbProBookTacGia.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Bunifu;
+            this.txbProBookTacGia.TabIndex = 29;
+            this.txbProBookTacGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txbProBookTacGia.TextMarginLeft = 5;
+            this.txbProBookTacGia.TextPlaceholder = "";
+            this.txbProBookTacGia.UseSystemPasswordChar = false;
             // 
             // txbProBookMaSP
             // 
@@ -1166,6 +1166,7 @@
             // pnlParent
             // 
             this.pnlParent.Controls.Add(this.pnlProductBook);
+            this.pnlParent.Controls.Add(this.pnlDetailBook);
             this.pnlParent.Controls.Add(this.pnlCategoryBook);
             this.pnlParent.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlParent.Location = new System.Drawing.Point(0, 0);
@@ -1175,7 +1176,6 @@
             // 
             // pnlProductBook
             // 
-            this.pnlProductBook.Controls.Add(this.pnlDetailBook);
             this.pnlProductBook.Controls.Add(this.btnProBookLuu);
             this.pnlProductBook.Controls.Add(this.btnProBookThayAnh4);
             this.pnlProductBook.Controls.Add(this.btnProBookThayAnh3);
@@ -1193,7 +1193,7 @@
             this.pnlProductBook.Controls.Add(this.txbProBookGiaTT);
             this.pnlProductBook.Controls.Add(this.txbProBookGiaSP);
             this.pnlProductBook.Controls.Add(this.cbbProBookLoai);
-            this.pnlProductBook.Controls.Add(this.txbProBookThuongHieu);
+            this.pnlProductBook.Controls.Add(this.txbProBookTacGia);
             this.pnlProductBook.Controls.Add(this.txbProBookTenSP);
             this.pnlProductBook.Controls.Add(this.txbProBookMaSP);
             this.pnlProductBook.Controls.Add(this.nmrProBookRate);
@@ -1235,9 +1235,15 @@
             this.cbbProBookLoai.ItemHeight = 26;
             this.cbbProBookLoai.ItemHighLightColor = System.Drawing.Color.Thistle;
             this.cbbProBookLoai.Items.AddRange(new object[] {
-            "MacBook",
-            "LaptopGaming",
-            "Laptop"});
+            "Văn Học Việt Nam",
+            "Văn Học Nước Ngoài",
+            "Khoa Học",
+            "Kỹ Năng Sống",
+            "Kinh Tế",
+            "Công Nghệ Thông Tin",
+            "Ngoại Ngữ",
+            "Thiêu Nhi",
+            "Sách Giáo Khoa"});
             this.cbbProBookLoai.Location = new System.Drawing.Point(320, 6);
             this.cbbProBookLoai.Name = "cbbProBookLoai";
             this.cbbProBookLoai.Size = new System.Drawing.Size(103, 32);
@@ -1359,9 +1365,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(24, 91);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 17);
+            this.label3.Size = new System.Drawing.Size(58, 17);
             this.label3.TabIndex = 5;
-            this.label3.Text = "Thương Hiệu";
+            this.label3.Text = "Tác Giả";
             // 
             // label2
             // 
@@ -1382,62 +1388,6 @@
             this.label1.Size = new System.Drawing.Size(49, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Mã SP";
-            // 
-            // pnlCategoryBook
-            // 
-            this.pnlCategoryBook.Controls.Add(this.btnCatBookReload);
-            this.pnlCategoryBook.Controls.Add(this.btnCatBookXoa);
-            this.pnlCategoryBook.Controls.Add(this.btnCatBookLuu);
-            this.pnlCategoryBook.Controls.Add(this.btnCatBookHuy);
-            this.pnlCategoryBook.Controls.Add(this.btnCatBookSua);
-            this.pnlCategoryBook.Controls.Add(this.btnCatBookThem);
-            this.pnlCategoryBook.Controls.Add(this.btnCatBookChangeImg);
-            this.pnlCategoryBook.Controls.Add(this.label23);
-            this.pnlCategoryBook.Controls.Add(this.txbCatBookLoai);
-            this.pnlCategoryBook.Controls.Add(this.label22);
-            this.pnlCategoryBook.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlCategoryBook.Enabled = false;
-            this.pnlCategoryBook.Location = new System.Drawing.Point(0, 0);
-            this.pnlCategoryBook.Name = "pnlCategoryBook";
-            this.pnlCategoryBook.Size = new System.Drawing.Size(960, 162);
-            this.pnlCategoryBook.TabIndex = 0;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(229, 14);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(66, 17);
-            this.label23.TabIndex = 2;
-            this.label23.Text = "Hình Ảnh";
-            // 
-            // txbCatBookLoai
-            // 
-            this.txbCatBookLoai.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txbCatBookLoai.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbCatBookLoai.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txbCatBookLoai.BorderThickness = 3;
-            this.txbCatBookLoai.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txbCatBookLoai.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txbCatBookLoai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txbCatBookLoai.isPassword = false;
-            this.txbCatBookLoai.Location = new System.Drawing.Point(64, 57);
-            this.txbCatBookLoai.Margin = new System.Windows.Forms.Padding(4);
-            this.txbCatBookLoai.Name = "txbCatBookLoai";
-            this.txbCatBookLoai.Size = new System.Drawing.Size(169, 41);
-            this.txbCatBookLoai.TabIndex = 1;
-            this.txbCatBookLoai.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(22, 69);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(35, 17);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Loại";
             // 
             // pnlDetailBook
             // 
@@ -1705,6 +1655,62 @@
             this.label9.TabIndex = 1;
             this.label9.Text = "Mã SP";
             // 
+            // pnlCategoryBook
+            // 
+            this.pnlCategoryBook.Controls.Add(this.btnCatBookReload);
+            this.pnlCategoryBook.Controls.Add(this.btnCatBookXoa);
+            this.pnlCategoryBook.Controls.Add(this.btnCatBookLuu);
+            this.pnlCategoryBook.Controls.Add(this.btnCatBookHuy);
+            this.pnlCategoryBook.Controls.Add(this.btnCatBookSua);
+            this.pnlCategoryBook.Controls.Add(this.btnCatBookThem);
+            this.pnlCategoryBook.Controls.Add(this.btnCatBookChangeImg);
+            this.pnlCategoryBook.Controls.Add(this.label23);
+            this.pnlCategoryBook.Controls.Add(this.txbCatBookLoai);
+            this.pnlCategoryBook.Controls.Add(this.label22);
+            this.pnlCategoryBook.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlCategoryBook.Enabled = false;
+            this.pnlCategoryBook.Location = new System.Drawing.Point(0, 0);
+            this.pnlCategoryBook.Name = "pnlCategoryBook";
+            this.pnlCategoryBook.Size = new System.Drawing.Size(960, 162);
+            this.pnlCategoryBook.TabIndex = 0;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(229, 14);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(66, 17);
+            this.label23.TabIndex = 2;
+            this.label23.Text = "Hình Ảnh";
+            // 
+            // txbCatBookLoai
+            // 
+            this.txbCatBookLoai.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txbCatBookLoai.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbCatBookLoai.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txbCatBookLoai.BorderThickness = 3;
+            this.txbCatBookLoai.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txbCatBookLoai.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txbCatBookLoai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txbCatBookLoai.isPassword = false;
+            this.txbCatBookLoai.Location = new System.Drawing.Point(64, 57);
+            this.txbCatBookLoai.Margin = new System.Windows.Forms.Padding(4);
+            this.txbCatBookLoai.Name = "txbCatBookLoai";
+            this.txbCatBookLoai.Size = new System.Drawing.Size(169, 41);
+            this.txbCatBookLoai.TabIndex = 1;
+            this.txbCatBookLoai.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(22, 69);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(35, 17);
+            this.label22.TabIndex = 0;
+            this.label22.Text = "Loại";
+            // 
             // FormBook_Manager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1726,10 +1732,10 @@
             this.pnlProductBook.ResumeLayout(false);
             this.pnlProductBook.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nmrProBookRate)).EndInit();
-            this.pnlCategoryBook.ResumeLayout(false);
-            this.pnlCategoryBook.PerformLayout();
             this.pnlDetailBook.ResumeLayout(false);
             this.pnlDetailBook.PerformLayout();
+            this.pnlCategoryBook.ResumeLayout(false);
+            this.pnlCategoryBook.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1765,7 +1771,7 @@
         private Bunifu.UI.WinForms.BunifuPictureBox ptbProBookImage1;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txbProBookGiaTT;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txbProBookGiaSP;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txbProBookThuongHieu;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txbProBookTacGia;
         private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txbProBookMaSP;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnDetBookReload;
         private Bunifu.UI.WinForms.BunifuDataGridView dgvData;

@@ -1,4 +1,5 @@
 ﻿using Server.BLL;
+using Server.BLL.CATEGORY;
 using Server.GUI;
 using System;
 using System.Collections.Generic;
@@ -65,20 +66,19 @@ namespace Server
                 case DataManager.CATEGORY_BOOK:
                     controls = new List<Control>() { txbCatBookLoai, btnCatBookChangeImg };
                     btnCatBookSua.Enabled = btnCatBookLuu.Enabled = btnCatBookHuy.Enabled = btnCatBookXoa.Enabled = false;
-                    //NOTE
-                    //table = new BLCA().GetData().Tables[0];
+                    table = new BLCategory_Book().GetData().Tables[0];
                     pnlCategoryBook.Enabled = true;
                     pnlCategoryBook.BringToFront();
                     break;
                 case DataManager.DETAILBOOK:
-                    controls = new List<Control>() { txbDetBookMaSP, txbDetBookNXB, txbDetBookNgayXB, txbDetCarLoaiBia, txbDetBookSoTrang };
+                    controls = new List<Control>() { txbDetBookMaSP, txbDetBookNXB, txbDetBookNgayXB, txbDetCarLoaiBia, txbDetBookSoTrang, txbDetBookDichGia };
                     btnDetBookSua.Enabled = btnDetBookLuu.Enabled = btnDetBookHuy.Enabled = btnDetBookXoa.Enabled = false;
                     table = new BLDetailBook().GetData().Tables[0];
                     pnlDetailBook.Enabled = true;
                     pnlDetailBook.BringToFront();
                     break;
                 case DataManager.PRODUCTBOOK:
-                    controls = new List<Control>() { txbProBookMaSP, txbProBookTenSP, txbProBookThuongHieu, cbbProBookLoai, nmrProBookRate,
+                    controls = new List<Control>() { txbProBookMaSP, txbProBookTenSP, txbProBookTacGia, cbbProBookLoai, nmrProBookRate,
                                                     txbProBookGiaSP, txbProBookGiaTT, btnProBookThayAnh1, btnProBookThayAnh2, btnProBookThayAnh3, btnProBookThayAnh4 };
                     btnProBookSua.Enabled = btnProBookLuu.Enabled = btnProBookHuy.Enabled = btnProBookXoa.Enabled = false;
                     tableImage = new BLImageBook().GetData().Tables[0];
@@ -105,7 +105,7 @@ namespace Server
 
                     txbProBookMaSP.Text = dgvData.Rows[row].Cells[0].Value.ToString();
                     txbProBookTenSP.Text = dgvData.Rows[row].Cells[1].Value.ToString();
-                    txbProBookThuongHieu.Text = dgvData.Rows[row].Cells[2].Value.ToString();
+                    txbProBookTacGia.Text = dgvData.Rows[row].Cells[2].Value.ToString();
 
                     cbbProBookLoai.Text = dgvData.Rows[row].Cells[3].Value.ToString();
                     txbProBookGiaSP.Text = dgvData.Rows[row].Cells[4].Value.ToString();
@@ -135,7 +135,7 @@ namespace Server
                     txbDetBookSoTrang.Text = dgvData.Rows[row].Cells[3].Value.ToString();
                     
                     txbDetCarLoaiBia.Text = dgvData.Rows[row].Cells[4].Value.ToString();
-                    txbDetBookDichGia.Text = dgvData.Rows[row].Cells[4].Value.ToString();
+                    txbDetBookDichGia.Text = dgvData.Rows[row].Cells[5].Value.ToString();
 
                     break;
                 case DataManager.CATEGORY_BOOK:
@@ -235,7 +235,7 @@ namespace Server
                 case DataManager.PRODUCTBOOK:
                     if (isInsert)
                     {
-                        if (!eventClick.Insert(txbProBookMaSP.Text.Trim(), txbProBookTenSP.Text, txbProBookThuongHieu.Text, cbbProBookLoai.Text,
+                        if (!eventClick.Insert(txbProBookMaSP.Text.Trim(), txbProBookTenSP.Text, txbProBookTacGia.Text, cbbProBookLoai.Text,
                             txbProBookGiaSP.Text, txbProBookGiaTT.Text, nmrProBookRate.Value.ToString(), txbProBookMaSP.Text, ptbProBookImage1.Image,
                             ptbProBookImage2.Image, ptbProBookImage3.Image, ptbProBookImage4.Image, DateTime.Now.Date, ref err))
                         {
@@ -247,7 +247,7 @@ namespace Server
                     }
                     else
                     {
-                        if (!eventClick.Update(txbProBookMaSP.Text.Trim(), txbProBookTenSP.Text, txbProBookThuongHieu.Text, cbbProBookLoai.Text,
+                        if (!eventClick.Update(txbProBookMaSP.Text.Trim(), txbProBookTenSP.Text, txbProBookTacGia.Text, cbbProBookLoai.Text,
                             txbProBookGiaSP.Text, txbProBookGiaTT.Text, nmrProBookRate.Value.ToString(), txbProBookMaSP.Text, ptbProBookImage1.Image,
                             ptbProBookImage2.Image, ptbProBookImage3.Image, ptbProBookImage4.Image, DateTime.Now.Date, ref err))
                         {

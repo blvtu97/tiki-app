@@ -1,4 +1,5 @@
 ﻿using Server.BLL;
+using Server.BLL.CATEGORY;
 using Server.GUI;
 using System;
 using System.Collections.Generic;
@@ -65,8 +66,7 @@ namespace Server
                 case DataManager.CATEGORY_LAPTOP:
                     controls = new List<Control>() { txbCatLaptopLoai, btnCatLaptopChangeImg };
                     btnCatLaptopSua.Enabled = btnCatLaptopLuu.Enabled = btnCatLaptopHuy.Enabled = btnCatLaptopXoa.Enabled = false;
-                    //NOTE
-                    //table = new BLCA().GetData().Tables[0];
+                    table = new BLCategory_Laptop().GetData().Tables[0];
                     pnlCategoryLaptop.Enabled = true;
                     pnlCategoryLaptop.BringToFront();
                     break;
@@ -146,7 +146,6 @@ namespace Server
                     btnCatLaptopSua.Enabled = btnCatLaptopXoa.Enabled = true;
                     txbCatLaptopLoai.Text = dgvData.Rows[row].Cells[0].Value.ToString();
 
-                    //DataRow rowTable = new BLCATEGORY_LAPTOP().FindImageByID(txbProSmartMaSP.Text.Trim());
                     MemoryStream ms = new MemoryStream((byte[])dgvData.Rows[row].Cells[1].Value);
                     btnCatLaptopChangeImg.Image = Image.FromStream(ms);
                     break;

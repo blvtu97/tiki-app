@@ -62,8 +62,28 @@ namespace Server.GUI
                 imgs.Add(ms.ToArray());
             }
 
-            return new BLProductSmart().Insert(maSP, tenSP, thuongHieu, loai, giaSanPham, giaThiTruong, int.Parse(rate), 
+            switch (dataManager)
+            {
+                case DataManager.PRODUCTSMARTPHONE:
+                    return new BLProductSmart().Insert(maSP, tenSP, thuongHieu, loai, giaSanPham, giaThiTruong, int.Parse(rate),
                                             idImage, imgs[0], imgs[1], imgs[2], imgs[3], ngayThem, ref err);
+                case DataManager.PRODUCTLAPTOP:
+                    return new BLProductLaptop().Insert(maSP, tenSP, thuongHieu, loai, giaSanPham, giaThiTruong, int.Parse(rate),
+                                            idImage, imgs[0], imgs[1], imgs[2], imgs[3], ngayThem, ref err);
+
+                case DataManager.PRODUCTFASHION:
+                    return new BLProductFashion().Insert(maSP, tenSP, thuongHieu, loai, giaSanPham, giaThiTruong, int.Parse(rate),
+                                            idImage, imgs[0], imgs[1], imgs[2], imgs[3], ngayThem, ref err);
+
+                case DataManager.PRODUCTCAR:
+                    return new BLProductCar().Insert(maSP, tenSP, thuongHieu, loai, giaSanPham, giaThiTruong, int.Parse(rate),
+                                            idImage, imgs[0], imgs[1], imgs[2], imgs[3], ngayThem, ref err);
+
+                case DataManager.PRODUCTBOOK:
+                    return new BLProductBook().Insert(maSP, tenSP, thuongHieu, loai, giaSanPham, giaThiTruong, int.Parse(rate),
+                                            idImage, imgs[0], imgs[1], imgs[2], imgs[3], ngayThem, ref err);
+            }
+            return false;
         }
        
         // Insert for table DetailSmartphone
@@ -143,7 +163,24 @@ namespace Server.GUI
             {
                 Properties.Resources.noimage.Save(ms, Properties.Resources.noimage.RawFormat);
             }
-            return new BLCategory_Smartphone_Tablet().Insert(loai.Trim(), ms.ToArray(), ref err);
+            switch (dataManager)
+            {
+                case DataManager.CATEGORY_SMARTPHONE_TABLET:
+                    return new BLCategory_Smartphone_Tablet().Insert(loai.Trim(), ms.ToArray(), ref err);
+
+                case DataManager.CATEGORY_LAPTOP:
+                    return new BLCategory_Laptop().Insert(loai.Trim(), ms.ToArray(), ref err);
+
+                case DataManager.CATEGORY_FASHION:
+                    return new BLCategory_Fashion().Insert(loai.Trim(), ms.ToArray(), ref err);
+
+                case DataManager.CATEGORY_CAR:
+                    return new BLCategory_Car().Insert(loai.Trim(), ms.ToArray(), ref err);
+
+                case DataManager.CATEGORY_BOOK:
+                    return new BLCategory_Book().Insert(loai.Trim(), ms.ToArray(), ref err);
+            }
+            return false;
         }
         #endregion
 
@@ -189,8 +226,28 @@ namespace Server.GUI
                 }
                 imgs.Add(ms.ToArray());
             }
-            return new BLProductSmart().Update(maSP, tenSP, thuongHieu, loai, giaSanPham, giaThiTruong, int.Parse(rate),
-                                idImage, imgs[0], imgs[1], imgs[2], imgs[3], ngayThem, ref err);
+            switch (dataManager)
+            {
+                case DataManager.PRODUCTSMARTPHONE:
+                    return new BLProductSmart().Update(maSP, tenSP, thuongHieu, loai, giaSanPham, giaThiTruong, int.Parse(rate),
+                                            idImage, imgs[0], imgs[1], imgs[2], imgs[3], ngayThem, ref err);
+                case DataManager.PRODUCTLAPTOP:
+                    return new BLProductLaptop().Update(maSP, tenSP, thuongHieu, loai, giaSanPham, giaThiTruong, int.Parse(rate),
+                                            idImage, imgs[0], imgs[1], imgs[2], imgs[3], ngayThem, ref err);
+
+                case DataManager.PRODUCTFASHION:
+                    return new BLProductFashion().Update(maSP, tenSP, thuongHieu, loai, giaSanPham, giaThiTruong, int.Parse(rate),
+                                            idImage, imgs[0], imgs[1], imgs[2], imgs[3], ngayThem, ref err);
+
+                case DataManager.PRODUCTCAR:
+                    return new BLProductCar().Update(maSP, tenSP, thuongHieu, loai, giaSanPham, giaThiTruong, int.Parse(rate),
+                                            idImage, imgs[0], imgs[1], imgs[2], imgs[3], ngayThem, ref err);
+
+                case DataManager.PRODUCTBOOK:
+                    return new BLProductBook().Update(maSP, tenSP, thuongHieu, loai, giaSanPham, giaThiTruong, int.Parse(rate),
+                                            idImage, imgs[0], imgs[1], imgs[2], imgs[3], ngayThem, ref err);
+            }
+            return false;
         }
 
         // Update for table DetailLaptop
@@ -269,7 +326,24 @@ namespace Server.GUI
             {
                 Properties.Resources.noimage.Save(ms, Properties.Resources.noimage.RawFormat);
             }
-            return new BLCategory_Smartphone_Tablet().Update(loai.Trim(), ms.ToArray(), ref err);
+            switch (dataManager)
+            {
+                case DataManager.CATEGORY_SMARTPHONE_TABLET:
+                    return new BLCategory_Smartphone_Tablet().Update(loai.Trim(), ms.ToArray(), ref err);
+
+                case DataManager.CATEGORY_LAPTOP:
+                    return new BLCategory_Laptop().Update(loai.Trim(), ms.ToArray(), ref err);
+
+                case DataManager.CATEGORY_FASHION:
+                    return new BLCategory_Fashion().Update(loai.Trim(), ms.ToArray(), ref err);
+
+                case DataManager.CATEGORY_CAR:
+                    return new BLCategory_Car().Update(loai.Trim(), ms.ToArray(), ref err);
+
+                case DataManager.CATEGORY_BOOK:
+                    return new BLCategory_Book().Update(loai.Trim(), ms.ToArray(), ref err);
+            }
+            return false;
         }
         #endregion
 
@@ -290,32 +364,28 @@ namespace Server.GUI
                 case DataManager.DETAILLAPTOP:
                     return new BLDetailLaptop().Delete(maSP, ref err);
                 case DataManager.CATEGORY_LAPTOP:
-                    //return new BLCategory_Laptop();
-                    return false;
+                    return new BLCategory_Laptop().Delete(maSP, ref err);
 
                 case DataManager.PRODUCTFASHION:
                     return new BLProductFashion().Delete(maSP, maSP, ref err);
                 case DataManager.DETAILFASHION:
                     return new BLDetailFashion().Delete(maSP, ref err);
                 case DataManager.CATEGORY_FASHION:
-                    //NOTE
-                    return false;
+                    return new BLCategory_Fashion().Delete(maSP, ref err);
 
                 case DataManager.PRODUCTCAR:
                     return new BLProductCar().Delete(maSP, maSP, ref err);
                 case DataManager.DETAILCAR:
                     return new BLDetailCar().Delete(maSP, ref err);
                 case DataManager.CATEGORY_CAR:
-                    //NOTE
-                    return false;
+                    return new BLCategory_Car().Delete(maSP, ref err);
 
                 case DataManager.PRODUCTBOOK:
                     return new BLProductBook().Delete(maSP, maSP, ref err);
                 case DataManager.DETAILBOOK:
                     return new BLDetailBook().Delete(maSP, ref err);
                 case DataManager.CATEGORY_BOOK:
-                    //NOTE
-                    return false;
+                    return new BLCategory_Book().Delete(maSP, ref err);
 
                 default:
                     err = "Không Có Thông Tin Của Bảng Dữ Liệu";
@@ -345,32 +415,28 @@ namespace Server.GUI
                 case DataManager.DETAILLAPTOP:
                     return new BLDetailLaptop().GetData().Tables[0];
                 case DataManager.CATEGORY_LAPTOP:
-                    //NOTE
-                    return null;
+                    return new BLCategory_Laptop().GetData().Tables[0];
 
                 case DataManager.PRODUCTFASHION:
                     return new BLProductFashion().GetData().Tables[0];
                 case DataManager.DETAILFASHION:
                     return new BLDetailFashion().GetData().Tables[0];
                 case DataManager.CATEGORY_FASHION:
-                    //NOTE
-                    return null;
+                    return new BLCategory_Fashion().GetData().Tables[0];
 
                 case DataManager.PRODUCTCAR:
                     return new BLProductCar().GetData().Tables[0];
                 case DataManager.DETAILCAR:
                     return new BLDetailCar().GetData().Tables[0];
                 case DataManager.CATEGORY_CAR:
-                    //NOTE
-                    return null;
+                    return new BLCategory_Car().GetData().Tables[0];
 
                 case DataManager.PRODUCTBOOK:
                     return new BLProductBook().GetData().Tables[0];
                 case DataManager.DETAILBOOK:
                     return new BLDetailBook().GetData().Tables[0];
                 case DataManager.CATEGORY_BOOK:
-                    //NOTE
-                    return null;
+                    return new BLCategory_Book().GetData().Tables[0];
 
                 default:
                     MessageBox.Show("Not Found");

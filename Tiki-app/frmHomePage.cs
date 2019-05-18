@@ -25,11 +25,14 @@ namespace Tiki_app
         tabNews tabs;
 
         public bool done = false;
+
         public  bool doneCategory = false;
 
         List<SanPham> vax;
 
         object obj;
+
+        private frmRegister formRegister;
 
         private DataManager dataManager = DataManager.getInstance();
 
@@ -49,6 +52,7 @@ namespace Tiki_app
         /// </summary>
         private void initializeViews()
         {
+            pageLogin.setOnClickListener(this);
             pageProducts.setOnClickListener(this);
             pageDetailsProducts.TabChooseToBuy.setOnClickListener(this);
             pagePayProducts.TabOrder.setOnClickListener(this);
@@ -56,6 +60,7 @@ namespace Tiki_app
             tabInfoCustomer.setOnClickListener(this);
             tabInfoCustomer.setOnClickListener(this);
             tabChoosePayMethod.setOnClickListener(this);
+
         }
 
         /// <summary>
@@ -111,6 +116,15 @@ namespace Tiki_app
             else if (view.getID() == R.id.CHOOSE_HOME_PAGE)
             {
                 pageProducts.BringToFront();
+            }
+            else if (view.getID() == R.id.REGISTER_USER)
+            {
+                formRegister = new frmRegister();
+                formRegister.Show();
+            }
+            else if (view.getID() == R.id.REQUEST_LOGIN)
+            {
+                tabInfoUser.BringToFront();
             }
         }
 
@@ -490,6 +504,11 @@ namespace Tiki_app
             //dataManager = DataManager.getInstance();
             done = doneCategory = dataManager.loadData();
 
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            pageLogin.BringToFront();
         }
     }
 }

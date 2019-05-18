@@ -1,4 +1,5 @@
 ﻿using Server.BLL;
+using Server.BLL.CATEGORY;
 using Server.GUI;
 using System;
 using System.Collections.Generic;
@@ -64,9 +65,7 @@ namespace Server
             {
                 case DataManager.CATEGORY_FASHION:
                     controls = new List<Control>() { txbCatFashionLoai, btnCatFashionChangeImg };
-                    btnCatFashionSua.Enabled = btnCatFashionLuu.Enabled = btnCatFashionHuy.Enabled = btnCatFahionXoa.Enabled = false;
-                    //NOTE
-                    //table = new BLCA().GetData().Tables[0];
+                    table = new BLCategory_Fashion().GetData().Tables[0];
                     pnlCategoryFashion.Enabled = true;
                     pnlCategoryFashion.BringToFront();
                     break;

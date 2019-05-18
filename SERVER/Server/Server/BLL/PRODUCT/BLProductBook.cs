@@ -21,7 +21,7 @@ namespace Server.BLL
             return db.ExecuteQueryDataSet("select * from SACH", CommandType.Text);
         }
 
-        public bool Insert(string maSP, string tenSP, string thuongHieu, string loai,
+        public bool Insert(string maSP, string tenSP, string tacGia, string loai,
                             float giaSP, float giaTT, int rate, string idImage,
                             byte[] image1, byte[] image2, byte[] image3, byte[] image4, DateTime ngayThem, ref string err)
         {
@@ -38,12 +38,12 @@ namespace Server.BLL
                 return false;
 
 
-            string sqlString = "Insert Into SACH Values(" + "N'" + maSP + "',N'" + tenSP + "',N'" + thuongHieu + "','" + loai
+            string sqlString = "Insert Into SACH Values(" + "N'" + maSP + "',N'" + tenSP + "',N'" + tacGia + "','" + loai
                                + "','" + giaSP + "','" + giaTT + "','" + rate + "','" + idImage + "','" + ngayThem + "')";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
 
-        public bool Update(string maSP, string tenSP, string thuongHieu, string loai,
+        public bool Update(string maSP, string tenSP, string tacGia, string loai,
                             float giaSP, float giaTT, int rate, string idImage,
                             byte[] image1, byte[] image2, byte[] image3, byte[] image4, DateTime ngayThem, ref string err)
         {
@@ -57,7 +57,7 @@ namespace Server.BLL
 
             if (!db.MyExecuteNonQuery(sqlStringImg, CommandType.Text, ref err))
                 return false;
-            string sqlString = "Update SACH Set TenSP = N'" + tenSP + "',ThuongHieu = N'" + thuongHieu + "',Loai = N'" + loai +
+            string sqlString = "Update SACH Set TenSP = N'" + tenSP + "',TacGia = N'" + tacGia + "',Loai = N'" + loai +
                                 "',GiaSP = '" + giaSP + "',GiaTT = '" + giaTT + "',Rate = '" + rate + "',IdImage = N'" + idImage + "' Where MaSP= N'" + maSP + "'";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }

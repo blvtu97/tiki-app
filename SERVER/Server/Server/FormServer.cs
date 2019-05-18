@@ -14,6 +14,8 @@ using System.Net.Sockets;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using Server.BLL;
+using Server.BLL.CATEGORY;
+
 namespace Server
 {
     public partial class frmServer : Form
