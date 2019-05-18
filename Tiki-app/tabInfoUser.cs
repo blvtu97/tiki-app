@@ -72,6 +72,7 @@ namespace Tiki_app
           
         }
 
+        int k = -1;
         public void attachInfoUser(Customer customer)
         {
 
@@ -84,6 +85,7 @@ namespace Tiki_app
 
             DateTime date = DateTime.Parse(customer.NgaySinh);
             cbDate.SelectedIndex = findIndex(cbDate, date.Day);
+            k = cbDate.SelectedIndex;
             cbMonth.SelectedIndex = findIndex(cbMonth, date.Month);
             cbYear.SelectedIndex = findIndex(cbYear, date.Year);
 
@@ -192,6 +194,7 @@ namespace Tiki_app
             }
             
             MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK);
+            updateInfo();
             view.onClick(new VIEW
             {
                 obj = this,
@@ -252,5 +255,48 @@ namespace Tiki_app
             return Regex.IsMatch(value, "(?!^[0-9]*$)(?!^[a-z]*$)(?!^[A-Z]*$)^(.{8,15})$");
         }
 
+        public void showNotification()
+        {
+            pnNotification.BringToFront();
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            view.onClick(new VIEW
+            {
+                obj = this,
+                Tag = Convert.ToInt32(bunifuThinButton21.Tag)
+            });
+        }
+
+        private void updateInfo()
+        {
+            customer = new Customer();
+            customer.HoTen = txtName.Text.Trim();
+            customer.DienThoai = txtPhoneNumber.Text.Trim();
+            customer.DiaChiEmail = txtEmail.Text.Trim();
+            if (rdMale.Checked) customer.sex = true;
+            if (rdFemale.Checked) customer.sex = true;
+            customer.NgaySinh =
+                cbYear.Items[cbYear.SelectedIndex] + "-" +
+                cbMonth.Items[cbMonth.SelectedIndex] + "-" +
+                cbDate.Items[k];
+            customer.TinhThanhPho = "";
+            customer.QuanHuyen = "";
+            customer.DiaChi = edtAddress.Text;
+            if (btnChecked.Checked)
+            {
+                customer.MatKhau = txtNewPassword1.Text.Trim();
+            }
+            else
+            {
+                customer.MatKhau = txtOldPassword.Text.Trim();
+            }
+        }
+
+        private void cbDate_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            k = cbDate.SelectedIndex;
+        }
     }
 }

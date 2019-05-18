@@ -215,5 +215,26 @@ namespace Tiki_app.DAL
             return dr;
         }
 
+        /// <summary>
+        /// This is the method of executing a query to the database
+        /// </summary>
+        /// <param name="query">query statement</param>
+        /// <returns>true if the query succeeds, if not returned false</returns>
+        public bool MyExcuteNonquery(string query)
+        {
+            try
+            {
+                cmd = new SqlCommand(query, conn);
+                OpenConnection();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch(SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
+        }
+
     }
 }

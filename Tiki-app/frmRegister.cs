@@ -9,10 +9,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
+using Tiki_app.DTO;
+
 namespace Tiki_app
 {
     public partial class frmRegister : Form
     {
+        private RegisterCustomer register;
+
         public frmRegister()
         {
             InitializeComponent();
@@ -30,6 +34,7 @@ namespace Tiki_app
                 string s = checkInfoUser();
                 if (s.Equals(""))
                 {
+                    register.onRegister(getCustomer());
                     this.Close();
                 }
                 else
@@ -53,7 +58,7 @@ namespace Tiki_app
         {
             string s = "";
 
-            if (!isValidName(txtName.Text.Trim()))
+            if (isValidName(txtName.Text.Trim()))
                 s = "Vui lòng nhập họ tên";
 
             if (!isValidPhone(txtPhoneNumber.Text.Trim()))
@@ -75,7 +80,7 @@ namespace Tiki_app
        
         private bool isValidName(string value)
         {
-            return Regex.IsMatch(value, "^[a-z -']+$");
+            return txtName.Text.Trim().Equals("");
         }
 
         private bool isValidPhone(string value)
@@ -150,23 +155,57 @@ namespace Tiki_app
         private void lbPassword_Click(object sender, EventArgs e)
         {
             lbPassword.Visible = false;
+            txtPassword.Focus();
         }
 
 
         private void lbPhone_Click(object sender, EventArgs e)
         {
             lbPhone.Visible = false;
+            txtPhoneNumber.Focus();
         }
 
         private void lbEmail_Click(object sender, EventArgs e)
         {
             lbEmail.Visible = false;
+            txtEmail.Focus();
         }
 
         private void lbName_Click(object sender, EventArgs e)
         {
             lbName.Visible = false;
+            txtName.Focus();
         }
 
+        public interface RegisterCustomer
+        {
+            void onRegister(Customer customer);
+        }
+
+
+        public void setOnClickListener(RegisterCustomer register)
+        {
+            this.register = register;
+        }
+
+        private Customer getCustomer()
+        {
+            Customer cus = new Customer();
+            cus.HoTen = txtName.Text.Trim();
+            cus.DienThoai = txtPhoneNumber.Text.Trim();
+            cus.DiaChiEmail = txtEmail.Text.Trim();
+            cus.MatKhau = txtPassword.Text.Trim();
+            if (rdMale.Checked) cus.sex = true;
+            if (rdFemale.Checked) cus.sex = true;
+            cus.NgaySinh = cbYear.Items[cbYear.SelectedIndex] + "-" +
+                cbMonth.Items[cbMonth.SelectedIndex] + "-" +
+                cbDate.Items[cbDate.SelectedIndex];
+            return cus;
+        }
+
+        private void cbDate_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -163,6 +163,9 @@
   <data name="ic_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ic_logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ic_manage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_manage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -171,6 +174,9 @@
   </data>
   <data name="ic_motorbike" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_motorbike.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_not_found_notify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_not_found_notify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

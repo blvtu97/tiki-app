@@ -52,5 +52,11 @@ namespace Tiki_app
                 Tag = Convert.ToInt32(btnLogin.Tag)
             });
         }
+
+        public void clear()
+        {
+            txtAccount.ResetText();
+            txtPassword.ResetText();
+        }
     }
 }

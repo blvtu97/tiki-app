@@ -204,6 +204,7 @@
             this.cbDate.Size = new System.Drawing.Size(90, 29);
             this.cbDate.TabIndex = 7;
             this.cbDate.Text = "Ngày";
+            this.cbDate.SelectedIndexChanged += new System.EventHandler(this.cbDate_SelectedIndexChanged);
             // 
             // cbMonth
             // 

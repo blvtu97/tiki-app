@@ -58,7 +58,44 @@ namespace Tiki_app.BLL
             return cus;
         }
 
-       
+        public bool UpdateInfoCustomer(Customer customer)
+        {
+            string query =
+                "UPDATE CUSTOMER SET HoTen = " +
+                "N'" + customer.HoTen + "'" +
+                ",SoDT = '" + customer.DienThoai + "'" +
+                ",Email = '" + customer.DiaChiEmail + "'" +
+                ",GioiTinh = '" + customer.sex + "'" +
+                ",NgaySinh = '" + customer.NgaySinh + "'" +
+                ",TinhThanhPho = N'" + customer.TinhThanhPho + "'" +
+                ",QuanHuyen = N'" + customer.QuanHuyen + "'" +
+                ",DiaChi = N'" + customer.DiaChi + "'" +
+                " WHERE SoDT = '" + customer.DienThoai + "'" + " AND " +
+                "Email = '" + customer.DiaChiEmail + "'";
+
+            bool temp = connector.MyExcuteNonquery(query);
+            connector.CloseConnection();
+            return temp;
+        }
+
+        public bool AddCustomer(Customer customer)
+        {
+            string query =
+               "INSERT INTO CUSTOMER VALUES(N'"
+               + customer.HoTen + "'" +
+               ",'" + customer.DienThoai + "'" +
+               ",'" + customer.DiaChiEmail + "'" +
+               ",'" + customer.MatKhau+"'"+
+               ",'" + customer.sex + "'" +
+               ",'" + customer.NgaySinh + "'" +
+               ",N'" + customer.TinhThanhPho + "'" +
+               ",N'" + customer.QuanHuyen + "'" +
+               ",N'" + customer.DiaChi + "')";
+
+            bool temp = connector.MyExcuteNonquery(query);
+            connector.CloseConnection();
+            return temp;
+        }
 
     }
 }

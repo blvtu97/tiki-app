@@ -213,6 +213,16 @@ namespace Tiki_app.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ic_logout {
+            get {
+                object obj = ResourceManager.GetObject("ic_logout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ic_manage {
             get {
                 object obj = ResourceManager.GetObject("ic_manage", resourceCulture);
@@ -236,6 +246,16 @@ namespace Tiki_app.Properties {
         internal static System.Drawing.Bitmap ic_motorbike {
             get {
                 object obj = ResourceManager.GetObject("ic_motorbike", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ic_not_found_notify {
+            get {
+                object obj = ResourceManager.GetObject("ic_not_found_notify", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

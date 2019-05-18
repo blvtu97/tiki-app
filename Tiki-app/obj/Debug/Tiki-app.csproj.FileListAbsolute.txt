@@ -126,3 +126,4 @@ C:\Users\blvtu\Downloads\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabInfoUser.resour
 E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.frmRegister.resources
 E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.pageLogin.resources
 E:\Git\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabInfoUser.resources
+C:\Users\blvtu\Downloads\tiki-app\Tiki-app\obj\Debug\Tiki-app.csprojResolveAssemblyReference.cache

@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHomePage));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.tabFilterProducts = new Tiki_app.tabFilterProducts();
             this.tabPhone = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tabLaptop = new Bunifu.Framework.UI.BunifuFlatButton();
             this.tabFashion = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -41,6 +42,7 @@
             this.bar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnLogout = new Bunifu.Framework.UI.BunifuImageButton();
             this.lbNotification = new System.Windows.Forms.Label();
             this.btnNotification = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lbCountProduct = new System.Windows.Forms.Label();
@@ -56,7 +58,6 @@
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.pageProducts = new Tiki_app.pageProducts();
             this.pageNews = new Tiki_app.pageNews();
-            this.tabFilterProducts = new Tiki_app.tabFilterProducts();
             this.pageDetailsProducts = new Tiki_app.pageDetailsProduct();
             this.pageNoProducts = new Tiki_app.pageNoProduct();
             this.pagePayProducts = new Tiki_app.pagePayProduct();
@@ -70,6 +71,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.bar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFind)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -100,6 +102,17 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(284, 231);
             this.panel4.TabIndex = 18;
+            // 
+            // tabFilterProducts
+            // 
+            this.tabFilterProducts.AutoScroll = true;
+            this.tabFilterProducts.BackColor = System.Drawing.Color.White;
+            this.tabFilterProducts.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabFilterProducts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabFilterProducts.Location = new System.Drawing.Point(0, 0);
+            this.tabFilterProducts.Name = "tabFilterProducts";
+            this.tabFilterProducts.Size = new System.Drawing.Size(284, 231);
+            this.tabFilterProducts.TabIndex = 0;
             // 
             // tabPhone
             // 
@@ -339,6 +352,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
+            this.panel2.Controls.Add(this.btnLogout);
             this.panel2.Controls.Add(this.lbNotification);
             this.panel2.Controls.Add(this.btnNotification);
             this.panel2.Controls.Add(this.lbCountProduct);
@@ -352,6 +366,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1015, 65);
             this.panel2.TabIndex = 6;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogout.Image = global::Tiki_app.Properties.Resources.ic_logout;
+            this.btnLogout.ImageActive = null;
+            this.btnLogout.Location = new System.Drawing.Point(709, 18);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(25, 25);
+            this.btnLogout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnLogout.TabIndex = 13;
+            this.btnLogout.TabStop = false;
+            this.btnLogout.Visible = false;
+            this.btnLogout.Zoom = 10;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // lbNotification
             // 
@@ -399,6 +428,7 @@
             this.btnNotification.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNotification.Textcolor = System.Drawing.Color.White;
             this.btnNotification.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotification.Click += new System.EventHandler(this.btnNotification_Click);
             // 
             // lbCountProduct
             // 
@@ -609,17 +639,6 @@
             this.pageNews.Size = new System.Drawing.Size(1015, 551);
             this.pageNews.TabIndex = 8;
             // 
-            // tabFilterProducts
-            // 
-            this.tabFilterProducts.AutoScroll = true;
-            this.tabFilterProducts.BackColor = System.Drawing.Color.White;
-            this.tabFilterProducts.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabFilterProducts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabFilterProducts.Location = new System.Drawing.Point(0, 0);
-            this.tabFilterProducts.Name = "tabFilterProducts";
-            this.tabFilterProducts.Size = new System.Drawing.Size(284, 231);
-            this.tabFilterProducts.TabIndex = 0;
-            // 
             // pageDetailsProducts
             // 
             this.pageDetailsProducts.AutoScroll = true;
@@ -688,13 +707,16 @@
             this.pageLogin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pageLogin.Location = new System.Drawing.Point(0, 0);
             this.pageLogin.Name = "pageLogin";
+            this.pageLogin.password = null;
             this.pageLogin.Size = new System.Drawing.Size(1299, 681);
             this.pageLogin.TabIndex = 16;
+            this.pageLogin.userName = null;
             // 
             // tabInfoUser
             // 
             this.tabInfoUser.AutoScroll = true;
             this.tabInfoUser.BackColor = System.Drawing.Color.White;
+            this.tabInfoUser.customer = null;
             this.tabInfoUser.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabInfoUser.Location = new System.Drawing.Point(0, 0);
             this.tabInfoUser.Name = "tabInfoUser";
@@ -729,6 +751,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnLogout)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnFind)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -773,6 +796,7 @@
         private System.Windows.Forms.Label lbNotification;
         private pageLogin pageLogin;
         private tabInfoUser tabInfoUser;
+        private Bunifu.Framework.UI.BunifuImageButton btnLogout;
     }
 }
 

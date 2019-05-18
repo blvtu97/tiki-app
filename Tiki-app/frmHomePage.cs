@@ -16,17 +16,20 @@ using Tiki_app.GUI;
 
 namespace Tiki_app
 {
-    public partial class frmHomePage : Form, VIEW.OnClickListener, VIEW.OnChangeListener
+    public partial class frmHomePage : Form,
+        VIEW.OnClickListener,
+        VIEW.OnChangeListener,
+        frmRegister.RegisterCustomer
     {
         private List<SanPham> productsViewHistory = new List<SanPham>();
+
+        private List<SanPham> vax;
 
         private SanPham sanPhamCurrent;
 
         private Customer customer = null;
 
         private tabNews tabs;
-
-        private List<SanPham> vax;
 
         private object obj;
 
@@ -35,6 +38,10 @@ namespace Tiki_app
         private DataManager dataManager = DataManager.getInstance();
 
         private BillManager billManager = BillManager.getInstance();
+
+        private BLogicLogin blLogin = new BLogicLogin();
+
+        private bool isLogin;
 
         public bool done = false;
 
@@ -63,6 +70,7 @@ namespace Tiki_app
             tabInfoCustomer.setOnClickListener(this);
             tabInfoCustomer.setOnClickListener(this);
             tabChoosePayMethod.setOnClickListener(this);
+            tabInfoUser.setOnClickListener(this);
 
         }
 
@@ -123,6 +131,7 @@ namespace Tiki_app
             else if (view.getID() == R.id.REGISTER_USER)
             {
                 formRegister = new frmRegister();
+                formRegister.setOnClickListener(this);
                 formRegister.Show();
             }
             else if (view.getID() == R.id.REQUEST_LOGIN)
@@ -517,7 +526,14 @@ namespace Tiki_app
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            pageLogin.BringToFront();
+            if (isLogin)
+            {
+                tabInfoUser.BringToFront();
+            }
+            else
+            {
+                pageLogin.BringToFront();
+            }
         }
 
         /// <summary>
@@ -525,7 +541,7 @@ namespace Tiki_app
         /// </summary>
         private void handleLogin(string userName, string password)
         {
-            customer = new BLogicLogin().LoginSuccess(userName, password);
+            customer = blLogin.LoginSuccess(userName, password);
 
             if (customer!=null)
             {
@@ -533,6 +549,9 @@ namespace Tiki_app
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
                 tabInfoUser.attachInfoUser(customer);
                 tabInfoUser.BringToFront();
+                btnLogin.Text = "     Thông tin";
+                btnLogout.Visible = true;
+                isLogin = true;
             }
             else
             {
@@ -547,7 +566,38 @@ namespace Tiki_app
         /// <param name="cus"></param>
         private void handleUpdateCustomer(Customer cus)
         {
-            //Ghi dữ liệu xuống database thông qua đối tượng cus
+            blLogin.UpdateInfoCustomer(cus);
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            isLogin = false;
+            btnLogin.Text = "     Đăng nhập";
+            btnLogout.Visible = false;
+            pageLogin.clear();
+            pageLogin.BringToFront();
+        }
+
+        private void btnNotification_Click(object sender, EventArgs e)
+        {
+            if (isLogin)
+            {
+                tabInfoUser.BringToFront();
+                tabInfoUser.showNotification();
+            }
+            else
+            {
+                pageLogin.BringToFront();
+            }
+        }
+
+        /// <summary>
+        /// Hàm cập nhật khách hàng mới
+        /// </summary>
+        /// <param name="customer"></param>
+        public void onRegister(Customer customer)
+        {
+            blLogin.AddCustomer(customer);
         }
     }
 }

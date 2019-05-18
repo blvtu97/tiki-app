@@ -28,7 +28,9 @@ namespace Tiki_app.DTO
 
         public Customer()
         {
-
+            TinhThanhPho = "";
+            QuanHuyen = "";
+            DiaChi = "";
         }
 
         public Customer(string HoTen, string DienThoai, string DiaChiEmail, string MatKhau,
