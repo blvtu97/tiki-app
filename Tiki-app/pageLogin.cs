@@ -17,6 +17,10 @@ namespace Tiki_app
     {
         private VIEW.OnClickListener view;
 
+        public string userName { get; set; }
+
+        public string password { get; set; }
+
         public pageLogin()
         {
             InitializeComponent();
@@ -38,6 +42,10 @@ namespace Tiki_app
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            userName = txtAccount.Text.Trim();
+
+            password = txtPassword.Text;
+
             view.onClick(new VIEW
             {
                 obj = this,

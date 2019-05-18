@@ -82,6 +82,13 @@ namespace Tiki_app.DTO
             /// id = 12345692
             /// </summary>
             public static int REQUEST_LOGIN = 12345692;
+
+            /// <summary>
+            /// id = 12345693
+            /// </summary>
+            public static int REQUEST_UPDATE_INFO_USER = 12345693;
+
+
         }
         
     }

@@ -7,16 +7,36 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
+
+using Tiki_app.DTO;
+using Tiki_app.GUI;
 
 namespace Tiki_app
 {
     public partial class tabInfoUser : UserControl
     {
+        public Customer customer { get; set; }
+
+        private VIEW.OnClickListener view;
+
         public tabInfoUser()
         {
             InitializeComponent();
+            initUI();
         }
 
+        public void setOnClickListener(VIEW.OnClickListener view)
+        {
+            this.view = view;
+        }
+        private void initUI()
+        {
+            for (int i = 1900; i < 2020; i++)
+            {
+                cbYear.Items.Add(i.ToString());
+            }
+        }
         private void btnInfoUser_Click(object sender, EventArgs e)
         {
             pnInfo.BringToFront();
@@ -51,5 +71,186 @@ namespace Tiki_app
         {
           
         }
+
+        public void attachInfoUser(Customer customer)
+        {
+
+            this.customer = customer;
+            txtName.Text = customer.HoTen;
+            txtPhoneNumber.Text = customer.DienThoai;
+            txtEmail.Text = customer.DiaChiEmail;
+            lbName.Text = customer.HoTen;
+            txtOldPassword.Text = customer.MatKhau;
+
+            DateTime date = DateTime.Parse(customer.NgaySinh);
+            cbDate.SelectedIndex = findIndex(cbDate, date.Day);
+            cbMonth.SelectedIndex = findIndex(cbMonth, date.Month);
+            cbYear.SelectedIndex = findIndex(cbYear, date.Year);
+
+            if (customer.sex)
+            {
+                rdMale.Checked = true;
+            }
+            else
+            {
+                rdFemale.Checked = true;
+            }
+
+            edtName.Text = customer.HoTen;
+            edtPhoneNumber.Text = customer.DienThoai;
+            edtAddress.Text = customer.DiaChi;
+        }
+
+        private void seeOldPassword_Click(object sender, EventArgs e)
+        {
+            txtOldPassword.isPassword = !txtOldPassword.isPassword;
+        }
+
+        private void seeNewPassword1_Click(object sender, EventArgs e)
+        {
+            txtNewPassword1.isPassword = !txtNewPassword1.isPassword;
+        }
+
+        private void seeNewPassword2_Click(object sender, EventArgs e)
+        {
+            txtNewPassword2.isPassword = !txtNewPassword2.isPassword;
+        }
+
+        private void formatDayMonthYear()
+        {
+            if (cbYear.SelectedIndex < 0) return;
+            int y = Convert.ToInt32(cbYear.Items[cbYear.SelectedIndex]);
+            int d = 31;
+            if (y % 4 == 0 && y % 100 != 0)
+            {
+                if (cbMonth.Items[cbMonth.SelectedIndex].Equals("2"))
+                {
+                    d = 29;
+                }
+            }
+            else
+            {
+                if (cbMonth.SelectedIndex < 0) return;
+                int m = Convert.ToInt32(cbMonth.Items[cbMonth.SelectedIndex]);
+                if (m == 2)
+                {
+                    d = 28;
+                }
+                else if (m == 4 || m == 6 || m == 9 || m == 11)
+                {
+                    d = 30;
+                }
+            }
+
+            cbDate.Items.Clear();
+            for (int j = 1; j <= d; j++)
+            {
+                cbDate.Items.Add(j.ToString());
+            }
+        }
+
+        private void cbMonth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            formatDayMonthYear();
+        }
+
+        private void cbYear_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            formatDayMonthYear();
+        }
+
+        private int findIndex(ComboBox cb, int value)
+        {
+            for (int i = 0; i  <cb.Items.Count; i++)
+            {
+                if (Convert.ToInt32(cb.Items[i]) == value)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            string s1 = checkInfoUser();
+            if (!s1.Equals(""))
+            {
+                MessageBox.Show(s1, "Cảnh báo", MessageBoxButtons.OK);
+                return;
+            }
+
+            if (btnChecked.Checked)
+            {
+                string s2 = updatePassword();
+
+                if (!s2.Equals(""))
+                {
+                    MessageBox.Show(s2, "Cảnh báo", MessageBoxButtons.OK);
+                    return;
+                }
+            }
+            
+            MessageBox.Show("Cập nhật thành công", "Thông báo", MessageBoxButtons.OK);
+            view.onClick(new VIEW
+            {
+                obj = this,
+                Tag = Convert.ToInt32(btnUpdate.Tag)
+            });
+        }
+
+        private string checkInfoUser()
+        {
+
+            if (isValidName(txtName.Text.Trim()))
+                return  "Vui lòng nhập họ tên";
+
+            else if (!isValidPhone(txtPhoneNumber.Text.Trim()))
+                return "Vui lòng nhập một số điện thoại hợp lệ";
+
+            else if (!isValidEmail(txtEmail.Text.Trim()))
+                return "Vui lòng nhập một địa chỉ email hợp lệ";
+
+            return "";
+        }
+
+        private string updatePassword()
+        {
+            if (!isValidPassword(txtNewPassword1.Text.Trim()))
+            {
+                return "Mật khẩu mới của bạn phải chứa ít nhất một chữ cái viết hoa và " +
+                    "một chữ cái viết thường. Chứa ít nhất một chữ số và một kí tự. " +
+                    "Tối thiểu 8 kí tự.";
+            }
+            else if (!txtNewPassword1.Text.Trim().Equals(txtNewPassword2.Text.Trim()))
+            {
+                return "Vui lòng nhập lại mật khẩu mới";
+            }
+
+            return "";
+        }
+
+        private bool isValidName(string value)
+        {
+            return txtName.Text.Trim().Equals("");
+        }
+
+        private bool isValidPhone(string value)
+        {
+            return Regex.IsMatch(value, @"^-*[0-9,\.?\-?\(?\)?\ ]+$");
+        }
+
+        private bool isValidEmail(string value)
+        {
+            return Regex.IsMatch(value, @"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*"
+                + "@"
+                + @"((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))$");
+        }
+
+        private bool isValidPassword(string value)
+        {
+            return Regex.IsMatch(value, "(?!^[0-9]*$)(?!^[a-z]*$)(?!^[A-Z]*$)^(.{8,15})$");
+        }
+
     }
 }

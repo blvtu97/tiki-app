@@ -17,9 +17,10 @@ namespace Tiki_app.BLL
     public class BLogicProduct
     {
         DataConnector dataConnector;
+
         public BLogicProduct()
         {
-            dataConnector = new DataConnector();
+            dataConnector = DataConnector.getInstance();
         }
 
         public List<SanPham> getProducts(DataType type, ref bool flag)

@@ -18,25 +18,28 @@ namespace Tiki_app
 {
     public partial class frmHomePage : Form, VIEW.OnClickListener, VIEW.OnChangeListener
     {
-        List<SanPham> productsViewHistory = new List<SanPham>();
+        private List<SanPham> productsViewHistory = new List<SanPham>();
 
-        SanPham sanPhamCurrent;
+        private SanPham sanPhamCurrent;
 
-        tabNews tabs;
+        private Customer customer = null;
 
-        public bool done = false;
+        private tabNews tabs;
 
-        public  bool doneCategory = false;
+        private List<SanPham> vax;
 
-        List<SanPham> vax;
-
-        object obj;
+        private object obj;
 
         private frmRegister formRegister;
 
         private DataManager dataManager = DataManager.getInstance();
 
         private BillManager billManager = BillManager.getInstance();
+
+        public bool done = false;
+
+        public bool doneCategory = false;
+
 
         public frmHomePage()
         {
@@ -124,7 +127,13 @@ namespace Tiki_app
             }
             else if (view.getID() == R.id.REQUEST_LOGIN)
             {
-                tabInfoUser.BringToFront();
+                //Kiểm tra đăng nhập tại đây
+                pageLogin pl = (pageLogin)view.obj;
+                handleLogin(pl.userName, pl.password);
+            }
+            else if (view.getID() == R.id.REQUEST_UPDATE_INFO_USER)
+            {
+                handleUpdateCustomer(((tabInfoUser)view.obj).customer);
             }
         }
 
@@ -509,6 +518,36 @@ namespace Tiki_app
         private void btnLogin_Click(object sender, EventArgs e)
         {
             pageLogin.BringToFront();
+        }
+
+        /// <summary>
+        /// Hàm xử lý yêu cầu đăng nhập từ customer
+        /// </summary>
+        private void handleLogin(string userName, string password)
+        {
+            customer = new BLogicLogin().LoginSuccess(userName, password);
+
+            if (customer!=null)
+            {
+                MessageBox.Show("Đăng nhập thành công", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                tabInfoUser.attachInfoUser(customer);
+                tabInfoUser.BringToFront();
+            }
+            else
+            {
+                MessageBox.Show("Đăng nhập thất bại. Vui lòng kiểm tra tài khoản hoặc mật khẩu", "Thông báo",
+                   MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        /// <summary>
+        /// Hàm cập nhật thông tin người dùng
+        /// </summary>
+        /// <param name="cus"></param>
+        private void handleUpdateCustomer(Customer cus)
+        {
+            //Ghi dữ liệu xuống database thông qua đối tượng cus
         }
     }
 }

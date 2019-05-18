@@ -50,6 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\BLogicCategory.cs" />
+    <Compile Include="BLL\BLogicCustomer.cs" />
+    <Compile Include="BLL\BLogicLogin.cs" />
     <Compile Include="BLL\BLogicProduct.cs" />
     <Compile Include="DAL\DataConnector.cs" />
     <Compile Include="DTO\BillManager.cs" />
@@ -412,6 +414,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ic_upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_see.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

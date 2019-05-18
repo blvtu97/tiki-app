@@ -19,15 +19,32 @@ namespace Tiki_app.DAL
     public class DataConnector
     {
         const string ADRRESS = "localhost";
+
         const string IPENDPOINT = "127.0.0.1";
+
         const int PORT = 8989;
+
         ASCIIEncoding encoding = new ASCIIEncoding();
+
         static IPAddress[] ipAddress = Dns.GetHostAddresses(ADRRESS);
+
         static IPEndPoint ipEnd = new IPEndPoint(IPAddress.Parse(IPENDPOINT), PORT);
+
         static Socket clientSock = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
-        public DataConnector()
+
+        private DataConnector()
         {
+            conn = new SqlConnection(stringConnection);
         }
+
+        public static DataConnector instance;
+
+        public static DataConnector getInstance()
+        {
+            if (instance == null) instance = new DataConnector();
+            return instance;
+        }
+
         //Lấy dữ liệu
         public DataTable GetTable(string name, ref bool flag)
         {
@@ -125,5 +142,78 @@ namespace Tiki_app.DAL
                 Debug.WriteLine("Can't Send Massage To Server!\n\n" + ex);
             }
         }
+
+
+        string stringConnection = "Data Source = DESKTOP-BSUQ8EF;" 
+            + "Initial Catalog=DBTIKI;" 
+            + "Integrated Security=True";
+
+        private SqlCommand cmd;
+
+        private SqlConnection conn;
+
+        private SqlDataAdapter adapter;
+
+        public void OpenConnection()
+        {
+            try
+            {
+                if (conn.State == ConnectionState.Closed) conn.Open();
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+        }
+
+        public void CloseConnection()
+        {
+            try
+            {
+                if (conn.State == ConnectionState.Open) conn.Close();
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+        }
+
+        public DataTable getDataTable(string name)
+        {
+            DataTable dt = null;
+            try
+            {
+                string query = "SELECT * FROM " + name;
+                cmd = new SqlCommand(query, conn);
+                OpenConnection();
+                dt = new DataTable();
+                adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+            return dt;
+        }
+
+        public SqlDataReader getDataReader(string tableName)
+        {
+            SqlDataReader dr;
+            try
+            {
+                string query = "SELECT * FROM " + tableName;
+                cmd = new SqlCommand(query);
+                cmd.Connection = conn;
+                OpenConnection();
+                dr = cmd.ExecuteReader();
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            return dr;
+        }
+
     }
 }

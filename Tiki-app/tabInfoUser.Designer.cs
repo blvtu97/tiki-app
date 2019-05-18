@@ -28,55 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabInfoUser));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnInfo = new System.Windows.Forms.Panel();
-            this.txtName = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtPhoneNumber = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtEmail = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.rdMale = new System.Windows.Forms.RadioButton();
-            this.rdFemale = new System.Windows.Forms.RadioButton();
-            this.btnChecked = new Bunifu.Framework.UI.BunifuCheckbox();
-            this.panelChangePassword = new System.Windows.Forms.Panel();
-            this.txtOldPassword = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtNewPassword1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.txtNewPassword2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.cbYear = new System.Windows.Forms.ComboBox();
+            this.cbMonth = new System.Windows.Forms.ComboBox();
+            this.cbDate = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelChangePassword = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txtNewPassword2 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtNewPassword1 = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtOldPassword = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.btnChecked = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.rdFemale = new System.Windows.Forms.RadioButton();
+            this.rdMale = new System.Windows.Forms.RadioButton();
+            this.txtEmail = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtPhoneNumber = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.txtName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.pnNotification = new System.Windows.Forms.Panel();
-            this.pnManageBill = new System.Windows.Forms.Panel();
-            this.pnAddress = new System.Windows.Forms.Panel();
-            this.pnMyComment = new System.Windows.Forms.Panel();
             this.pnQcode = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.txtCodeProduct = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.edtName = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.edtPhoneNumber = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.cbCity = new System.Windows.Forms.ComboBox();
-            this.cbDistrict = new System.Windows.Forms.ComboBox();
-            this.cbWard = new System.Windows.Forms.ComboBox();
-            this.edtAddress = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.pnMyComment = new System.Windows.Forms.Panel();
+            this.pnAddress = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.edtAddress = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.cbWard = new System.Windows.Forms.ComboBox();
+            this.cbDistrict = new System.Windows.Forms.ComboBox();
+            this.cbCity = new System.Windows.Forms.ComboBox();
+            this.edtPhoneNumber = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.edtName = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.pnManageBill = new System.Windows.Forms.Panel();
             this.dgrBill = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.label20 = new System.Windows.Forms.Label();
             this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnSearch2 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnUploadFile = new Bunifu.Framework.UI.BunifuImageButton();
@@ -93,17 +93,23 @@
             this.btnManageBill = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnNotification = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnInfoUser = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.seeOldPassword = new System.Windows.Forms.PictureBox();
+            this.seeNewPassword1 = new System.Windows.Forms.PictureBox();
+            this.seeNewPassword2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.pnInfo.SuspendLayout();
             this.panelChangePassword.SuspendLayout();
-            this.pnManageBill.SuspendLayout();
-            this.pnAddress.SuspendLayout();
             this.pnQcode.SuspendLayout();
+            this.pnAddress.SuspendLayout();
+            this.pnManageBill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrBill)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUploadFile)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCode)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seeOldPassword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seeNewPassword1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seeNewPassword2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -125,9 +131,9 @@
             // 
             this.pnInfo.AutoScroll = true;
             this.pnInfo.Controls.Add(this.label6);
-            this.pnInfo.Controls.Add(this.comboBox3);
-            this.pnInfo.Controls.Add(this.comboBox2);
-            this.pnInfo.Controls.Add(this.comboBox1);
+            this.pnInfo.Controls.Add(this.cbYear);
+            this.pnInfo.Controls.Add(this.cbMonth);
+            this.pnInfo.Controls.Add(this.cbDate);
             this.pnInfo.Controls.Add(this.label5);
             this.pnInfo.Controls.Add(this.label4);
             this.pnInfo.Controls.Add(this.label3);
@@ -147,74 +153,258 @@
             this.pnInfo.Size = new System.Drawing.Size(774, 800);
             this.pnInfo.TabIndex = 0;
             // 
-            // txtName
+            // label6
             // 
-            this.txtName.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtName.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtName.BorderThickness = 1;
-            this.txtName.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtName.isPassword = false;
-            this.txtName.Location = new System.Drawing.Point(326, 35);
-            this.txtName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.txtName.MaxLength = 32767;
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(362, 44);
-            this.txtName.TabIndex = 0;
-            this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(358, 422);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(138, 21);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Thay đổi mật khẩu";
             // 
-            // txtPhoneNumber
+            // cbYear
             // 
-            this.txtPhoneNumber.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtPhoneNumber.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPhoneNumber.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtPhoneNumber.BorderThickness = 1;
-            this.txtPhoneNumber.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPhoneNumber.isPassword = false;
-            this.txtPhoneNumber.Location = new System.Drawing.Point(326, 113);
-            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.txtPhoneNumber.MaxLength = 32767;
-            this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(362, 44);
-            this.txtPhoneNumber.TabIndex = 1;
-            this.txtPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.cbYear.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbYear.FormattingEnabled = true;
+            this.cbYear.Location = new System.Drawing.Point(588, 369);
+            this.cbYear.Name = "cbYear";
+            this.cbYear.Size = new System.Drawing.Size(100, 29);
+            this.cbYear.TabIndex = 18;
+            this.cbYear.Text = "Năm";
+            this.cbYear.SelectedIndexChanged += new System.EventHandler(this.cbYear_SelectedIndexChanged);
             // 
-            // txtEmail
+            // cbMonth
             // 
-            this.txtEmail.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtEmail.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtEmail.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtEmail.BorderThickness = 1;
-            this.txtEmail.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtEmail.isPassword = false;
-            this.txtEmail.Location = new System.Drawing.Point(326, 207);
-            this.txtEmail.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
-            this.txtEmail.MaxLength = 32767;
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(362, 44);
-            this.txtEmail.TabIndex = 2;
-            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.cbMonth.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMonth.FormattingEnabled = true;
+            this.cbMonth.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"});
+            this.cbMonth.Location = new System.Drawing.Point(454, 369);
+            this.cbMonth.Name = "cbMonth";
+            this.cbMonth.Size = new System.Drawing.Size(100, 29);
+            this.cbMonth.TabIndex = 17;
+            this.cbMonth.Text = "Tháng";
+            this.cbMonth.SelectedIndexChanged += new System.EventHandler(this.cbMonth_SelectedIndexChanged);
             // 
-            // rdMale
+            // cbDate
             // 
-            this.rdMale.AutoSize = true;
-            this.rdMale.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdMale.Location = new System.Drawing.Point(318, 285);
-            this.rdMale.Name = "rdMale";
-            this.rdMale.Size = new System.Drawing.Size(70, 29);
-            this.rdMale.TabIndex = 3;
-            this.rdMale.TabStop = true;
-            this.rdMale.Text = "Nam";
-            this.rdMale.UseVisualStyleBackColor = true;
+            this.cbDate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDate.FormattingEnabled = true;
+            this.cbDate.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.cbDate.Location = new System.Drawing.Point(326, 366);
+            this.cbDate.Name = "cbDate";
+            this.cbDate.Size = new System.Drawing.Size(100, 29);
+            this.cbDate.TabIndex = 16;
+            this.cbDate.Text = "Ngày";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(85, 369);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 21);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Ngày sinh";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(85, 290);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(70, 21);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Giới tính";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(85, 123);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 21);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "SĐT";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(85, 220);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 21);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Email";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(85, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 21);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Họ và tên";
+            // 
+            // panelChangePassword
+            // 
+            this.panelChangePassword.Controls.Add(this.seeNewPassword2);
+            this.panelChangePassword.Controls.Add(this.seeNewPassword1);
+            this.panelChangePassword.Controls.Add(this.seeOldPassword);
+            this.panelChangePassword.Controls.Add(this.label9);
+            this.panelChangePassword.Controls.Add(this.label8);
+            this.panelChangePassword.Controls.Add(this.label7);
+            this.panelChangePassword.Controls.Add(this.txtNewPassword2);
+            this.panelChangePassword.Controls.Add(this.txtNewPassword1);
+            this.panelChangePassword.Controls.Add(this.txtOldPassword);
+            this.panelChangePassword.Location = new System.Drawing.Point(45, 468);
+            this.panelChangePassword.Name = "panelChangePassword";
+            this.panelChangePassword.Size = new System.Drawing.Size(651, 190);
+            this.panelChangePassword.TabIndex = 9;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(36, 146);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(137, 21);
+            this.label9.TabIndex = 22;
+            this.label9.Text = "Nhập lại mật khẩu";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(36, 83);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(107, 21);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "Mật khẩu mới";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(36, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(95, 21);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "Mật khẩu cũ";
+            // 
+            // txtNewPassword2
+            // 
+            this.txtNewPassword2.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtNewPassword2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNewPassword2.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtNewPassword2.BorderThickness = 1;
+            this.txtNewPassword2.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtNewPassword2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNewPassword2.Font = new System.Drawing.Font("Century Gothic", 10.75F);
+            this.txtNewPassword2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNewPassword2.isPassword = true;
+            this.txtNewPassword2.Location = new System.Drawing.Point(281, 135);
+            this.txtNewPassword2.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNewPassword2.MaxLength = 32767;
+            this.txtNewPassword2.Name = "txtNewPassword2";
+            this.txtNewPassword2.Size = new System.Drawing.Size(362, 44);
+            this.txtNewPassword2.TabIndex = 13;
+            this.txtNewPassword2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtNewPassword1
+            // 
+            this.txtNewPassword1.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtNewPassword1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNewPassword1.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtNewPassword1.BorderThickness = 1;
+            this.txtNewPassword1.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtNewPassword1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNewPassword1.Font = new System.Drawing.Font("Century Gothic", 10.75F);
+            this.txtNewPassword1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNewPassword1.isPassword = true;
+            this.txtNewPassword1.Location = new System.Drawing.Point(281, 70);
+            this.txtNewPassword1.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNewPassword1.MaxLength = 32767;
+            this.txtNewPassword1.Name = "txtNewPassword1";
+            this.txtNewPassword1.Size = new System.Drawing.Size(362, 44);
+            this.txtNewPassword1.TabIndex = 12;
+            this.txtNewPassword1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // txtOldPassword
+            // 
+            this.txtOldPassword.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtOldPassword.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtOldPassword.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtOldPassword.BorderThickness = 1;
+            this.txtOldPassword.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtOldPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtOldPassword.Font = new System.Drawing.Font("Century Gothic", 10.75F);
+            this.txtOldPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtOldPassword.isPassword = true;
+            this.txtOldPassword.Location = new System.Drawing.Point(281, 4);
+            this.txtOldPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtOldPassword.MaxLength = 32767;
+            this.txtOldPassword.Name = "txtOldPassword";
+            this.txtOldPassword.Size = new System.Drawing.Size(362, 44);
+            this.txtOldPassword.TabIndex = 11;
+            this.txtOldPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // btnChecked
+            // 
+            this.btnChecked.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.btnChecked.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.btnChecked.Checked = false;
+            this.btnChecked.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.btnChecked.ForeColor = System.Drawing.Color.White;
+            this.btnChecked.Location = new System.Drawing.Point(326, 422);
+            this.btnChecked.Name = "btnChecked";
+            this.btnChecked.Size = new System.Drawing.Size(20, 20);
+            this.btnChecked.TabIndex = 8;
+            this.btnChecked.OnChange += new System.EventHandler(this.bunifuCheckbox1_OnChange);
             // 
             // rdFemale
             // 
@@ -228,211 +418,74 @@
             this.rdFemale.Text = "Nữ";
             this.rdFemale.UseVisualStyleBackColor = true;
             // 
-            // btnChecked
+            // rdMale
             // 
-            this.btnChecked.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.btnChecked.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.btnChecked.Checked = false;
-            this.btnChecked.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.btnChecked.ForeColor = System.Drawing.Color.White;
-            this.btnChecked.Location = new System.Drawing.Point(326, 422);
-            this.btnChecked.Name = "btnChecked";
-            this.btnChecked.Size = new System.Drawing.Size(20, 20);
-            this.btnChecked.TabIndex = 8;
-            this.btnChecked.OnChange += new System.EventHandler(this.bunifuCheckbox1_OnChange);
+            this.rdMale.AutoSize = true;
+            this.rdMale.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdMale.Location = new System.Drawing.Point(318, 285);
+            this.rdMale.Name = "rdMale";
+            this.rdMale.Size = new System.Drawing.Size(70, 29);
+            this.rdMale.TabIndex = 3;
+            this.rdMale.TabStop = true;
+            this.rdMale.Text = "Nam";
+            this.rdMale.UseVisualStyleBackColor = true;
             // 
-            // panelChangePassword
+            // txtEmail
             // 
-            this.panelChangePassword.Controls.Add(this.label9);
-            this.panelChangePassword.Controls.Add(this.label8);
-            this.panelChangePassword.Controls.Add(this.label7);
-            this.panelChangePassword.Controls.Add(this.txtNewPassword2);
-            this.panelChangePassword.Controls.Add(this.txtNewPassword1);
-            this.panelChangePassword.Controls.Add(this.txtOldPassword);
-            this.panelChangePassword.Location = new System.Drawing.Point(45, 468);
-            this.panelChangePassword.Name = "panelChangePassword";
-            this.panelChangePassword.Size = new System.Drawing.Size(651, 190);
-            this.panelChangePassword.TabIndex = 9;
+            this.txtEmail.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtEmail.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtEmail.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtEmail.BorderThickness = 1;
+            this.txtEmail.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 10.75F);
+            this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtEmail.isPassword = false;
+            this.txtEmail.Location = new System.Drawing.Point(326, 207);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(6);
+            this.txtEmail.MaxLength = 32767;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(362, 44);
+            this.txtEmail.TabIndex = 2;
+            this.txtEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // txtOldPassword
+            // txtPhoneNumber
             // 
-            this.txtOldPassword.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtOldPassword.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtOldPassword.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtOldPassword.BorderThickness = 1;
-            this.txtOldPassword.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtOldPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtOldPassword.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtOldPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtOldPassword.isPassword = false;
-            this.txtOldPassword.Location = new System.Drawing.Point(281, 4);
-            this.txtOldPassword.Margin = new System.Windows.Forms.Padding(4);
-            this.txtOldPassword.MaxLength = 32767;
-            this.txtOldPassword.Name = "txtOldPassword";
-            this.txtOldPassword.Size = new System.Drawing.Size(362, 44);
-            this.txtOldPassword.TabIndex = 11;
-            this.txtOldPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtPhoneNumber.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtPhoneNumber.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPhoneNumber.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtPhoneNumber.BorderThickness = 1;
+            this.txtPhoneNumber.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 10.75F);
+            this.txtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPhoneNumber.isPassword = false;
+            this.txtPhoneNumber.Location = new System.Drawing.Point(326, 113);
+            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(6);
+            this.txtPhoneNumber.MaxLength = 32767;
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(362, 44);
+            this.txtPhoneNumber.TabIndex = 1;
+            this.txtPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // txtNewPassword1
+            // txtName
             // 
-            this.txtNewPassword1.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtNewPassword1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNewPassword1.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtNewPassword1.BorderThickness = 1;
-            this.txtNewPassword1.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtNewPassword1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNewPassword1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtNewPassword1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNewPassword1.isPassword = true;
-            this.txtNewPassword1.Location = new System.Drawing.Point(281, 70);
-            this.txtNewPassword1.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNewPassword1.MaxLength = 32767;
-            this.txtNewPassword1.Name = "txtNewPassword1";
-            this.txtNewPassword1.Size = new System.Drawing.Size(362, 44);
-            this.txtNewPassword1.TabIndex = 12;
-            this.txtNewPassword1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // txtNewPassword2
-            // 
-            this.txtNewPassword2.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtNewPassword2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNewPassword2.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtNewPassword2.BorderThickness = 1;
-            this.txtNewPassword2.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtNewPassword2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNewPassword2.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtNewPassword2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtNewPassword2.isPassword = true;
-            this.txtNewPassword2.Location = new System.Drawing.Point(281, 135);
-            this.txtNewPassword2.Margin = new System.Windows.Forms.Padding(4);
-            this.txtNewPassword2.MaxLength = 32767;
-            this.txtNewPassword2.Name = "txtNewPassword2";
-            this.txtNewPassword2.Size = new System.Drawing.Size(362, 44);
-            this.txtNewPassword2.TabIndex = 13;
-            this.txtNewPassword2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(85, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 21);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Họ và tên";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(85, 220);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 21);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Email";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(85, 123);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 21);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "SĐT";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(85, 290);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 21);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Giới tính";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(85, 369);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 21);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Ngày sinh";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Ngày"});
-            this.comboBox1.Location = new System.Drawing.Point(326, 366);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 29);
-            this.comboBox1.TabIndex = 16;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Tháng"});
-            this.comboBox2.Location = new System.Drawing.Point(454, 369);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 29);
-            this.comboBox2.TabIndex = 17;
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Năm"});
-            this.comboBox3.Location = new System.Drawing.Point(588, 369);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(100, 29);
-            this.comboBox3.TabIndex = 18;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(358, 422);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(138, 21);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "Thay đổi mật khẩu";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(36, 18);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(95, 21);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "Mật khẩu cũ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(36, 83);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(107, 21);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "Mật khẩu mới";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(36, 146);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(137, 21);
-            this.label9.TabIndex = 22;
-            this.label9.Text = "Nhập lại mật khẩu";
+            this.txtName.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtName.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtName.BorderThickness = 1;
+            this.txtName.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtName.Font = new System.Drawing.Font("Century Gothic", 10.75F);
+            this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtName.isPassword = false;
+            this.txtName.Location = new System.Drawing.Point(326, 35);
+            this.txtName.Margin = new System.Windows.Forms.Padding(6);
+            this.txtName.MaxLength = 32767;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(362, 44);
+            this.txtName.TabIndex = 0;
+            this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // pnNotification
             // 
@@ -442,16 +495,69 @@
             this.pnNotification.Size = new System.Drawing.Size(774, 800);
             this.pnNotification.TabIndex = 20;
             // 
-            // pnManageBill
+            // pnQcode
             // 
-            this.pnManageBill.AutoScroll = true;
-            this.pnManageBill.Controls.Add(this.dgrBill);
-            this.pnManageBill.Controls.Add(this.label20);
-            this.pnManageBill.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnManageBill.Location = new System.Drawing.Point(0, 0);
-            this.pnManageBill.Name = "pnManageBill";
-            this.pnManageBill.Size = new System.Drawing.Size(774, 800);
-            this.pnManageBill.TabIndex = 21;
+            this.pnQcode.AutoScroll = true;
+            this.pnQcode.Controls.Add(this.txtCodeProduct);
+            this.pnQcode.Controls.Add(this.label14);
+            this.pnQcode.Controls.Add(this.label13);
+            this.pnQcode.Controls.Add(this.btnSearch2);
+            this.pnQcode.Controls.Add(this.btnUploadFile);
+            this.pnQcode.Controls.Add(this.ptbCode);
+            this.pnQcode.Controls.Add(this.btnSearch);
+            this.pnQcode.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnQcode.Location = new System.Drawing.Point(0, 0);
+            this.pnQcode.Name = "pnQcode";
+            this.pnQcode.Size = new System.Drawing.Size(774, 800);
+            this.pnQcode.TabIndex = 21;
+            // 
+            // txtCodeProduct
+            // 
+            this.txtCodeProduct.BorderColorFocused = System.Drawing.Color.Blue;
+            this.txtCodeProduct.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCodeProduct.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.txtCodeProduct.BorderThickness = 1;
+            this.txtCodeProduct.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtCodeProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCodeProduct.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.txtCodeProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCodeProduct.isPassword = false;
+            this.txtCodeProduct.Location = new System.Drawing.Point(507, 234);
+            this.txtCodeProduct.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCodeProduct.MaxLength = 32767;
+            this.txtCodeProduct.Name = "txtCodeProduct";
+            this.txtCodeProduct.Size = new System.Drawing.Size(181, 44);
+            this.txtCodeProduct.TabIndex = 9;
+            this.txtCodeProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(129, 136);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(116, 21);
+            this.label14.TabIndex = 8;
+            this.label14.Text = "Tra bằng qcode";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(511, 136);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(168, 21);
+            this.label13.TabIndex = 7;
+            this.label13.Text = "Tra bằng mã sản phẩm";
+            // 
+            // pnMyComment
+            // 
+            this.pnMyComment.AutoScroll = true;
+            this.pnMyComment.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnMyComment.Location = new System.Drawing.Point(0, 0);
+            this.pnMyComment.Name = "pnMyComment";
+            this.pnMyComment.Size = new System.Drawing.Size(774, 800);
+            this.pnMyComment.TabIndex = 21;
             // 
             // pnAddress
             // 
@@ -475,193 +581,15 @@
             this.pnAddress.Size = new System.Drawing.Size(774, 800);
             this.pnAddress.TabIndex = 21;
             // 
-            // pnMyComment
+            // label19
             // 
-            this.pnMyComment.AutoScroll = true;
-            this.pnMyComment.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnMyComment.Location = new System.Drawing.Point(0, 0);
-            this.pnMyComment.Name = "pnMyComment";
-            this.pnMyComment.Size = new System.Drawing.Size(774, 800);
-            this.pnMyComment.TabIndex = 21;
-            // 
-            // pnQcode
-            // 
-            this.pnQcode.AutoScroll = true;
-            this.pnQcode.Controls.Add(this.txtCodeProduct);
-            this.pnQcode.Controls.Add(this.label14);
-            this.pnQcode.Controls.Add(this.label13);
-            this.pnQcode.Controls.Add(this.btnSearch2);
-            this.pnQcode.Controls.Add(this.btnUploadFile);
-            this.pnQcode.Controls.Add(this.ptbCode);
-            this.pnQcode.Controls.Add(this.btnSearch);
-            this.pnQcode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnQcode.Location = new System.Drawing.Point(0, 0);
-            this.pnQcode.Name = "pnQcode";
-            this.pnQcode.Size = new System.Drawing.Size(774, 800);
-            this.pnQcode.TabIndex = 21;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(511, 136);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(168, 21);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "Tra bằng mã sản phẩm";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(129, 136);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(116, 21);
-            this.label14.TabIndex = 8;
-            this.label14.Text = "Tra bằng qcode";
-            // 
-            // txtCodeProduct
-            // 
-            this.txtCodeProduct.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtCodeProduct.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCodeProduct.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtCodeProduct.BorderThickness = 1;
-            this.txtCodeProduct.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtCodeProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCodeProduct.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtCodeProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtCodeProduct.isPassword = false;
-            this.txtCodeProduct.Location = new System.Drawing.Point(507, 234);
-            this.txtCodeProduct.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCodeProduct.MaxLength = 32767;
-            this.txtCodeProduct.Name = "txtCodeProduct";
-            this.txtCodeProduct.Size = new System.Drawing.Size(181, 44);
-            this.txtCodeProduct.TabIndex = 9;
-            this.txtCodeProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // edtName
-            // 
-            this.edtName.BorderColorFocused = System.Drawing.Color.Blue;
-            this.edtName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.edtName.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.edtName.BorderThickness = 1;
-            this.edtName.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.edtName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.edtName.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.edtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.edtName.isPassword = false;
-            this.edtName.Location = new System.Drawing.Point(283, 26);
-            this.edtName.Margin = new System.Windows.Forms.Padding(4);
-            this.edtName.MaxLength = 32767;
-            this.edtName.Name = "edtName";
-            this.edtName.Size = new System.Drawing.Size(370, 44);
-            this.edtName.TabIndex = 0;
-            this.edtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // edtPhoneNumber
-            // 
-            this.edtPhoneNumber.BorderColorFocused = System.Drawing.Color.Blue;
-            this.edtPhoneNumber.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.edtPhoneNumber.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.edtPhoneNumber.BorderThickness = 1;
-            this.edtPhoneNumber.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.edtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.edtPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.edtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.edtPhoneNumber.isPassword = false;
-            this.edtPhoneNumber.Location = new System.Drawing.Point(283, 113);
-            this.edtPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
-            this.edtPhoneNumber.MaxLength = 32767;
-            this.edtPhoneNumber.Name = "edtPhoneNumber";
-            this.edtPhoneNumber.Size = new System.Drawing.Size(370, 44);
-            this.edtPhoneNumber.TabIndex = 1;
-            this.edtPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // cbCity
-            // 
-            this.cbCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCity.FormattingEnabled = true;
-            this.cbCity.Location = new System.Drawing.Point(283, 195);
-            this.cbCity.Name = "cbCity";
-            this.cbCity.Size = new System.Drawing.Size(370, 32);
-            this.cbCity.TabIndex = 2;
-            // 
-            // cbDistrict
-            // 
-            this.cbDistrict.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbDistrict.FormattingEnabled = true;
-            this.cbDistrict.Location = new System.Drawing.Point(283, 258);
-            this.cbDistrict.Name = "cbDistrict";
-            this.cbDistrict.Size = new System.Drawing.Size(370, 32);
-            this.cbDistrict.TabIndex = 3;
-            // 
-            // cbWard
-            // 
-            this.cbWard.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbWard.FormattingEnabled = true;
-            this.cbWard.Location = new System.Drawing.Point(283, 319);
-            this.cbWard.Name = "cbWard";
-            this.cbWard.Size = new System.Drawing.Size(370, 32);
-            this.cbWard.TabIndex = 4;
-            // 
-            // edtAddress
-            // 
-            this.edtAddress.BorderColorFocused = System.Drawing.Color.Blue;
-            this.edtAddress.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.edtAddress.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.edtAddress.BorderThickness = 1;
-            this.edtAddress.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.edtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.edtAddress.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.edtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.edtAddress.isPassword = false;
-            this.edtAddress.Location = new System.Drawing.Point(283, 386);
-            this.edtAddress.Margin = new System.Windows.Forms.Padding(4);
-            this.edtAddress.MaxLength = 32767;
-            this.edtAddress.Name = "edtAddress";
-            this.edtAddress.Size = new System.Drawing.Size(370, 121);
-            this.edtAddress.TabIndex = 5;
-            this.edtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(45, 35);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(92, 25);
-            this.label12.TabIndex = 7;
-            this.label12.Text = "Họ và tên";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(45, 123);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(123, 25);
-            this.label15.TabIndex = 8;
-            this.label15.Text = "Số điện thoại";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(45, 202);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(147, 25);
-            this.label16.TabIndex = 9;
-            this.label16.Text = "Tỉnh/Thành phố";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(45, 265);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(124, 25);
-            this.label17.TabIndex = 10;
-            this.label17.Text = "Quận/Huyện ";
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(45, 385);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(70, 25);
+            this.label19.TabIndex = 12;
+            this.label19.Text = "Địa chỉ";
             // 
             // label18
             // 
@@ -673,41 +601,156 @@
             this.label18.TabIndex = 11;
             this.label18.Text = "Phường xã";
             // 
-            // label19
+            // label17
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(45, 385);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(70, 25);
-            this.label19.TabIndex = 12;
-            this.label19.Text = "Địa chỉ";
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(45, 265);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(124, 25);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "Quận/Huyện ";
             // 
-            // label20
+            // label16
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(35, 30);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(157, 25);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "Đơn hàng của tôi";
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(45, 202);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(147, 25);
+            this.label16.TabIndex = 9;
+            this.label16.Text = "Tỉnh/Thành phố";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(45, 123);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(123, 25);
+            this.label15.TabIndex = 8;
+            this.label15.Text = "Số điện thoại";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(45, 35);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(92, 25);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "Họ và tên";
+            // 
+            // edtAddress
+            // 
+            this.edtAddress.BorderColorFocused = System.Drawing.Color.Blue;
+            this.edtAddress.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.edtAddress.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.edtAddress.BorderThickness = 1;
+            this.edtAddress.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.edtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.edtAddress.Font = new System.Drawing.Font("Century Gothic", 10.75F);
+            this.edtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.edtAddress.isPassword = false;
+            this.edtAddress.Location = new System.Drawing.Point(283, 386);
+            this.edtAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.edtAddress.MaxLength = 32767;
+            this.edtAddress.Name = "edtAddress";
+            this.edtAddress.Size = new System.Drawing.Size(370, 121);
+            this.edtAddress.TabIndex = 5;
+            this.edtAddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // cbWard
+            // 
+            this.cbWard.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbWard.FormattingEnabled = true;
+            this.cbWard.Location = new System.Drawing.Point(283, 319);
+            this.cbWard.Name = "cbWard";
+            this.cbWard.Size = new System.Drawing.Size(370, 32);
+            this.cbWard.TabIndex = 4;
+            // 
+            // cbDistrict
+            // 
+            this.cbDistrict.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDistrict.FormattingEnabled = true;
+            this.cbDistrict.Location = new System.Drawing.Point(283, 258);
+            this.cbDistrict.Name = "cbDistrict";
+            this.cbDistrict.Size = new System.Drawing.Size(370, 32);
+            this.cbDistrict.TabIndex = 3;
+            // 
+            // cbCity
+            // 
+            this.cbCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCity.FormattingEnabled = true;
+            this.cbCity.Location = new System.Drawing.Point(283, 195);
+            this.cbCity.Name = "cbCity";
+            this.cbCity.Size = new System.Drawing.Size(370, 32);
+            this.cbCity.TabIndex = 2;
+            // 
+            // edtPhoneNumber
+            // 
+            this.edtPhoneNumber.BorderColorFocused = System.Drawing.Color.Blue;
+            this.edtPhoneNumber.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.edtPhoneNumber.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.edtPhoneNumber.BorderThickness = 1;
+            this.edtPhoneNumber.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.edtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.edtPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 10.75F);
+            this.edtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.edtPhoneNumber.isPassword = false;
+            this.edtPhoneNumber.Location = new System.Drawing.Point(283, 113);
+            this.edtPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
+            this.edtPhoneNumber.MaxLength = 32767;
+            this.edtPhoneNumber.Name = "edtPhoneNumber";
+            this.edtPhoneNumber.Size = new System.Drawing.Size(370, 44);
+            this.edtPhoneNumber.TabIndex = 1;
+            this.edtPhoneNumber.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // edtName
+            // 
+            this.edtName.BorderColorFocused = System.Drawing.Color.Blue;
+            this.edtName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.edtName.BorderColorMouseHover = System.Drawing.Color.Blue;
+            this.edtName.BorderThickness = 1;
+            this.edtName.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.edtName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.edtName.Font = new System.Drawing.Font("Century Gothic", 10.75F);
+            this.edtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.edtName.isPassword = false;
+            this.edtName.Location = new System.Drawing.Point(283, 26);
+            this.edtName.Margin = new System.Windows.Forms.Padding(4);
+            this.edtName.MaxLength = 32767;
+            this.edtName.Name = "edtName";
+            this.edtName.Size = new System.Drawing.Size(370, 44);
+            this.edtName.TabIndex = 0;
+            this.edtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // pnManageBill
+            // 
+            this.pnManageBill.AutoScroll = true;
+            this.pnManageBill.Controls.Add(this.dgrBill);
+            this.pnManageBill.Controls.Add(this.label20);
+            this.pnManageBill.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnManageBill.Location = new System.Drawing.Point(0, 0);
+            this.pnManageBill.Name = "pnManageBill";
+            this.pnManageBill.Size = new System.Drawing.Size(774, 800);
+            this.pnManageBill.TabIndex = 21;
             // 
             // dgrBill
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgrBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgrBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgrBill.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgrBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgrBill.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgrBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgrBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgrBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgrBill.DoubleBuffered = true;
             this.dgrBill.EnableHeadersVisualStyles = false;
@@ -718,6 +761,16 @@
             this.dgrBill.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgrBill.Size = new System.Drawing.Size(717, 411);
             this.dgrBill.TabIndex = 1;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(35, 30);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(157, 25);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "Đơn hàng của tôi";
             // 
             // btnUpdate
             // 
@@ -742,7 +795,9 @@
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(181, 41);
             this.btnUpdate.TabIndex = 10;
+            this.btnUpdate.Tag = "12345693";
             this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSearch2
             // 
@@ -1114,6 +1169,40 @@
             this.btnInfoUser.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInfoUser.Click += new System.EventHandler(this.btnInfoUser_Click);
             // 
+            // seeOldPassword
+            // 
+            this.seeOldPassword.BackgroundImage = global::Tiki_app.Properties.Resources.ic_see;
+            this.seeOldPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.seeOldPassword.ErrorImage = null;
+            this.seeOldPassword.Location = new System.Drawing.Point(608, 11);
+            this.seeOldPassword.Name = "seeOldPassword";
+            this.seeOldPassword.Size = new System.Drawing.Size(30, 30);
+            this.seeOldPassword.TabIndex = 23;
+            this.seeOldPassword.TabStop = false;
+            this.seeOldPassword.Click += new System.EventHandler(this.seeOldPassword_Click);
+            // 
+            // seeNewPassword1
+            // 
+            this.seeNewPassword1.BackgroundImage = global::Tiki_app.Properties.Resources.ic_see;
+            this.seeNewPassword1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.seeNewPassword1.Location = new System.Drawing.Point(608, 78);
+            this.seeNewPassword1.Name = "seeNewPassword1";
+            this.seeNewPassword1.Size = new System.Drawing.Size(30, 30);
+            this.seeNewPassword1.TabIndex = 24;
+            this.seeNewPassword1.TabStop = false;
+            this.seeNewPassword1.Click += new System.EventHandler(this.seeNewPassword1_Click);
+            // 
+            // seeNewPassword2
+            // 
+            this.seeNewPassword2.BackgroundImage = global::Tiki_app.Properties.Resources.ic_see;
+            this.seeNewPassword2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.seeNewPassword2.Location = new System.Drawing.Point(608, 143);
+            this.seeNewPassword2.Name = "seeNewPassword2";
+            this.seeNewPassword2.Size = new System.Drawing.Size(30, 30);
+            this.seeNewPassword2.TabIndex = 25;
+            this.seeNewPassword2.TabStop = false;
+            this.seeNewPassword2.Click += new System.EventHandler(this.seeNewPassword2_Click);
+            // 
             // tabInfoUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1130,18 +1219,21 @@
             this.pnInfo.PerformLayout();
             this.panelChangePassword.ResumeLayout(false);
             this.panelChangePassword.PerformLayout();
-            this.pnManageBill.ResumeLayout(false);
-            this.pnManageBill.PerformLayout();
-            this.pnAddress.ResumeLayout(false);
-            this.pnAddress.PerformLayout();
             this.pnQcode.ResumeLayout(false);
             this.pnQcode.PerformLayout();
+            this.pnAddress.ResumeLayout(false);
+            this.pnAddress.PerformLayout();
+            this.pnManageBill.ResumeLayout(false);
+            this.pnManageBill.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrBill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUploadFile)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbCode)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seeOldPassword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seeNewPassword1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seeNewPassword2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1158,9 +1250,9 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel pnInfo;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbYear;
+        private System.Windows.Forms.ComboBox cbMonth;
+        private System.Windows.Forms.ComboBox cbDate;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -1210,5 +1302,8 @@
         private Bunifu.Framework.UI.BunifuMetroTextbox edtName;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgrBill;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.PictureBox seeNewPassword2;
+        private System.Windows.Forms.PictureBox seeNewPassword1;
+        private System.Windows.Forms.PictureBox seeOldPassword;
     }
 }

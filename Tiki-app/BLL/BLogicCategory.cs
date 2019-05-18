@@ -20,7 +20,7 @@ namespace Tiki_app.BLL
         DataConnector dataConnector;
         public BLogicCategory()
         {
-            dataConnector = new DataConnector();
+            dataConnector = DataConnector.getInstance();
         }
 
         public List<DanhMucSanPham> getCategory(DataType type, ref bool flag)

@@ -181,6 +181,9 @@
   <data name="ic_qcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_qcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ic_see" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_see.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ic_shirt" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_shirt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
