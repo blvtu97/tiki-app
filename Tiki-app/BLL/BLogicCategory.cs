@@ -27,12 +27,12 @@ namespace Tiki_app.BLL
         {
             try
             {
+                dataConnector.Connect();
+                
                 Debug.WriteLine("Lay category");
-                //DataTable table = dataConnector.GetTable("CATEGORY_PHONE", ref flag);
-                DataConnector.ConnectToServer();
-                DataConnector.SendRequest("CATEGORY_PHONE");
-                DataTable table = DataConnector.ReceiveResponse();
-                DataConnector.Exit();
+
+                DataTable table = dataConnector.GetTable("CATEGORY_PHONE",ref flag);
+
                 Debug.WriteLine("Lay category thanh cong");
 
                 List<DanhMucSanPham> sanPhams = new List<DanhMucSanPham>();
@@ -45,7 +45,6 @@ namespace Tiki_app.BLL
                     sanPhams.Add(sp);
                     Debug.WriteLine(i + " " + sp.Loai);
                 }
-
                 return sanPhams;
             }catch(Exception e)
             {

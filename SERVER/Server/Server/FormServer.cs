@@ -18,137 +18,125 @@ namespace Server
 {
     public partial class frmServer : Form
     {
-        private static Socket serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-        private static List<Socket> clientSockets = new List<Socket>();
-        private const int BUFFER_SIZE = 2048;
-        private const int PORT = 5656;
-        private static byte[] buffer = new byte[BUFFER_SIZE];
-        private static Socket clientSocket;
+
+        private IPEndPoint ipEnd;
+        private Socket server;
+        private List<Socket> clients;
+        static ASCIIEncoding encoding = new ASCIIEncoding();
+
+        TcpListener listener;
         public frmServer()
         {
             InitializeComponent();
+            CheckForIllegalCrossThreadCalls = false;
             this.Focus();
 
         }
-        /// <summary>
-        /// Close all connected client (we do not need to shutdown the server socket as its connections
-        /// are already closed with the clients).
-        /// </summary>
-        private static void CloseAllSockets()
-        {
-            foreach (Socket socket in clientSockets)
-            {
-                socket.Shutdown(SocketShutdown.Both);
-                socket.Close();
-            }
 
-            serverSocket.Close();
-        }
-        #region Thread Process Server
-        //Stop Thread Server
-        private void StopServer()
-        {
-            //isRunning = false;
-            //if (sock != null)
-            //    sock.Close();
-            //btnStop.Enabled = false;
-            //btnStartServer.Enabled = true;
-            //btnStartServer.ButtonText = "Restart Server";
-        }
-
-        private void btnStop_Click(object sender, EventArgs e)
-        {
-            StopServer();
-        }
-
-        //Run Thread Server
         private void btnStartServer_Click(object sender, EventArgs e)
         {
-            Debug.WriteLine("Setting up server...");
-            serverSocket.Bind(new IPEndPoint(IPAddress.Any, PORT));
-            serverSocket.Listen(200);
-            clientSocket = serverSocket.Accept();
+            listener = new TcpListener(IPAddress.Any, 8989);
+            Thread thread = new Thread(Open);
+            thread.Start();
 
-            serverSocket.BeginAccept(AcceptCallback, null);
-            Debug.WriteLine("Server setup complete");
-            //isRunning = true;
-            btnStartServer.ButtonText = "In process...";
             btnStartServer.Enabled = false;
-            //btnStop.Enabled = true;
-            //serviceSocketThread = new Thread(RunningServer);
-            CloseAllSockets();
-            //serviceSocketThread.Start();
+            btnStartServer.ButtonText = "In Process";
+            MessageBox.Show("Started");
         }
 
-        //Waiting Request From Client
-        private void RunningServer()
+
+        public void Open()
         {
-            //while (isRunning)
-            //{
-            //    try
-            //    {
-            //        ipEnd = new IPEndPoint(IPAddress.Any, 5656);
-            //        sock = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.IP);
+            try
+            {
+                while (true)
+                {
+                    listener.Start();
+                    Socket client = listener.AcceptSocket();
 
-            //        sock.Bind(ipEnd);
-            //        sock.Listen(100);
-            //        clientSock = sock.Accept();
-
-            //        byte[] data = new byte[1024];
-            //        clientSock.Receive(data);
-            //        string str = encoding.GetString(data).Trim().Replace("\0", string.Empty);    //Loại kí tự trống và \0
-            //        if (str.Contains("MESSAGE"))
-            //            CheckMessage(str);
-            //        else   //request
-            //        {
-            //            int count = 0;
-            //            int begin = 0;
-            //            int end = 10;
-            //            bool flag = true;
-            //            List<DataTable> sendBack = new List<DataTable>();
-            //            while (flag)
-            //            {
-            //                DataTable dt = GetDatabase(begin, end, out flag, str);
-            //                if (dt != null)
-            //                {
-            //                    ++count;
-            //                    sendBack.Add(dt);
-            //                    begin = end;
-            //                    end += 10;
-            //                }
-            //            }
-            //            clientSock.Send(SerializeData(count));
-            //            foreach (DataTable table in sendBack)
-            //            {
-            //                clientSock.Send(SerializeData(table));
-            //                clientSock.Receive(data);
-            //            }
-
-
-            //        }
-            //        sock.Close();
-            //        clientSock.Close();
-            //        Application.DoEvents();
-            //    }
-            //    catch (Exception e)
-            //    {
-            //        sock.Close();
-            //        clientSock.Close();
-            //        Application.DoEvents();
-            //    }
-            //}
+                    var childSocketThread = new Thread(() =>
+                    {
+                        while (client.Connected)
+                        {
+                            try
+                            {
+                                byte[] data = new byte[100];
+                                int size = client.Receive(data);
+                                string mess = encoding.GetString(data);
+                                Receive(client, mess);
+                            }
+                            catch(SocketException)
+                            {
+                                Thread.CurrentThread.Abort();
+                            }
+                        }
+                    });
+                    childSocketThread.Start();
+                }
+            }
+            catch(SocketException)
+            {
+                listener = new TcpListener(IPAddress.Any, 8989);
+            }
         }
 
-        private void CheckMessage(string str)
+        public void Send(Socket client, DataTable table)
         {
-            MessageBox.Show(str);
+            client.Send(SerializeData(table));
         }
 
-        private void frmServer_FormClosing(object sender, FormClosingEventArgs e)
+        public void Send(Socket client, int lengh)
         {
-            StopServer();
+            client.Send(SerializeData(lengh));
         }
-        #endregion
+
+        public void Receive(Socket client, string mess)
+        {
+            try
+            {
+                if (mess.Contains("MASSAGE")) { }
+                else
+                {
+                    mess = mess.Trim().Replace("\0", string.Empty);
+                    int count = 0;
+                    int begin = 0;
+                    int end = 10;
+                    bool flag = true;
+                    List<DataTable> sendBack = new List<DataTable>();
+                    while (flag)
+                    {
+                        DataTable dt = GetDatabase(begin, end, out flag, mess);
+                        if (dt != null)
+                        {
+                            ++count;
+                            sendBack.Add(dt);
+                            begin = end;
+                            end += 10;
+                        }
+                    }
+                    if (sendBack.Count > 0)
+                    {
+                        Send(client, count);
+                        for (int i = 0; i < count; i++)
+                        {
+                            Send(client, sendBack[i]);
+                            client.Receive(new byte[4]);
+                        }
+                    }
+                    else
+                    {
+                        client.Disconnect(true);
+                        client.Close();
+                    }
+                }
+            }
+            catch (SocketException e)
+            {
+                Debug.WriteLine(e);
+                Close();
+            }
+        }
+
 
         #region Functions Get And Endcode Database
         //Encode object to byte array
@@ -307,94 +295,9 @@ namespace Server
 
         #endregion
 
-        /** New **/
-        private static void AcceptCallback(IAsyncResult AR)
+        private void frmServer_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Socket socket;
-
-            try
-            {
-                socket = serverSocket.EndAccept(AR);
-            }
-            catch (ObjectDisposedException) // I cannot seem to avoid this (on exit when properly closing sockets)
-            {
-                return;
-            }
-
-            clientSockets.Add(socket);
-            socket.BeginReceive(buffer, 0, BUFFER_SIZE, SocketFlags.None, ReceiveCallback, socket);
-            Debug.WriteLine("Client connected : waiting for request...");
-            serverSocket.BeginAccept(AcceptCallback, null);
+            //Close();
         }
-
-        private static void ReceiveCallback(IAsyncResult AR)
-        {
-            Socket current = (Socket)AR.AsyncState;
-            int received;
-
-            try
-            {
-                received = current.EndReceive(AR);
-            }
-            catch (SocketException)
-            {
-                Debug.WriteLine("Client forcefully disconnected");
-                // Don't shutdown because the socket may be disposed and its disconnected anyway.
-                current.Close();
-                clientSockets.Remove(current);
-                return;
-            }
-
-            byte[] recBuf = new byte[received];
-            Array.Copy(buffer, recBuf, received);
-            string text = Encoding.ASCII.GetString(recBuf);
-            Debug.WriteLine("Received Text: " + text);
-
-            if (text.Contains("MASSEAGE")) // Client requested time
-            {
-                
-            }
-            else if (text.ToLower() == "exit") // Client wants to exit gracefully
-            {
-                // Always Shutdown before closing
-                current.Shutdown(SocketShutdown.Both);
-                current.Close();
-                clientSockets.Remove(current);
-                Debug.WriteLine("Client disconnected");
-                return;
-            }
-            else
-            {
-                text = text.Trim().Replace("\0", string.Empty);
-                //Console.WriteLine("Text is an invalid request");
-                //byte[] data = Encoding.ASCII.GetBytes("Invalid request");
-                //current.Send(data);
-                int count = 0;
-                int begin = 0;
-                int end = 10;
-                bool flag = true;
-                List<DataTable> sendBack = new List<DataTable>();
-                while (flag)
-                {
-                    DataTable dt = GetDatabase(begin, end, out flag, text);
-                    if (dt != null)
-                    {
-                        ++count;
-                        sendBack.Add(dt);
-                        begin = end;
-                        end += 10;
-                    }
-                }
-                current.Send(SerializeData(count));
-                foreach (DataTable table in sendBack)
-                {
-                    current.Send(SerializeData(table));
-                    current.Receive(new byte[8]);
-                }
-            }
-
-            current.BeginReceive(buffer, 0, BUFFER_SIZE, SocketFlags.None, ReceiveCallback, current);
-        }
-
     }
 }

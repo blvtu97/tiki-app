@@ -295,7 +295,6 @@
             this.btnStop.Size = new System.Drawing.Size(187, 59);
             this.btnStop.TabIndex = 4;
             this.btnStop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // frmServer
             // 

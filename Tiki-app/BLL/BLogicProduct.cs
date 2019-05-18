@@ -26,16 +26,14 @@ namespace Tiki_app.BLL
         {
             try
             {
+                dataConnector.Connect();
                 Debug.WriteLine("lay du lieu san pham");
-                //DataTable table = dataConnector.GetTable("PRODUCT_PHONE", ref flag);
-                //Debug.WriteLine("lay dien thoai thanh cong");
-                //DataTable tableImage = dataConnector.GetTable("IMAGE_PHONE", ref flag);
-                DataConnector.ConnectToServer();
-                DataConnector.SendRequest("PRODUCT_PHONE");
-                DataTable table = DataConnector.ReceiveResponse();
-                DataConnector.SendRequest("IMAGE_PHONE");
-                DataTable tableImage = DataConnector.ReceiveResponse();
-                Debug.WriteLine("lay hinh anh thanh cong");
+                DataTable table = dataConnector.GetTable("PRODUCT_PHONE", ref flag);
+                DataTable tableImage = dataConnector.GetTable("IMAGE_PHONE", ref flag);
+
+                //Đóng connect khi đã láy xong bảng category và bảng product
+
+                Debug.WriteLine("lay dien thoai thanh cong");
 
                 List<SanPham> sanPhams = new List<SanPham>();
                 for (int i = 0; i < table.Rows.Count; i++)

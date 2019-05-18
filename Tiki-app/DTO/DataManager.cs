@@ -38,9 +38,21 @@ namespace Tiki_app.DTO
 
         public bool loadData()
         {
-            bool flag = true;
-            listCategory = logicCategory.getCategory(DataType.CATEGORY_DIENTHOAI_TABLET, ref flag);
-            //listProduct = logicProduct.getProducts(DataType.DIENTHOAI, ref flag);
+            bool flag = false;
+            while (!flag)
+            {
+                listCategory = logicCategory.getCategory(DataType.CATEGORY_DIENTHOAI_TABLET, ref flag);
+
+            }
+
+
+            flag = false;
+            while (!flag)
+            {
+                listProduct = logicProduct.getProducts(DataType.DIENTHOAI, ref flag);
+            }
+
+
             return flag;
             //while (!flag)
             //{
