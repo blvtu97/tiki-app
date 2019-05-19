@@ -72,7 +72,6 @@ namespace Tiki_app
             tabChoosePayMethod.setOnClickListener(this);
             tabInfoUser.setOnClickListener(this);
             tabFilterProducts.setOnClickListener(this);
-            
 
         }
 
@@ -116,8 +115,6 @@ namespace Tiki_app
             }
             else if (view.getID() == R.id.CHOOSE_PAY_METHOD_BUY)
             {
-                //Xử lý thanh toán đơn hàng khi nhấn vào button đặt mua tại đây
-                PayMethod payMethod = ((tabChoseDeliveryMethod)view.obj).payMethod;
                 tabThankyou1.BringToFront();
             }
             else if (view.getID() == R.id.CHOOSE_HOME_PAGE)
@@ -155,6 +152,7 @@ namespace Tiki_app
                 FilterProduct filterProduct = ((tabFilterProducts)view.obj).filterProduct;
                 //Xử lý lọc theo sao tại đây
                 int rate = filterProduct.rate;
+                showProductFollowRate(view.obj, rate);
             }
             else if (view.getID() == R.id.FILTER_FOLLOW_ABOUT_PRICE)
             {
@@ -162,6 +160,7 @@ namespace Tiki_app
                 //Xử lý lọc theo khoảng giá tại đây
                 double from = filterProduct.price1;
                 double to = filterProduct.price2;
+                showProductAboutPrice(from+to,from, to);
             }
             else if (view.getID() == R.id.FILTER_FOLLOW_TEXT)
             {
@@ -169,6 +168,7 @@ namespace Tiki_app
                 string content = filterProduct.Content;
                 //Xử lý lọc theo hàng theo nội dung tìm kiếm tại đây với nôi dung
                 //là biến content ở trên
+                showProductFollowText(content, content);
             }
             else if (view.getID() == R.id.FILTER_FOLLOW_HOT_PRODUCT)
             {
@@ -181,6 +181,7 @@ namespace Tiki_app
             else if (view.getID() == R.id.FILTER_FOLLOW_SALE_PRODUCT)
             {
                 //Xử lý lọc theo hàng giảm giá nhiều tại đây
+                showProductFollowSale(view.obj);
             }
             else if (view.getID() == R.id.SEARCH_BY_CODE)
             {
@@ -536,6 +537,50 @@ namespace Tiki_app
         }
 
         /// <summary>
+        /// Hàm hiển thị danh sách sản phẩm dựa theo mức Rate
+        /// </summary>
+        /// <param name="sender">Đối tượng khi click vào sẽ hiển thị danh sách này</param>
+        /// <param name="rate"></param>
+        private void showProductFollowRate(object sender, int rate)
+        {
+            vax = dataManager.findProductFollowRate(rate);
+            asyncShowProductTask(sender);
+        }
+
+        /// <summary>
+        /// Hàm hiển thị danh sách sản phẩm dựa theo mức giá trong khoảng [from,to]
+        /// </summary>
+        /// <param name="sender">Đối tượng khi click vào sẽ hiển thị danh sách này</param>
+        /// <param name="from">Mức giá cận dưới</param>
+        /// <param name="to">Mức giá cận trên</param>
+        private void showProductAboutPrice(object sender, double from, double to)
+        {
+            vax = dataManager.findProductFollowAboutPrice(from, to);
+            asyncShowProductTask(sender);
+        }
+
+        /// <summary>
+        /// Hàm hiển thị danh sách sản phẩm có tên giống content
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="content"></param>
+        private void showProductFollowText(object sender, string content)
+        {
+            vax = dataManager.findProductFollowText(content);
+            asyncShowProductTask(sender);
+        }
+
+        /// <summary>
+        /// Hàm hiển thị danh sách sản phẩm được sắp xếp giảm giá từ nhiều xuống ít
+        /// </summary>
+        /// <param name="sender"></param>
+        private void showProductFollowSale(object sender)
+        {
+            vax = dataManager.sortProductFollowSale();
+            asyncShowProductTask(sender);
+        }
+
+        /// <summary>
         /// Sự kiện click button xem giỏ hàng, hàm sẽ thực hiện gọi hàm hiển thị danh sách
         /// sản phẩm đã mua
         /// </summary>
@@ -591,8 +636,7 @@ namespace Tiki_app
         /// </summary>
         private void handleLogin(string userName, string password)
         {
-            bool flag = false;
-            customer = blLogin.LoginSuccess(userName, password, ref flag);
+            customer = blLogin.LoginSuccess(userName, password);
 
             if (customer!=null)
             {

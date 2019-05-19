@@ -66,7 +66,7 @@ namespace Tiki_app
         {
             view.onClick(new VIEW
             {
-                obj = this,
+                obj = btnHomePage,
                 Tag = Convert.ToInt32(btnHomePage.Tag)
             });
         }
