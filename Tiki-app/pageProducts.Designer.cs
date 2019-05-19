@@ -92,7 +92,6 @@
             // 
             // btnFindProduct
             // 
-            this.btnFindProduct.BackColor = System.Drawing.Color.Transparent;
             this.btnFindProduct.Image = global::Tiki_app.Properties.Resources.ic_find;
             this.btnFindProduct.ImageActive = null;
             this.btnFindProduct.Location = new System.Drawing.Point(962, 16);
@@ -107,6 +106,7 @@
             // 
             // edtFindProduct
             // 
+     
             this.edtFindProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.edtFindProduct.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.edtFindProduct.ForeColor = System.Drawing.Color.WhiteSmoke;
@@ -119,6 +119,7 @@
             this.edtFindProduct.LineThickness = 2;
             this.edtFindProduct.Location = new System.Drawing.Point(798, 13);
             this.edtFindProduct.Margin = new System.Windows.Forms.Padding(4);
+ 
             this.edtFindProduct.Name = "edtFindProduct";
             this.edtFindProduct.Size = new System.Drawing.Size(153, 33);
             this.edtFindProduct.TabIndex = 30;

@@ -111,7 +111,6 @@
             // 
             // bunifuImageButton3
             // 
-            this.bunifuImageButton3.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton3.Image = global::Tiki_app.Properties.Resources.appstore;
             this.bunifuImageButton3.ImageActive = null;
             this.bunifuImageButton3.Location = new System.Drawing.Point(673, 310);
@@ -124,7 +123,6 @@
             // 
             // bunifuImageButton2
             // 
-            this.bunifuImageButton2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton2.Image = global::Tiki_app.Properties.Resources.img_connects;
             this.bunifuImageButton2.ImageActive = null;
             this.bunifuImageButton2.Location = new System.Drawing.Point(673, 108);
@@ -137,7 +135,6 @@
             // 
             // bunifuImageButton1
             // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = global::Tiki_app.Properties.Resources.img_pays;
             this.bunifuImageButton1.ImageActive = null;
             this.bunifuImageButton1.Location = new System.Drawing.Point(289, 97);
@@ -192,13 +189,13 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "HỖ TRỢ KHÁCH HÀNG";
             // 
-            // tabContactUs
+            // ContactUs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(56)))));
             this.Controls.Add(this.panel3);
-            this.Name = "tabContactUs";
+            this.Name = "ContactUs";
             this.Size = new System.Drawing.Size(1000, 458);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

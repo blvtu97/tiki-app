@@ -145,7 +145,7 @@ namespace Tiki_app.DAL
         }
 
 
-        string stringConnection = "Data Source = DESKTOP-BSUQ8EF;" 
+        string stringConnection = "Data Source = (local);" 
             + "Initial Catalog=DBTIKI;" 
             + "Integrated Security=True";
 

@@ -193,6 +193,7 @@ C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabViewAll
 C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabViewOneComment.resources
 C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabWriteComment.resources
 C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\obj\Debug\Tiki-app.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 E:\Git\tiki-app\Tiki-app\bin\Debug\Bunifu_UI_v1.5.3.dll
 E:\Git\tiki-app\Tiki-app\bin\Debug\zxing.dll
 E:\Git\tiki-app\Tiki-app\bin\Debug\zxing.presentation.dll
@@ -206,3 +207,37 @@ E:\Git\tiki-app\Tiki-app\bin\Debug\AForge.Video.dll
 E:\Git\tiki-app\Tiki-app\bin\Debug\AForge.xml
 E:\Git\tiki-app\Tiki-app\bin\Debug\AForge.Video.xml
 E:\Git\tiki-app\Tiki-app\bin\Debug\AForge.Video.DirectShow.xml
+=======
+C:\Users\Administrator\tiki-app\Tiki-app\bin\Debug\Tiki-app.exe.config
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki-app.exe
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki-app.pdb
+C:\Users\Administrator\tiki-app\Tiki-app\bin\Debug\Tiki-app.exe
+C:\Users\Administrator\tiki-app\Tiki-app\bin\Debug\Tiki-app.pdb
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki-app.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.frmRegister.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.pageLogin.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.pagePayProduct.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabChooseToBuy.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabCategorySamples.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabChoseDeliveryMethod.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabContactUs.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabCustomerComment.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.pageDetailsProduct.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.frmHomePage.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabFilterProducts.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabGood.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.pageNoProduct.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.pageNews.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.pageProducts.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabInfoCustomer.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabInfoUser.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabOrder.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabProductSamples.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.Properties.Resources.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabNews.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabThankyou.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabViewAllComment.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabViewOneComment.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabWriteComment.resources
+C:\Users\Administrator\tiki-app\Tiki-app\obj\Debug\Tiki-app.csproj.GenerateResource.Cache
+>>>>>>> 7411b86327977386f5e876caaab6a9c16e259444
