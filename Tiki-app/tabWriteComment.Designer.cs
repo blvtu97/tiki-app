@@ -84,10 +84,9 @@
             // 
             // edtTitleComment
             // 
-            this.edtTitleComment.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.edtTitleComment.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+
             this.edtTitleComment.AutoScroll = true;
-            this.edtTitleComment.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+ 
             this.edtTitleComment.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.edtTitleComment.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.edtTitleComment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -100,7 +99,6 @@
             this.edtTitleComment.LineThickness = 1;
             this.edtTitleComment.Location = new System.Drawing.Point(61, 197);
             this.edtTitleComment.Margin = new System.Windows.Forms.Padding(4);
-            this.edtTitleComment.MaxLength = 32767;
             this.edtTitleComment.Name = "edtTitleComment";
             this.edtTitleComment.Size = new System.Drawing.Size(621, 33);
             this.edtTitleComment.TabIndex = 5;
@@ -108,10 +106,8 @@
             // 
             // edtCommentProduct
             // 
-            this.edtCommentProduct.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.edtCommentProduct.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+
             this.edtCommentProduct.AutoScroll = true;
-            this.edtCommentProduct.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.edtCommentProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.edtCommentProduct.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.edtCommentProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -124,7 +120,6 @@
             this.edtCommentProduct.LineThickness = 1;
             this.edtCommentProduct.Location = new System.Drawing.Point(61, 316);
             this.edtCommentProduct.Margin = new System.Windows.Forms.Padding(4);
-            this.edtCommentProduct.MaxLength = 32767;
             this.edtCommentProduct.Name = "edtCommentProduct";
             this.edtCommentProduct.Size = new System.Drawing.Size(621, 101);
             this.edtCommentProduct.TabIndex = 6;

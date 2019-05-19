@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabChooseToBuy));
             this.lbTitle = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lbCountProduct = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.edtCountProduct = new Bunifu.Framework.BunifuCustomTextbox();
+            this.edtCountProduct = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnBuyProduct = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -104,7 +104,7 @@
             // 
             // btnBuyProduct
             // 
-            this.btnBuyProduct.Active = false;
+ 
             this.btnBuyProduct.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(96)))), ((int)(((byte)(105)))));
             this.btnBuyProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(66)))), ((int)(((byte)(75)))));
             this.btnBuyProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -259,7 +259,8 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnBuyProduct;
         private Bunifu.Framework.UI.BunifuCustomLabel lbTitle;
         private Bunifu.Framework.UI.BunifuCustomLabel lbCountProduct;
-        private Bunifu.Framework.BunifuCustomTextbox edtCountProduct;
+        //Thieu cai nay nua la dc
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox edtCountProduct;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private Bunifu.Framework.UI.BunifuImageButton btnLoveProduct;

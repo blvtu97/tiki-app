@@ -22,6 +22,7 @@ namespace Tiki_app.DAL
 
         const string IPENDPOINT = "127.0.0.1";
 
+
         const int PORT = 8989;
 
         ASCIIEncoding encoding = new ASCIIEncoding();

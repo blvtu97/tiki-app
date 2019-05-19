@@ -69,14 +69,13 @@
             this.txtName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtName.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtName.BorderThickness = 1;
-            this.txtName.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtName.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtName.isPassword = false;
             this.txtName.Location = new System.Drawing.Point(477, 31);
             this.txtName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtName.MaxLength = 32767;
+
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(300, 45);
             this.txtName.TabIndex = 1;
@@ -88,14 +87,14 @@
             this.txtPhoneNumber.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPhoneNumber.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtPhoneNumber.BorderThickness = 1;
-            this.txtPhoneNumber.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+        
             this.txtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPhoneNumber.isPassword = false;
             this.txtPhoneNumber.Location = new System.Drawing.Point(477, 114);
             this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPhoneNumber.MaxLength = 32767;
+    
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(300, 45);
             this.txtPhoneNumber.TabIndex = 2;
@@ -107,14 +106,14 @@
             this.txtEmail.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtEmail.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtEmail.BorderThickness = 1;
-            this.txtEmail.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+  
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtEmail.isPassword = false;
             this.txtEmail.Location = new System.Drawing.Point(477, 202);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(4);
-            this.txtEmail.MaxLength = 32767;
+  
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(300, 45);
             this.txtEmail.TabIndex = 3;
@@ -126,14 +125,14 @@
             this.txtPassword.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPassword.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtPassword.BorderThickness = 1;
-            this.txtPassword.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPassword.isPassword = true;
             this.txtPassword.Location = new System.Drawing.Point(477, 286);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPassword.MaxLength = 32767;
+       
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(300, 45);
             this.txtPassword.TabIndex = 4;

@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabGood));
             this.lbNameProduct = new System.Windows.Forms.Label();
-            this.edtCountProduct = new Bunifu.Framework.BunifuCustomTextbox();
+            this.edtCountProduct = new  WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.lbCountProduct = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnMinus = new Bunifu.Framework.UI.BunifuImageButton();
             this.btnPlus = new Bunifu.Framework.UI.BunifuImageButton();
@@ -197,7 +197,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnBuyLater;
         private Bunifu.Framework.UI.BunifuImageButton btnMinus;
         private Bunifu.Framework.UI.BunifuImageButton btnPlus;
-        private Bunifu.Framework.BunifuCustomTextbox edtCountProduct;
+        private WindowsFormsControlLibrary1.BunifuCustomTextbox edtCountProduct;
         private Bunifu.Framework.UI.BunifuCustomLabel lbCountProduct;
     }
 }

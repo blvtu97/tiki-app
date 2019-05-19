@@ -255,14 +255,13 @@
             this.txtPassword.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPassword.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtPassword.BorderThickness = 1;
-            this.txtPassword.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPassword.isPassword = true;
             this.txtPassword.Location = new System.Drawing.Point(26, 152);
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPassword.MaxLength = 32767;
+   
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(358, 44);
             this.txtPassword.TabIndex = 5;
@@ -274,14 +273,14 @@
             this.txtAccount.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAccount.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtAccount.BorderThickness = 1;
-            this.txtAccount.characterCasing = System.Windows.Forms.CharacterCasing.Normal;
+    
             this.txtAccount.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAccount.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtAccount.isPassword = false;
             this.txtAccount.Location = new System.Drawing.Point(26, 90);
             this.txtAccount.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAccount.MaxLength = 32767;
+
             this.txtAccount.Name = "txtAccount";
             this.txtAccount.Size = new System.Drawing.Size(358, 44);
             this.txtAccount.TabIndex = 4;

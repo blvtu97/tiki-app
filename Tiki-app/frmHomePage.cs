@@ -101,14 +101,6 @@ namespace Tiki_app
                 orderChoosedBillList();
             }
 
-            else if (view.getID() == R.id.FILTER_PRICE_LOW_TO_HIGTH)
-            {
-                showPriceProductLowToHight(view.obj);
-            }
-            else if (view.getID() == R.id.FILTER_PRICE_HIGH_TO_LOW)
-            {
-                showPriceProductHightToLow(view.obj);
-            }
             else if (view.getID() == R.id.CHOOSE_TO_BUY_PRODUCT)
             {
                 buyChoosedProduct();
@@ -145,7 +137,14 @@ namespace Tiki_app
             {
                 handleUpdateCustomer(((tabInfoUser)view.obj).customer);
             }
-
+            else if (view.getID() == R.id.FILTER_PRICE_LOW_TO_HIGTH)
+            {
+                showPriceProductLowToHight(view.obj);
+            }
+            else if (view.getID() == R.id.FILTER_PRICE_HIGH_TO_LOW)
+            {
+                showPriceProductHightToLow(view.obj);
+            }
 
             //Đoạn này cần xử lý với dữ liệu, tao bắt sự kiện sẵn rồi
             else if (view.getID() == R.id.FILTER_FOLLOW_RATE)

@@ -50,3 +50,14 @@ E:\Git\tiki-app\SERVER\Server\Server\obj\Debug\Server.FormLaptop_Manager.resourc
 E:\Git\tiki-app\SERVER\Server\Server\obj\Debug\Server.FormFashion_Manager.resources
 E:\Git\tiki-app\SERVER\Server\Server\obj\Debug\Server.FormCar_Manager.resources
 E:\Git\tiki-app\SERVER\Server\Server\obj\Debug\Server.FormBook_Manager.resources
+C:\Users\blvtu\Downloads\tiki-app\SERVER\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\blvtu\Downloads\tiki-app\SERVER\Server\Server\obj\Debug\Server.FormBook_Manager.resources
+C:\Users\blvtu\Downloads\tiki-app\SERVER\Server\Server\obj\Debug\Server.FormCar_Manager.resources
+C:\Users\blvtu\Downloads\tiki-app\SERVER\Server\Server\obj\Debug\Server.FormFashion_Manager.resources
+C:\Users\blvtu\Downloads\tiki-app\SERVER\Server\Server\obj\Debug\Server.FormLaptop_Manager.resources
+C:\Users\blvtu\Downloads\tiki-app\SERVER\Server\Server\obj\Debug\Server.FormPhone_Manager.resources
+C:\Users\blvtu\Downloads\tiki-app\SERVER\Server\Server\obj\Debug\Server.frmServer.resources
+C:\Users\blvtu\Downloads\tiki-app\SERVER\Server\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\blvtu\Downloads\tiki-app\SERVER\Server\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+C:\Users\blvtu\Downloads\tiki-app\SERVER\Server\Server\obj\Debug\Server.exe
+C:\Users\blvtu\Downloads\tiki-app\SERVER\Server\Server\bin\Debug\Server.exe.config
