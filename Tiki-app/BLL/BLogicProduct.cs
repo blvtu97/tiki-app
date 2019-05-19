@@ -28,13 +28,9 @@ namespace Tiki_app.BLL
             try
             {
                 dataConnector.Connect();
-                Debug.WriteLine("lay du lieu san pham");
+
                 DataTable table = dataConnector.GetTable("PRODUCT_PHONE", ref flag);
                 DataTable tableImage = dataConnector.GetTable("IMAGE_PHONE", ref flag);
-
-                //Đóng connect khi đã láy xong bảng category và bảng product
-
-                Debug.WriteLine("lay dien thoai thanh cong");
 
                 List<SanPham> sanPhams = new List<SanPham>();
                 for (int i = 0; i < table.Rows.Count; i++)
@@ -49,7 +45,6 @@ namespace Tiki_app.BLL
                     DienThoai dienThoai = new DienThoai(table.Rows[i][0].ToString(), table.Rows[i][1].ToString(),
                                       table.Rows[i][2].ToString(), table.Rows[i][3].ToString(), float.Parse(table.Rows[i][4].ToString()),
                                       float.Parse(table.Rows[i][5].ToString()), int.Parse(table.Rows[i][6].ToString()), 0, image);
-                    Debug.WriteLine(i + " " + dienThoai.MaSP);
                     sanPhams.Add(dienThoai);
                 }
                 return sanPhams;

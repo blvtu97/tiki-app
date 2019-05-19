@@ -194,3 +194,15 @@ C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabViewOne
 C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\obj\Debug\Tiki_app.tabWriteComment.resources
 C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\obj\Debug\Tiki-app.csproj.GenerateResource.Cache
 E:\Git\tiki-app\Tiki-app\bin\Debug\Bunifu_UI_v1.5.3.dll
+E:\Git\tiki-app\Tiki-app\bin\Debug\zxing.dll
+E:\Git\tiki-app\Tiki-app\bin\Debug\zxing.presentation.dll
+E:\Git\tiki-app\Tiki-app\bin\Debug\zxing.pdb
+E:\Git\tiki-app\Tiki-app\bin\Debug\zxing.xml
+E:\Git\tiki-app\Tiki-app\bin\Debug\zxing.presentation.pdb
+E:\Git\tiki-app\Tiki-app\bin\Debug\zxing.presentation.xml
+E:\Git\tiki-app\Tiki-app\bin\Debug\AForge.dll
+E:\Git\tiki-app\Tiki-app\bin\Debug\AForge.Video.DirectShow.dll
+E:\Git\tiki-app\Tiki-app\bin\Debug\AForge.Video.dll
+E:\Git\tiki-app\Tiki-app\bin\Debug\AForge.xml
+E:\Git\tiki-app\Tiki-app\bin\Debug\AForge.Video.xml
+E:\Git\tiki-app\Tiki-app\bin\Debug\AForge.Video.DirectShow.xml

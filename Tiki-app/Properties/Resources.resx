@@ -118,86 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="appstore" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\appstore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bgr_register" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bgr_register.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_address" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_address.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_bell" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_bell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_book" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_buy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_buy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ic_cart" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_cart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_comment" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_comment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_facebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_facebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_find" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_find.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_gmail" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_gmail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_heart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_laptop" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_laptop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_manage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_manage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_product" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_product.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ic_minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_minus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_motorbike" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_motorbike.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_not_found_notify" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_not_found_notify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_qcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_qcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_see" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_see.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_shirt" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_shirt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_start.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ic_upload" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ic_upload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ic_user_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_user_login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,31 +139,100 @@
   <data name="ic_zalo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_zalo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="img_category" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_category.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_manage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_manage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_comment" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_comment.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_heart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_heart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_facebook" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_facebook.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_find" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_find.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_minus" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_minus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_see" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_see.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="appstore" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\appstore.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_upload" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_upload.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_laptop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_laptop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_qcode" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_qcode.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ic_zoom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ic_zoom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_category" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_category.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_motorbike" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_motorbike.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_connects" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\img_connects.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_pays" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_pays.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_not_found_notify" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_not_found_notify.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_product" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_product.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_bell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_bell.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logo_shopping" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo_shopping.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="samsung" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Background (24).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bgr_register" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bgr_register.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo_store" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo_store.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\phone.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo_shopping" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo_shopping.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="samsung" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Background (24).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ic_gmail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_gmail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_buy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_buy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_address" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_address.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_shirt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_shirt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_book" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_book.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_pays" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_pays.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ic_camera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ic_camera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

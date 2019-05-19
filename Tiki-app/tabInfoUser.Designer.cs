@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabInfoUser));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnInfo = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -42,11 +42,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panelChangePassword = new System.Windows.Forms.Panel();
-            this.seeNewPassword2 = new System.Windows.Forms.PictureBox();
-            this.seeNewPassword1 = new System.Windows.Forms.PictureBox();
-            this.seeOldPassword = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -61,17 +57,11 @@
             this.txtName = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.pnNotification = new System.Windows.Forms.Panel();
             this.pnNoFoundNoti = new System.Windows.Forms.Panel();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label11 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnQcode = new System.Windows.Forms.Panel();
             this.txtCodeProduct = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.btnSearch2 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnUploadFile = new Bunifu.Framework.UI.BunifuImageButton();
-            this.ptbCode = new System.Windows.Forms.PictureBox();
-            this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.pnMyComment = new System.Windows.Forms.Panel();
             this.pnAddress = new System.Windows.Forms.Panel();
             this.label19 = new System.Windows.Forms.Label();
@@ -80,7 +70,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.btnUpdate2 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.edtAddress = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.cbWard = new System.Windows.Forms.ComboBox();
             this.cbDistrict = new System.Windows.Forms.ComboBox();
@@ -90,6 +79,18 @@
             this.pnManageBill = new System.Windows.Forms.Panel();
             this.dgrBill = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.label20 = new System.Windows.Forms.Label();
+            this.btnCamera = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btnSearch2 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnUploadFile = new Bunifu.Framework.UI.BunifuImageButton();
+            this.ptbCode = new System.Windows.Forms.PictureBox();
+            this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnUpdate = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.seeNewPassword2 = new System.Windows.Forms.PictureBox();
+            this.seeNewPassword1 = new System.Windows.Forms.PictureBox();
+            this.seeOldPassword = new System.Windows.Forms.PictureBox();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnUpdate2 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.imgUser = new System.Windows.Forms.PictureBox();
             this.lbName = new System.Windows.Forms.Label();
@@ -103,18 +104,19 @@
             this.panel1.SuspendLayout();
             this.pnInfo.SuspendLayout();
             this.panelChangePassword.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.seeNewPassword2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.seeNewPassword1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.seeOldPassword)).BeginInit();
             this.pnNotification.SuspendLayout();
             this.pnNoFoundNoti.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnQcode.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnUploadFile)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCode)).BeginInit();
             this.pnAddress.SuspendLayout();
             this.pnManageBill.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrBill)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCamera)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUploadFile)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seeNewPassword2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seeNewPassword1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seeOldPassword)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUser)).BeginInit();
             this.SuspendLayout();
@@ -122,9 +124,9 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
+            this.panel1.Controls.Add(this.pnQcode);
             this.panel1.Controls.Add(this.pnInfo);
             this.panel1.Controls.Add(this.pnNotification);
-            this.panel1.Controls.Add(this.pnQcode);
             this.panel1.Controls.Add(this.pnMyComment);
             this.panel1.Controls.Add(this.pnAddress);
             this.panel1.Controls.Add(this.pnManageBill);
@@ -298,33 +300,6 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Họ và tên";
             // 
-            // btnUpdate
-            // 
-            this.btnUpdate.ActiveBorderThickness = 1;
-            this.btnUpdate.ActiveCornerRadius = 20;
-            this.btnUpdate.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.ActiveForecolor = System.Drawing.Color.White;
-            this.btnUpdate.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.BackColor = System.Drawing.Color.White;
-            this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
-            this.btnUpdate.ButtonText = "Cập nhật";
-            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.IdleBorderThickness = 1;
-            this.btnUpdate.IdleCornerRadius = 20;
-            this.btnUpdate.IdleFillColor = System.Drawing.Color.White;
-            this.btnUpdate.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate.Location = new System.Drawing.Point(326, 694);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(5);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(181, 41);
-            this.btnUpdate.TabIndex = 10;
-            this.btnUpdate.Tag = "12345693";
-            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
             // panelChangePassword
             // 
             this.panelChangePassword.Controls.Add(this.seeNewPassword2);
@@ -340,40 +315,6 @@
             this.panelChangePassword.Name = "panelChangePassword";
             this.panelChangePassword.Size = new System.Drawing.Size(651, 190);
             this.panelChangePassword.TabIndex = 9;
-            // 
-            // seeNewPassword2
-            // 
-            this.seeNewPassword2.BackgroundImage = global::Tiki_app.Properties.Resources.ic_see;
-            this.seeNewPassword2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.seeNewPassword2.Location = new System.Drawing.Point(608, 143);
-            this.seeNewPassword2.Name = "seeNewPassword2";
-            this.seeNewPassword2.Size = new System.Drawing.Size(30, 30);
-            this.seeNewPassword2.TabIndex = 25;
-            this.seeNewPassword2.TabStop = false;
-            this.seeNewPassword2.Click += new System.EventHandler(this.seeNewPassword2_Click);
-            // 
-            // seeNewPassword1
-            // 
-            this.seeNewPassword1.BackgroundImage = global::Tiki_app.Properties.Resources.ic_see;
-            this.seeNewPassword1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.seeNewPassword1.Location = new System.Drawing.Point(608, 78);
-            this.seeNewPassword1.Name = "seeNewPassword1";
-            this.seeNewPassword1.Size = new System.Drawing.Size(30, 30);
-            this.seeNewPassword1.TabIndex = 24;
-            this.seeNewPassword1.TabStop = false;
-            this.seeNewPassword1.Click += new System.EventHandler(this.seeNewPassword1_Click);
-            // 
-            // seeOldPassword
-            // 
-            this.seeOldPassword.BackgroundImage = global::Tiki_app.Properties.Resources.ic_see;
-            this.seeOldPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.seeOldPassword.ErrorImage = null;
-            this.seeOldPassword.Location = new System.Drawing.Point(608, 11);
-            this.seeOldPassword.Name = "seeOldPassword";
-            this.seeOldPassword.Size = new System.Drawing.Size(30, 30);
-            this.seeOldPassword.TabIndex = 23;
-            this.seeOldPassword.TabStop = false;
-            this.seeOldPassword.Click += new System.EventHandler(this.seeOldPassword_Click);
             // 
             // label9
             // 
@@ -458,7 +399,7 @@
             // 
             // btnChecked
             // 
-            this.btnChecked.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.btnChecked.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.btnChecked.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
             this.btnChecked.Checked = false;
             this.btnChecked.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
@@ -563,33 +504,6 @@
             this.pnNoFoundNoti.Size = new System.Drawing.Size(267, 318);
             this.pnNoFoundNoti.TabIndex = 0;
             // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "Tiếp tục mua sản phẩm";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(15, 247);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(237, 57);
-            this.bunifuThinButton21.TabIndex = 2;
-            this.bunifuThinButton21.Tag = "12345686";
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -600,19 +514,10 @@
             this.label11.TabIndex = 1;
             this.label11.Text = "Bạn chưa có thông báo nào";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Tiki_app.Properties.Resources.ic_not_found_notify;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(257, 208);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // pnQcode
             // 
             this.pnQcode.AutoScroll = true;
+            this.pnQcode.Controls.Add(this.btnCamera);
             this.pnQcode.Controls.Add(this.txtCodeProduct);
             this.pnQcode.Controls.Add(this.label14);
             this.pnQcode.Controls.Add(this.label13);
@@ -662,85 +567,6 @@
             this.label13.Size = new System.Drawing.Size(168, 21);
             this.label13.TabIndex = 7;
             this.label13.Text = "Tra bằng mã sản phẩm";
-            // 
-            // btnSearch2
-            // 
-            this.btnSearch2.ActiveBorderThickness = 1;
-            this.btnSearch2.ActiveCornerRadius = 20;
-            this.btnSearch2.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnSearch2.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSearch2.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSearch2.BackColor = System.Drawing.Color.White;
-            this.btnSearch2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch2.BackgroundImage")));
-            this.btnSearch2.ButtonText = "Tra cứu";
-            this.btnSearch2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnSearch2.IdleBorderThickness = 1;
-            this.btnSearch2.IdleCornerRadius = 20;
-            this.btnSearch2.IdleFillColor = System.Drawing.Color.White;
-            this.btnSearch2.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnSearch2.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSearch2.Location = new System.Drawing.Point(507, 369);
-            this.btnSearch2.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSearch2.Name = "btnSearch2";
-            this.btnSearch2.Size = new System.Drawing.Size(181, 41);
-            this.btnSearch2.TabIndex = 5;
-            this.btnSearch2.Tag = "12345700";
-            this.btnSearch2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSearch2.Click += new System.EventHandler(this.btnSearch2_Click);
-            // 
-            // btnUploadFile
-            // 
-            this.btnUploadFile.BackColor = System.Drawing.Color.SeaGreen;
-            this.btnUploadFile.Image = global::Tiki_app.Properties.Resources.ic_upload;
-            this.btnUploadFile.ImageActive = null;
-            this.btnUploadFile.Location = new System.Drawing.Point(276, 336);
-            this.btnUploadFile.Name = "btnUploadFile";
-            this.btnUploadFile.Size = new System.Drawing.Size(20, 20);
-            this.btnUploadFile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnUploadFile.TabIndex = 3;
-            this.btnUploadFile.TabStop = false;
-            this.btnUploadFile.Zoom = 10;
-            this.btnUploadFile.Click += new System.EventHandler(this.btnUploadFile_Click);
-            // 
-            // ptbCode
-            // 
-            this.ptbCode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ptbCode.Image = global::Tiki_app.Properties.Resources.ic_qcode;
-            this.ptbCode.Location = new System.Drawing.Point(89, 175);
-            this.ptbCode.Name = "ptbCode";
-            this.ptbCode.Size = new System.Drawing.Size(181, 181);
-            this.ptbCode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptbCode.TabIndex = 2;
-            this.ptbCode.TabStop = false;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.ActiveBorderThickness = 1;
-            this.btnSearch.ActiveCornerRadius = 20;
-            this.btnSearch.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSearch.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSearch.BackColor = System.Drawing.Color.White;
-            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-            this.btnSearch.ButtonText = "Tra cứu";
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnSearch.IdleBorderThickness = 1;
-            this.btnSearch.IdleCornerRadius = 20;
-            this.btnSearch.IdleFillColor = System.Drawing.Color.White;
-            this.btnSearch.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnSearch.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnSearch.Location = new System.Drawing.Point(89, 369);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(5);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(181, 41);
-            this.btnSearch.TabIndex = 0;
-            this.btnSearch.Tag = "12345701";
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // pnMyComment
             // 
@@ -833,31 +659,6 @@
             this.label12.TabIndex = 7;
             this.label12.Text = "Họ và tên";
             // 
-            // btnUpdate2
-            // 
-            this.btnUpdate2.ActiveBorderThickness = 1;
-            this.btnUpdate2.ActiveCornerRadius = 20;
-            this.btnUpdate2.ActiveFillColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate2.ActiveForecolor = System.Drawing.Color.White;
-            this.btnUpdate2.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate2.BackColor = System.Drawing.Color.White;
-            this.btnUpdate2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate2.BackgroundImage")));
-            this.btnUpdate2.ButtonText = "Cập nhật";
-            this.btnUpdate2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUpdate2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate2.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate2.IdleBorderThickness = 1;
-            this.btnUpdate2.IdleCornerRadius = 20;
-            this.btnUpdate2.IdleFillColor = System.Drawing.Color.White;
-            this.btnUpdate2.IdleForecolor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate2.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.btnUpdate2.Location = new System.Drawing.Point(283, 541);
-            this.btnUpdate2.Margin = new System.Windows.Forms.Padding(5);
-            this.btnUpdate2.Name = "btnUpdate2";
-            this.btnUpdate2.Size = new System.Drawing.Size(181, 41);
-            this.btnUpdate2.TabIndex = 6;
-            this.btnUpdate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // edtAddress
             // 
             this.edtAddress.BorderColorFocused = System.Drawing.Color.Blue;
@@ -949,19 +750,19 @@
             // 
             // dgrBill
             // 
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgrBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgrBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgrBill.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgrBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgrBill.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgrBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgrBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgrBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgrBill.DoubleBuffered = true;
             this.dgrBill.EnableHeadersVisualStyles = false;
@@ -982,6 +783,222 @@
             this.label20.Size = new System.Drawing.Size(157, 25);
             this.label20.TabIndex = 0;
             this.label20.Text = "Đơn hàng của tôi";
+            // 
+            // btnCamera
+            // 
+            this.btnCamera.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnCamera.Image = global::Tiki_app.Properties.Resources.ic_camera;
+            this.btnCamera.ImageActive = null;
+            this.btnCamera.Location = new System.Drawing.Point(276, 304);
+            this.btnCamera.Name = "btnCamera";
+            this.btnCamera.Size = new System.Drawing.Size(20, 20);
+            this.btnCamera.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCamera.TabIndex = 10;
+            this.btnCamera.TabStop = false;
+            this.btnCamera.Zoom = 10;
+            this.btnCamera.Click += new System.EventHandler(this.btnCamera_Click);
+            // 
+            // btnSearch2
+            // 
+            this.btnSearch2.ActiveBorderThickness = 1;
+            this.btnSearch2.ActiveCornerRadius = 20;
+            this.btnSearch2.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch2.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSearch2.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch2.BackColor = System.Drawing.Color.White;
+            this.btnSearch2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch2.BackgroundImage")));
+            this.btnSearch2.ButtonText = "Tra cứu";
+            this.btnSearch2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch2.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch2.IdleBorderThickness = 1;
+            this.btnSearch2.IdleCornerRadius = 20;
+            this.btnSearch2.IdleFillColor = System.Drawing.Color.White;
+            this.btnSearch2.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnSearch2.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch2.Location = new System.Drawing.Point(507, 369);
+            this.btnSearch2.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSearch2.Name = "btnSearch2";
+            this.btnSearch2.Size = new System.Drawing.Size(181, 41);
+            this.btnSearch2.TabIndex = 5;
+            this.btnSearch2.Tag = "12345700";
+            this.btnSearch2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearch2.Click += new System.EventHandler(this.btnSearch2_Click);
+            // 
+            // btnUploadFile
+            // 
+            this.btnUploadFile.BackColor = System.Drawing.Color.SeaGreen;
+            this.btnUploadFile.Image = global::Tiki_app.Properties.Resources.ic_upload;
+            this.btnUploadFile.ImageActive = null;
+            this.btnUploadFile.Location = new System.Drawing.Point(276, 336);
+            this.btnUploadFile.Name = "btnUploadFile";
+            this.btnUploadFile.Size = new System.Drawing.Size(20, 20);
+            this.btnUploadFile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnUploadFile.TabIndex = 3;
+            this.btnUploadFile.TabStop = false;
+            this.btnUploadFile.Zoom = 10;
+            this.btnUploadFile.Click += new System.EventHandler(this.btnUploadFile_Click);
+            // 
+            // ptbCode
+            // 
+            this.ptbCode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ptbCode.Image = global::Tiki_app.Properties.Resources.ic_qcode;
+            this.ptbCode.Location = new System.Drawing.Point(89, 175);
+            this.ptbCode.Name = "ptbCode";
+            this.ptbCode.Size = new System.Drawing.Size(181, 181);
+            this.ptbCode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptbCode.TabIndex = 2;
+            this.ptbCode.TabStop = false;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.ActiveBorderThickness = 1;
+            this.btnSearch.ActiveCornerRadius = 20;
+            this.btnSearch.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSearch.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.BackColor = System.Drawing.Color.White;
+            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+            this.btnSearch.ButtonText = "Tra cứu";
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.IdleBorderThickness = 1;
+            this.btnSearch.IdleCornerRadius = 20;
+            this.btnSearch.IdleFillColor = System.Drawing.Color.White;
+            this.btnSearch.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.Location = new System.Drawing.Point(89, 369);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(181, 41);
+            this.btnSearch.TabIndex = 0;
+            this.btnSearch.Tag = "12345701";
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.ActiveBorderThickness = 1;
+            this.btnUpdate.ActiveCornerRadius = 20;
+            this.btnUpdate.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.ActiveForecolor = System.Drawing.Color.White;
+            this.btnUpdate.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.BackColor = System.Drawing.Color.White;
+            this.btnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.BackgroundImage")));
+            this.btnUpdate.ButtonText = "Cập nhật";
+            this.btnUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.IdleBorderThickness = 1;
+            this.btnUpdate.IdleCornerRadius = 20;
+            this.btnUpdate.IdleFillColor = System.Drawing.Color.White;
+            this.btnUpdate.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate.Location = new System.Drawing.Point(326, 694);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(5);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(181, 41);
+            this.btnUpdate.TabIndex = 10;
+            this.btnUpdate.Tag = "12345693";
+            this.btnUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // seeNewPassword2
+            // 
+            this.seeNewPassword2.BackgroundImage = global::Tiki_app.Properties.Resources.ic_see;
+            this.seeNewPassword2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.seeNewPassword2.Location = new System.Drawing.Point(608, 143);
+            this.seeNewPassword2.Name = "seeNewPassword2";
+            this.seeNewPassword2.Size = new System.Drawing.Size(30, 30);
+            this.seeNewPassword2.TabIndex = 25;
+            this.seeNewPassword2.TabStop = false;
+            this.seeNewPassword2.Click += new System.EventHandler(this.seeNewPassword2_Click);
+            // 
+            // seeNewPassword1
+            // 
+            this.seeNewPassword1.BackgroundImage = global::Tiki_app.Properties.Resources.ic_see;
+            this.seeNewPassword1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.seeNewPassword1.Location = new System.Drawing.Point(608, 78);
+            this.seeNewPassword1.Name = "seeNewPassword1";
+            this.seeNewPassword1.Size = new System.Drawing.Size(30, 30);
+            this.seeNewPassword1.TabIndex = 24;
+            this.seeNewPassword1.TabStop = false;
+            this.seeNewPassword1.Click += new System.EventHandler(this.seeNewPassword1_Click);
+            // 
+            // seeOldPassword
+            // 
+            this.seeOldPassword.BackgroundImage = global::Tiki_app.Properties.Resources.ic_see;
+            this.seeOldPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.seeOldPassword.ErrorImage = null;
+            this.seeOldPassword.Location = new System.Drawing.Point(608, 11);
+            this.seeOldPassword.Name = "seeOldPassword";
+            this.seeOldPassword.Size = new System.Drawing.Size(30, 30);
+            this.seeOldPassword.TabIndex = 23;
+            this.seeOldPassword.TabStop = false;
+            this.seeOldPassword.Click += new System.EventHandler(this.seeOldPassword_Click);
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.BackColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "Tiếp tục mua sản phẩm";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(15, 247);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(237, 57);
+            this.bunifuThinButton21.TabIndex = 2;
+            this.bunifuThinButton21.Tag = "12345686";
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Tiki_app.Properties.Resources.ic_not_found_notify;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(257, 208);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnUpdate2
+            // 
+            this.btnUpdate2.ActiveBorderThickness = 1;
+            this.btnUpdate2.ActiveCornerRadius = 20;
+            this.btnUpdate2.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate2.ActiveForecolor = System.Drawing.Color.White;
+            this.btnUpdate2.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate2.BackColor = System.Drawing.Color.White;
+            this.btnUpdate2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate2.BackgroundImage")));
+            this.btnUpdate2.ButtonText = "Cập nhật";
+            this.btnUpdate2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdate2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate2.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate2.IdleBorderThickness = 1;
+            this.btnUpdate2.IdleCornerRadius = 20;
+            this.btnUpdate2.IdleFillColor = System.Drawing.Color.White;
+            this.btnUpdate2.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate2.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnUpdate2.Location = new System.Drawing.Point(283, 541);
+            this.btnUpdate2.Margin = new System.Windows.Forms.Padding(5);
+            this.btnUpdate2.Name = "btnUpdate2";
+            this.btnUpdate2.Size = new System.Drawing.Size(181, 41);
+            this.btnUpdate2.TabIndex = 6;
+            this.btnUpdate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // bunifuGradientPanel1
             // 
@@ -1266,22 +1283,23 @@
             this.pnInfo.PerformLayout();
             this.panelChangePassword.ResumeLayout(false);
             this.panelChangePassword.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.seeNewPassword2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.seeNewPassword1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.seeOldPassword)).EndInit();
             this.pnNotification.ResumeLayout(false);
             this.pnNoFoundNoti.ResumeLayout(false);
             this.pnNoFoundNoti.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnQcode.ResumeLayout(false);
             this.pnQcode.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnUploadFile)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbCode)).EndInit();
             this.pnAddress.ResumeLayout(false);
             this.pnAddress.PerformLayout();
             this.pnManageBill.ResumeLayout(false);
             this.pnManageBill.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgrBill)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCamera)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnUploadFile)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbCode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seeNewPassword2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seeNewPassword1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.seeOldPassword)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUser)).EndInit();
@@ -1360,5 +1378,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Bunifu.Framework.UI.BunifuImageButton btnCamera;
     }
 }

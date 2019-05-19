@@ -116,7 +116,6 @@
             // 
             // tabPhone
             // 
-         
             this.tabPhone.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.tabPhone.BackColor = System.Drawing.Color.CornflowerBlue;
             this.tabPhone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -152,7 +151,6 @@
             // 
             // tabLaptop
             // 
-       
             this.tabLaptop.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.tabLaptop.BackColor = System.Drawing.Color.CornflowerBlue;
             this.tabLaptop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -188,7 +186,6 @@
             // 
             // tabFashion
             // 
-      
             this.tabFashion.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.tabFashion.BackColor = System.Drawing.Color.CornflowerBlue;
             this.tabFashion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -224,7 +221,6 @@
             // 
             // tabVehicle
             // 
-           
             this.tabVehicle.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.tabVehicle.BackColor = System.Drawing.Color.CornflowerBlue;
             this.tabVehicle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -260,7 +256,6 @@
             // 
             // tabBook
             // 
-       
             this.tabBook.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(158)))), ((int)(((byte)(255)))));
             this.tabBook.BackColor = System.Drawing.Color.CornflowerBlue;
             this.tabBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -296,7 +291,6 @@
             // 
             // bunifuFlatButton3
             // 
-        
             this.bunifuFlatButton3.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.bunifuFlatButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -347,7 +341,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // panel2
             // 
@@ -396,7 +389,6 @@
             // 
             // btnNotification
             // 
-        
             this.btnNotification.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.btnNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.btnNotification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -445,7 +437,6 @@
             // 
             // btnBuyProduct
             // 
-         
             this.btnBuyProduct.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.btnBuyProduct.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.btnBuyProduct.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -481,7 +472,6 @@
             // 
             // btnLogin
             // 
-
             this.btnLogin.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(89)))), ((int)(((byte)(152)))));
             this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -528,7 +518,6 @@
             // 
             // edtFindProduct
             // 
-       
             this.edtFindProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.edtFindProduct.Font = new System.Drawing.Font("Segoe UI", 12.25F);
             this.edtFindProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -714,9 +703,11 @@
             this.tabInfoUser.BackColor = System.Drawing.Color.White;
             this.tabInfoUser.customer = null;
             this.tabInfoUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabInfoUser.imageCode = null;
             this.tabInfoUser.Location = new System.Drawing.Point(0, 0);
             this.tabInfoUser.Name = "tabInfoUser";
             this.tabInfoUser.Size = new System.Drawing.Size(1299, 681);
+            this.tabInfoUser.stringCode = null;
             this.tabInfoUser.TabIndex = 17;
             // 
             // frmHomePage

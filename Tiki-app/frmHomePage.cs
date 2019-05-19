@@ -188,11 +188,19 @@ namespace Tiki_app
                 //Xử lý tìm sản phẩm theo mã code với mã
                 string stringCode = ((tabInfoUser)view.obj).stringCode;
             }
-            else if (view.getID() == R.id.SEARCH_BY_IMAGE_CODE)
+            else if (view.getID() == R.id.SEARCH_BY_IMAGE_CODE || 
+                    view.getID() == R.id.SEARCH_BY_CAMERA_CODE)
             {
 
+                string stringCode = null;
+                while (stringCode == null)
+                {
+                   stringCode = ((tabInfoUser)view.obj).stringCode;
+                }
+                
+                MessageBox.Show(stringCode);
                 //Xử lý tìm sản phẩm theo mã code với mã
-                PictureBox imageCode = ((tabInfoUser)view.obj).imageCode;
+                //PictureBox imageCode = ((tabInfoUser)view.obj).imageCode;
             }
         }
 
@@ -232,8 +240,9 @@ namespace Tiki_app
         /// </summary>
         private void initializeData()
         {
-            //createProducts(pageProducts.TabProducts, dataManager.listProduct);
-            // createCategory(pageProducts.TabCategory, dataManager.listCategory);
+            Thread thread = new Thread(new ThreadStart(laydulieu));
+            thread.Start();
+            showCircleProgress();
         }
 
         /// <summary>
@@ -473,11 +482,15 @@ namespace Tiki_app
             timer.Start();
         }
 
+
+        private void laydulieu()
+        {
+            done = doneCategory = dataManager.loadData();
+        }
         private void timer_Tick(object sender, EventArgs e)
         {
             if (done && doneCategory)
             {
-               // timer.Stop();
                 circleProgress.Visible = false;
                 circleProgress.animated = false;
 
@@ -558,21 +571,6 @@ namespace Tiki_app
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Thread thread = new Thread(new ThreadStart(laydulieu));
-            thread.Start();
-            //dataManager = DataManager.getInstance();
-            showCircleProgress();
-        }
-
-        private void laydulieu()
-        {
-
-            //dataManager = DataManager.getInstance();
-            done = doneCategory = dataManager.loadData();
-
-        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -650,5 +648,6 @@ namespace Tiki_app
         {
             blLogin.AddCustomer(customer);
         }
+
     }
 }

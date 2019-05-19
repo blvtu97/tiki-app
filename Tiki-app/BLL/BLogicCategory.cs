@@ -27,13 +27,9 @@ namespace Tiki_app.BLL
         {
             try
             {
-                dataConnector.Connect();
-                
-                Debug.WriteLine("Lay category");
+                dataConnector.Connect();     
 
                 DataTable table = dataConnector.GetTable("CATEGORY_PHONE",ref flag);
-
-                Debug.WriteLine("Lay category thanh cong");
 
                 List<DanhMucSanPham> sanPhams = new List<DanhMucSanPham>();
 

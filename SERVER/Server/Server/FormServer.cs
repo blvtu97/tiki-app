@@ -108,6 +108,7 @@ namespace Server
             }
             catch (SocketException)
             {
+                listener.Stop();
                 listener = new TcpListener(IPAddress.Any, 8989);
             }
         }

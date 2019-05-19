@@ -8,7 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
-
+using AForge.Video;
+using AForge.Video.DirectShow;
+using ZXing;
+using ZXing.Common;
 using Tiki_app.DTO;
 using Tiki_app.GUI;
 
@@ -23,6 +26,8 @@ namespace Tiki_app
         public string stringCode { get; set; }
 
         private VIEW.OnClickListener view;
+
+        private bool scanByCamera;
 
         public tabInfoUser()
         {
@@ -315,17 +320,29 @@ namespace Tiki_app
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            imageCode = ptbCode;
-            view.onClick(new VIEW
+            if (scanByCamera)
             {
-                obj = this,
-                Tag = Convert.ToInt32(btnSearch.Tag)
-            });
+                timeScan.Start();
+                if (stringCode != null)
+                    DisconnectCamera();
+            }
+            else
+            {
+                imageCode = ptbCode;
+                view.onClick(new VIEW
+                {
+                    obj = this,
+                    Tag = Convert.ToInt32(btnSearch.Tag)
+                });
+            }
         }
 
         private void btnUploadFile_Click(object sender, EventArgs e)
         {
-          
+            btnSearch.Tag = 12345701;
+            scanByCamera = false;
+            DisconnectCamera();
+
             OpenFileDialog openFile = new OpenFileDialog();
             openFile.Filter = "Image Files(*.png;*.jpg; *.jpeg; *.gif; *.bmp)|*.png;*.jpg; *.jpeg; *.gif; *.bmp";
             openFile.CheckFileExists = true;
@@ -334,7 +351,77 @@ namespace Tiki_app
             {
 
                 ptbCode.Image = new Bitmap(openFile.FileName);
+
+                BarcodeReader barcodeReader = new BarcodeReader();
+                var result = barcodeReader.Decode((Bitmap)ptbCode.Image);
+
+                if (result == null)
+                {
+                    MessageBox.Show("Không nhận diện được mã QR Code");
+                }
+                else
+                {
+                    stringCode = result.Text;
+                }
             }
+        }
+
+        private FilterInfoCollection CaptureDevice; //Lấy Camera
+        private VideoCaptureDevice FinalFrame;  //Lấy hình ảnh từ camera
+        Timer timeScan = new Timer();
+
+        private void btnCamera_Click(object sender, EventArgs e)
+        {
+            scanByCamera = true;
+            ptbCode.Image = null;
+            //Mở kết nối đến camera
+            CaptureDevice = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            FinalFrame = new VideoCaptureDevice(CaptureDevice[0].MonikerString);
+            FinalFrame.NewFrame += new NewFrameEventHandler(FinalFrame_NewFrame);
+            FinalFrame.Start();
+
+            timeScan.Interval = 100;
+            timeScan.Tick += tmrScan_Tick;
+
+        }
+
+        //Camera frame
+        private void FinalFrame_NewFrame(object sender, NewFrameEventArgs eventArgs)
+        {
+            ptbCode.Image = (Bitmap)eventArgs.Frame.Clone();
+        }
+
+        private void tmrScan_Tick(object sender, EventArgs e)
+        {
+            //Scan qua camera
+            if (FinalFrame != null && FinalFrame.IsRunning == true)
+            {
+                BarcodeReader Reader = new BarcodeReader();
+                //Lấy kêt quả từ camera thông qua picturebox
+                Result result = Reader.Decode((Bitmap)ptbCode.Image);
+                try
+                {
+                    string decoded = result.ToString().Trim();
+                    timeScan.Stop();
+                    stringCode = decoded;
+                }
+                catch (Exception ex)
+                {
+                    stringCode = "NULL";
+                    timeScan.Stop();
+                    MessageBox.Show(ex.ToString());
+                    MessageBox.Show("Mã QR không đúng");
+                }
+            }
+        }
+        private void DisconnectCamera()
+        {
+            //Ngừng camera 
+            if (FinalFrame != null && FinalFrame.IsRunning == true)
+            {
+                FinalFrame.Stop();
+            }
+            timeScan.Stop();
         }
     }
 }

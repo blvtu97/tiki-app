@@ -128,6 +128,12 @@ namespace Tiki_app.DTO
             /// </summary>
             public static int SEARCH_BY_IMAGE_CODE = 12345701;
 
+
+            /// <summary>
+            /// id = 12345702
+            /// </summary>
+            public static int SEARCH_BY_CAMERA_CODE = 12345702;
+
         }
         
     }
