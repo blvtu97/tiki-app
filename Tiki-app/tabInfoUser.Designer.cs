@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabInfoUser));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pnInfo = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
@@ -411,14 +411,12 @@
             this.txtNewPassword2.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNewPassword2.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtNewPassword2.BorderThickness = 1;
-
             this.txtNewPassword2.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNewPassword2.Font = new System.Drawing.Font("Century Gothic", 10.75F);
             this.txtNewPassword2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNewPassword2.isPassword = true;
             this.txtNewPassword2.Location = new System.Drawing.Point(281, 135);
             this.txtNewPassword2.Margin = new System.Windows.Forms.Padding(4);
-   
             this.txtNewPassword2.Name = "txtNewPassword2";
             this.txtNewPassword2.Size = new System.Drawing.Size(362, 44);
             this.txtNewPassword2.TabIndex = 13;
@@ -430,14 +428,12 @@
             this.txtNewPassword1.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNewPassword1.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtNewPassword1.BorderThickness = 1;
-
             this.txtNewPassword1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNewPassword1.Font = new System.Drawing.Font("Century Gothic", 10.75F);
             this.txtNewPassword1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNewPassword1.isPassword = true;
             this.txtNewPassword1.Location = new System.Drawing.Point(281, 70);
             this.txtNewPassword1.Margin = new System.Windows.Forms.Padding(4);
-  
             this.txtNewPassword1.Name = "txtNewPassword1";
             this.txtNewPassword1.Size = new System.Drawing.Size(362, 44);
             this.txtNewPassword1.TabIndex = 12;
@@ -449,14 +445,12 @@
             this.txtOldPassword.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtOldPassword.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtOldPassword.BorderThickness = 1;
-  
             this.txtOldPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOldPassword.Font = new System.Drawing.Font("Century Gothic", 10.75F);
             this.txtOldPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtOldPassword.isPassword = true;
             this.txtOldPassword.Location = new System.Drawing.Point(281, 4);
             this.txtOldPassword.Margin = new System.Windows.Forms.Padding(4);
-       
             this.txtOldPassword.Name = "txtOldPassword";
             this.txtOldPassword.Size = new System.Drawing.Size(362, 44);
             this.txtOldPassword.TabIndex = 11;
@@ -505,14 +499,12 @@
             this.txtEmail.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtEmail.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtEmail.BorderThickness = 1;
-      
             this.txtEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtEmail.Font = new System.Drawing.Font("Century Gothic", 10.75F);
             this.txtEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtEmail.isPassword = false;
             this.txtEmail.Location = new System.Drawing.Point(326, 207);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(6);
-     
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(362, 44);
             this.txtEmail.TabIndex = 2;
@@ -524,14 +516,12 @@
             this.txtPhoneNumber.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPhoneNumber.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtPhoneNumber.BorderThickness = 1;
-       
             this.txtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 10.75F);
             this.txtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtPhoneNumber.isPassword = false;
             this.txtPhoneNumber.Location = new System.Drawing.Point(326, 113);
             this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(6);
-     
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(362, 44);
             this.txtPhoneNumber.TabIndex = 1;
@@ -543,14 +533,12 @@
             this.txtName.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtName.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtName.BorderThickness = 1;
-   
             this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtName.Font = new System.Drawing.Font("Century Gothic", 10.75F);
             this.txtName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtName.isPassword = false;
             this.txtName.Location = new System.Drawing.Point(326, 35);
             this.txtName.Margin = new System.Windows.Forms.Padding(6);
-    
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(362, 44);
             this.txtName.TabIndex = 0;
@@ -644,14 +632,12 @@
             this.txtCodeProduct.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCodeProduct.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.txtCodeProduct.BorderThickness = 1;
-  
             this.txtCodeProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCodeProduct.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtCodeProduct.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCodeProduct.isPassword = false;
             this.txtCodeProduct.Location = new System.Drawing.Point(507, 234);
             this.txtCodeProduct.Margin = new System.Windows.Forms.Padding(4);
-        
             this.txtCodeProduct.Name = "txtCodeProduct";
             this.txtCodeProduct.Size = new System.Drawing.Size(181, 44);
             this.txtCodeProduct.TabIndex = 9;
@@ -700,10 +686,13 @@
             this.btnSearch2.Name = "btnSearch2";
             this.btnSearch2.Size = new System.Drawing.Size(181, 41);
             this.btnSearch2.TabIndex = 5;
+            this.btnSearch2.Tag = "12345700";
             this.btnSearch2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearch2.Click += new System.EventHandler(this.btnSearch2_Click);
             // 
             // btnUploadFile
             // 
+            this.btnUploadFile.BackColor = System.Drawing.Color.SeaGreen;
             this.btnUploadFile.Image = global::Tiki_app.Properties.Resources.ic_upload;
             this.btnUploadFile.ImageActive = null;
             this.btnUploadFile.Location = new System.Drawing.Point(276, 336);
@@ -713,14 +702,16 @@
             this.btnUploadFile.TabIndex = 3;
             this.btnUploadFile.TabStop = false;
             this.btnUploadFile.Zoom = 10;
+            this.btnUploadFile.Click += new System.EventHandler(this.btnUploadFile_Click);
             // 
             // ptbCode
             // 
-            this.ptbCode.BackgroundImage = global::Tiki_app.Properties.Resources.ic_qcode;
             this.ptbCode.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ptbCode.Image = global::Tiki_app.Properties.Resources.ic_qcode;
             this.ptbCode.Location = new System.Drawing.Point(89, 175);
             this.ptbCode.Name = "ptbCode";
             this.ptbCode.Size = new System.Drawing.Size(181, 181);
+            this.ptbCode.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbCode.TabIndex = 2;
             this.ptbCode.TabStop = false;
             // 
@@ -747,7 +738,9 @@
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(181, 41);
             this.btnSearch.TabIndex = 0;
+            this.btnSearch.Tag = "12345701";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // pnMyComment
             // 
@@ -871,14 +864,12 @@
             this.edtAddress.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.edtAddress.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.edtAddress.BorderThickness = 1;
-         
             this.edtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.edtAddress.Font = new System.Drawing.Font("Century Gothic", 10.75F);
             this.edtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.edtAddress.isPassword = false;
             this.edtAddress.Location = new System.Drawing.Point(283, 386);
             this.edtAddress.Margin = new System.Windows.Forms.Padding(4);
-    
             this.edtAddress.Name = "edtAddress";
             this.edtAddress.Size = new System.Drawing.Size(370, 121);
             this.edtAddress.TabIndex = 5;
@@ -917,14 +908,12 @@
             this.edtPhoneNumber.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.edtPhoneNumber.BorderColorMouseHover = System.Drawing.Color.Blue;
             this.edtPhoneNumber.BorderThickness = 1;
-
             this.edtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.edtPhoneNumber.Font = new System.Drawing.Font("Century Gothic", 10.75F);
             this.edtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.edtPhoneNumber.isPassword = false;
             this.edtPhoneNumber.Location = new System.Drawing.Point(283, 113);
             this.edtPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
-
             this.edtPhoneNumber.Name = "edtPhoneNumber";
             this.edtPhoneNumber.Size = new System.Drawing.Size(370, 44);
             this.edtPhoneNumber.TabIndex = 1;
@@ -942,7 +931,6 @@
             this.edtName.isPassword = false;
             this.edtName.Location = new System.Drawing.Point(283, 26);
             this.edtName.Margin = new System.Windows.Forms.Padding(4);
- 
             this.edtName.Name = "edtName";
             this.edtName.Size = new System.Drawing.Size(370, 44);
             this.edtName.TabIndex = 0;
@@ -961,19 +949,19 @@
             // 
             // dgrBill
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgrBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dgrBill.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgrBill.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgrBill.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgrBill.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgrBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.SeaGreen;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgrBill.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgrBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgrBill.DoubleBuffered = true;
             this.dgrBill.EnableHeadersVisualStyles = false;
@@ -1124,7 +1112,6 @@
             // 
             // btnAddress
             // 
- 
             this.btnAddress.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnAddress.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -1160,7 +1147,6 @@
             // 
             // btnManageBill
             // 
-     
             this.btnManageBill.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnManageBill.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnManageBill.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -1196,7 +1182,6 @@
             // 
             // btnNotification
             // 
-
             this.btnNotification.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnNotification.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnNotification.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -1232,7 +1217,6 @@
             // 
             // btnInfoUser
             // 
-        
             this.btnInfoUser.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnInfoUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
             this.btnInfoUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;

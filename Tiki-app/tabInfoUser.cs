@@ -18,6 +18,10 @@ namespace Tiki_app
     {
         public Customer customer { get; set; }
 
+        public PictureBox imageCode { get; set; }
+
+        public string stringCode { get; set; }
+
         private VIEW.OnClickListener view;
 
         public tabInfoUser()
@@ -297,6 +301,40 @@ namespace Tiki_app
         private void cbDate_SelectedIndexChanged(object sender, EventArgs e)
         {
             k = cbDate.SelectedIndex;
+        }
+
+        private void btnSearch2_Click(object sender, EventArgs e)
+        {
+            stringCode = txtCodeProduct.Text;
+            view.onClick(new VIEW
+            {
+                obj = this,
+                Tag = Convert.ToInt32(btnSearch2.Tag)
+            });
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            imageCode = ptbCode;
+            view.onClick(new VIEW
+            {
+                obj = this,
+                Tag = Convert.ToInt32(btnSearch.Tag)
+            });
+        }
+
+        private void btnUploadFile_Click(object sender, EventArgs e)
+        {
+          
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "Image Files(*.png;*.jpg; *.jpeg; *.gif; *.bmp)|*.png;*.jpg; *.jpeg; *.gif; *.bmp";
+            openFile.CheckFileExists = true;
+            openFile.CheckPathExists = true;
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+
+                ptbCode.Image = new Bitmap(openFile.FileName);
+            }
         }
     }
 }

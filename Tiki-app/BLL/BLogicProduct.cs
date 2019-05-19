@@ -57,6 +57,7 @@ namespace Tiki_app.BLL
             }
             catch (Exception e)
             {
+                Debug.WriteLine(e.Message);
                 flag = false;
             }
             return null;

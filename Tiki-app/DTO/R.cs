@@ -118,6 +118,16 @@ namespace Tiki_app.DTO
             /// </summary>
             public static int REQUEST_UPDATE_INFO_USER = 12345693;
 
+            /// <summary>
+            /// id = 12345700
+            /// </summary>
+            public static int SEARCH_BY_CODE = 12345700;
+
+            /// <summary>
+            /// id = 12345701
+            /// </summary>
+            public static int SEARCH_BY_IMAGE_CODE = 12345701;
+
         }
         
     }

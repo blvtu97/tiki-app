@@ -167,8 +167,6 @@ C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\obj\Debug\Tiki-app.exe
 C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\obj\Debug\Tiki-app.pdb
 C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\bin\Debug\Tiki-app.exe
 C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\bin\Debug\Tiki-app.pdb
-C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\obj\Debug\Tiki_app.Form2.resources
-C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\obj\Debug\Tiki_app.Form3.resources
 C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\obj\Debug\Tiki_app.frmRegister.resources
 C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\obj\Debug\Tiki_app.pageLogin.resources
 C:\Users\blvtu\Downloads\Backup3\tiki-app\Tiki-app\obj\Debug\Tiki_app.pagePayProduct.resources

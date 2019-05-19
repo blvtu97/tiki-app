@@ -179,6 +179,18 @@ namespace Tiki_app
             {
                 //Xử lý lọc theo hàng giảm giá nhiều tại đây
             }
+            else if (view.getID() == R.id.SEARCH_BY_CODE)
+            {
+
+                //Xử lý tìm sản phẩm theo mã code với mã
+                string stringCode = ((tabInfoUser)view.obj).stringCode;
+            }
+            else if (view.getID() == R.id.SEARCH_BY_IMAGE_CODE)
+            {
+
+                //Xử lý tìm sản phẩm theo mã code với mã
+                PictureBox imageCode = ((tabInfoUser)view.obj).imageCode;
+            }
         }
 
         /// <summary>
