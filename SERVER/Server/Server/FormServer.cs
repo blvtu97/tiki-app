@@ -15,26 +15,46 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using Server.BLL;
 using Server.BLL.CATEGORY;
-
+using Server.DTO;
+using Server.BLL.CUSTOMER;
 namespace Server
 {
     public partial class frmServer : Form
     {
-
-        private IPEndPoint ipEnd;
-        private Socket server;
-        private List<Socket> clients;
         static ASCIIEncoding encoding = new ASCIIEncoding();
-
         TcpListener listener;
+        ProcessManager proManager;
         public frmServer()
         {
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
             this.Focus();
-
+            proManager = new ProcessManager();
         }
 
+        private void frmServer_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            CloseConnect();
+            proManager.KillByPort(8989);
+            Application.Exit();
+        }
+
+        private void CloseConnect()
+        {
+            if (listener != null)
+            {
+                listener.Stop();
+            }
+        }
+
+        private void btnStop_Click(object sender, EventArgs e)
+        {
+            CloseConnect();
+            btnStartServer.Enabled = true;
+            btnStartServer.ButtonText = "Restart";
+            btnStartServer.Focus();
+            btnStop.Enabled = false;
+        }
         private void btnStartServer_Click(object sender, EventArgs e)
         {
             listener = new TcpListener(IPAddress.Any, 8989);
@@ -43,9 +63,10 @@ namespace Server
 
             btnStartServer.Enabled = false;
             btnStartServer.ButtonText = "In Process";
-            MessageBox.Show("Started");
-        }
+            btnStop.Enabled = true;
+            btnStop.Focus();
 
+        }
 
         public void Open()
         {
@@ -55,20 +76,29 @@ namespace Server
                 {
                     listener.Start();
                     Socket client = listener.AcceptSocket();
-
                     var childSocketThread = new Thread(() =>
                     {
-                        while (client.Connected)
+                        while (true)
                         {
                             try
                             {
                                 byte[] data = new byte[100];
-                                int size = client.Receive(data);
+                                try
+                                {
+                                    int size = client.Receive(data);
+                                }
+                                catch
+                                {
+                                    client.Close();
+                                    Thread.CurrentThread.Abort();
+                                }
                                 string mess = encoding.GetString(data);
                                 Receive(client, mess);
                             }
-                            catch(SocketException)
+                            catch (SocketException)
                             {
+                                client.Disconnect(true);
+                                client.Close();
                                 Thread.CurrentThread.Abort();
                             }
                         }
@@ -76,17 +106,18 @@ namespace Server
                     childSocketThread.Start();
                 }
             }
-            catch(SocketException)
+            catch (SocketException)
             {
                 listener = new TcpListener(IPAddress.Any, 8989);
             }
         }
-
+        // Gửi Table
         public void Send(Socket client, DataTable table)
         {
             client.Send(SerializeData(table));
         }
 
+        // Gửi Messsage
         public void Send(Socket client, int lengh)
         {
             client.Send(SerializeData(lengh));
@@ -135,10 +166,13 @@ namespace Server
             catch (SocketException e)
             {
                 Debug.WriteLine(e);
-                Close();
+                CloseConnect();
+                client.Disconnect(true);
+                client.Close();
+                listener = new TcpListener(IPAddress.Any, 8989);
+
             }
         }
-
 
         #region Functions Get And Endcode Database
         //Encode object to byte array
@@ -155,25 +189,110 @@ namespace Server
         {
             flag = true;
             DataSet dt = null;
-            switch (nameTable.Trim())
-            {
-                case "IMAGE_PHONE":
-                    dt = new BLImageSmartPhone().GetData();
-                    break;
-                case "PRODUCT_PHONE":
-                    dt = new BLProductSmart().GetData();
-                    break;
-                case "DETAIL_PHONE":
-                    dt = new BLDetailSmartPhone().GetData();
-                    break;
-                case "CATEGORY_PHONE":
-                    dt = new BLCategory_Smartphone_Tablet().GetData();
-                    break;
-                default:
-                    MessageBox.Show("Table not create yet!");
-                    flag = false;
-                    return null;
-            }
+            if(nameTable.Contains("IMAGE"))
+                switch (nameTable.Trim())
+                {
+                    case "IMAGE_PHONE":
+                        dt = new BLImageSmartPhone().GetData();
+                        break;
+                    case "IMAGE_LAPTOP":
+                        dt = new BLImageLaptop().GetData();
+                        break;
+                    case "IMAGE_FASHION":
+                        dt = new BLImageFahion().GetData();
+                        break;
+                    case "IMAGE_CAR":
+                        dt = new BLImageCar().GetData();
+                        break;
+                    case "IMAGE_BOOK":
+                        dt = new BLImageCar().GetData();
+                        break;
+                    default:
+                        flag = false;
+                        return null;
+                }
+            else if(nameTable.Contains("PRODUCT"))
+                switch (nameTable.Trim())
+                {
+                    case "PRODUCT_PHONE":
+                        dt = new BLProductSmart().GetData();
+                        break;
+                    case "PRODUCT_LAPTOP":
+                        dt = new BLProductLaptop().GetData();
+                        break;
+                    case "PRODUCT_FASHION":
+                        dt = new BLProductFashion().GetData();
+                        break;
+                    case "PRODUCT_CAR":
+                        dt = new BLProductCar().GetData();
+                        break;
+                    case "PRODUCT_BOOK":
+                        dt = new BLProductBook().GetData();
+                        break;
+                    default:
+                        flag = false;
+                        return null;
+                }
+            else if(nameTable.Contains("DETAIL"))
+                switch (nameTable.Trim())
+                {
+                    case "DETAIL_PHONE":
+                        dt = new BLDetailSmartPhone().GetData();
+                        break;
+                    case "DETAIL_LAPTOP":
+                        dt = new BLDetailLaptop().GetData();
+                        break;
+                    case "DETAIL_FASHION":
+                        dt = new BLDetailFashion().GetData();
+                        break;
+                    case "DETAIL_CAR":
+                        dt = new BLDetailCar().GetData();
+                        break;
+                    case "DETAIL_BOOK":
+                        dt = new BLDetailBook().GetData();
+                        break;
+                    default:
+                        flag = false;
+                        return null;
+                }
+            else if(nameTable.Contains("CATEGORY"))
+                switch (nameTable.Trim())
+                {
+                    case "CATEGORY_PHONE":
+                        dt = new BLCategory_Smartphone_Tablet().GetData();
+                        break;
+                    case "CATEGORY_LAPTOP":
+                        dt = new BLCategory_Laptop().GetData();
+                        break;
+                    case "CATEGORY_FASHION":
+                        dt = new BLCategory_Fashion().GetData();
+                        break;
+                    case "CATEGORY_CAR":
+                        dt = new BLCategory_Car().GetData();
+                        break;
+                    case "CATEGORY_BOOK":
+                        dt = new BLCategory_Book().GetData();
+                        break;
+                    default:
+                        flag = false;
+                        return null;
+                }
+            else
+                switch (nameTable.Trim())
+                {
+                    case "CUSTOMER":
+                        dt = new BLCustomer().GetData();
+                        break;
+                    case "COMMENT":
+                        dt = new BLComment().GetData();
+                        break;
+                    case "BILL":
+                        dt = new BLDetailBill().GetData();
+                        break;
+                    default:
+                        flag = false;
+                        return null;
+                }
 
             DataTable table = dt.Tables[0];
             if (table.Rows.Count <= end)
@@ -182,7 +301,6 @@ namespace Server
                 flag = false;
             }
             DataTable resulrSplip = table.AsEnumerable().Skip(begin).Take(end - begin).CopyToDataTable();
-            //myData[0].AsEnumerable().Take(10).CopyToDataTable();
             return resulrSplip;
         }
 
@@ -199,12 +317,23 @@ namespace Server
             FormFashion_Manager formFashion_Manager = new FormFashion_Manager();
             FormCar_Manager formCar_Manager = new FormCar_Manager();
             FormBook_Manager formBook_Manager = new FormBook_Manager();
+            FormUser_Manager formUser_Manager = new FormUser_Manager();
             switch (menu.Tag.ToString())
             {
                 case "CUSTOMER":
-                    FormPhone_Manager.dataType = DataManager.CUSTOMER;
+                    FormUser_Manager.dataType = DataManager.CUSTOMER;
                     this.Hide();
-                    formPhone_Manager.ShowDialog();
+                    formUser_Manager.ShowDialog();
+                    break;
+                case "DETAILBILL":
+                    FormUser_Manager.dataType = DataManager.DETAILBILL;
+                    this.Hide();
+                    formUser_Manager.ShowDialog();
+                    break;
+                case "COMMENT":
+                    FormUser_Manager.dataType = DataManager.COMMENT;
+                    this.Hide();
+                    formUser_Manager.ShowDialog();
                     break;
 
                 case "DETAILSMART":
@@ -297,9 +426,5 @@ namespace Server
 
         #endregion
 
-        private void frmServer_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            //Close();
-        }
     }
 }

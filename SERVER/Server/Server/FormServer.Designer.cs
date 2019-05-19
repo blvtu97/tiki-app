@@ -32,6 +32,9 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.metMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.metCustomer = new System.Windows.Forms.ToolStripMenuItem();
+            this.metCus = new System.Windows.Forms.ToolStripMenuItem();
+            this.metBill = new System.Windows.Forms.ToolStripMenuItem();
+            this.metComment = new System.Windows.Forms.ToolStripMenuItem();
             this.metProduct = new System.Windows.Forms.ToolStripMenuItem();
             this.metProSmart = new System.Windows.Forms.ToolStripMenuItem();
             this.metProLaptop = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,11 +81,38 @@
             // 
             // metCustomer
             // 
+            this.metCustomer.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.metCus,
+            this.metBill,
+            this.metComment});
             this.metCustomer.Name = "metCustomer";
             this.metCustomer.Size = new System.Drawing.Size(176, 22);
             this.metCustomer.Tag = "CUSTOMER";
             this.metCustomer.Text = "&Customer Manager";
-            this.metCustomer.Click += new System.EventHandler(this.Menu_Click);
+            // 
+            // metCus
+            // 
+            this.metCus.Name = "metCus";
+            this.metCus.Size = new System.Drawing.Size(128, 22);
+            this.metCus.Tag = "CUSTOMER";
+            this.metCus.Text = "Customer";
+            this.metCus.Click += new System.EventHandler(this.Menu_Click);
+            // 
+            // metBill
+            // 
+            this.metBill.Name = "metBill";
+            this.metBill.Size = new System.Drawing.Size(128, 22);
+            this.metBill.Tag = "DETAILBILL";
+            this.metBill.Text = "Bill";
+            this.metBill.Click += new System.EventHandler(this.Menu_Click);
+            // 
+            // metComment
+            // 
+            this.metComment.Name = "metComment";
+            this.metComment.Size = new System.Drawing.Size(128, 22);
+            this.metComment.Tag = "COMMENT";
+            this.metComment.Text = "Comment";
+            this.metComment.Click += new System.EventHandler(this.Menu_Click);
             // 
             // metProduct
             // 
@@ -295,6 +325,7 @@
             this.btnStop.Size = new System.Drawing.Size(187, 59);
             this.btnStop.TabIndex = 4;
             this.btnStop.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnStop.Click += new System.EventHandler(this.btnStop_Click);
             // 
             // frmServer
             // 
@@ -343,6 +374,9 @@
         private System.Windows.Forms.ToolStripMenuItem metCatBook;
         private System.Windows.Forms.ToolStripMenuItem metCatFashion;
         private System.Windows.Forms.ToolStripMenuItem metCatCar;
+        private System.Windows.Forms.ToolStripMenuItem metCus;
+        private System.Windows.Forms.ToolStripMenuItem metBill;
+        private System.Windows.Forms.ToolStripMenuItem metComment;
     }
 }
 

@@ -9,6 +9,8 @@ namespace Server
     public enum DataManager
     {
         CUSTOMER,
+        COMMENT,
+        DETAILBILL,
 
         PRODUCTSMARTPHONE,
         CATEGORY_SMARTPHONE_TABLET,

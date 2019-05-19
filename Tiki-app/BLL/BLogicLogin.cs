@@ -27,34 +27,43 @@ namespace Tiki_app.BLL
         /// <param name="id"></param>
         /// <param name="pass"></param>
         /// <returns>true if login success, else false</returns>
-        public Customer LoginSuccess(string id, string pass)
+        public Customer LoginSuccess(string id, string pass, ref bool flag)
         {
             Customer cus = null;
-            DataTable dt = connector.getDataTable("CUSTOMER");
-            for (int i = 0; i < dt.Rows.Count; i++)
+            try
             {
-
-                if (dt.Rows[i][1].ToString().Trim().Equals(id) ||
-                    dt.Rows[i][2].ToString().Trim().Equals(id))
+                connector.Connect();
+                DataTable dt = connector.GetTable("CUSTOMER", ref flag);
+                //DataTable dt = connector.getDataTable("CUSTOMER");
+                for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    if (dt.Rows[i][3].ToString().Trim().Equals(pass))
-                    {
-                        cus = new Customer();
-                        cus.HoTen = dt.Rows[i][0].ToString().Trim();
-                        cus.DienThoai = dt.Rows[i][1].ToString().Trim();
-                        cus.DiaChiEmail = dt.Rows[i][2].ToString().Trim();
-                        cus.MatKhau = dt.Rows[i][3].ToString().Trim();
-                        cus.sex = (bool)dt.Rows[i][4];
-                        cus.NgaySinh = dt.Rows[i][5].ToString();
-                        cus.TinhThanhPho = dt.Rows[i][6].ToString();
-                        cus.QuanHuyen = dt.Rows[i][7].ToString();
-                        cus.DiaChi = dt.Rows[i][8].ToString();
-                        return cus;
-                    }
-                }
 
+                    if (dt.Rows[i][1].ToString().Trim().Equals(id) ||
+                        dt.Rows[i][2].ToString().Trim().Equals(id))
+                    {
+                        if (dt.Rows[i][3].ToString().Trim().Equals(pass))
+                        {
+                            cus = new Customer();
+                            cus.HoTen = dt.Rows[i][0].ToString().Trim();
+                            cus.DienThoai = dt.Rows[i][1].ToString().Trim();
+                            cus.DiaChiEmail = dt.Rows[i][2].ToString().Trim();
+                            cus.MatKhau = dt.Rows[i][3].ToString().Trim();
+                            cus.sex = (bool)dt.Rows[i][4];
+                            cus.NgaySinh = dt.Rows[i][5].ToString();
+                            cus.TinhThanhPho = dt.Rows[i][6].ToString();
+                            cus.QuanHuyen = dt.Rows[i][7].ToString();
+                            cus.DiaChi = dt.Rows[i][8].ToString();
+                            return cus;
+                        }
+                    }
+
+                }
+                //connector.CloseConnection();
+                flag = true;
+            }catch
+            {
+                flag = false;
             }
-            connector.CloseConnection();
             return cus;
         }
 
