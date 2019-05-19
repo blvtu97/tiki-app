@@ -138,6 +138,7 @@
             this.ratingStart1.Name = "ratingStart1";
             this.ratingStart1.Size = new System.Drawing.Size(148, 19);
             this.ratingStart1.TabIndex = 5;
+            this.ratingStart1.Tag = "12345694";
             this.ratingStart1.Value = 1;
             this.ratingStart1.Click += new System.EventHandler(this.ratingStart1_Click);
             // 
@@ -150,6 +151,7 @@
             this.ratingStart2.Name = "ratingStart2";
             this.ratingStart2.Size = new System.Drawing.Size(148, 19);
             this.ratingStart2.TabIndex = 4;
+            this.ratingStart2.Tag = "12345694";
             this.ratingStart2.Value = 2;
             this.ratingStart2.Click += new System.EventHandler(this.ratingStart1_Click);
             // 
@@ -162,6 +164,7 @@
             this.ratingStart3.Name = "ratingStart3";
             this.ratingStart3.Size = new System.Drawing.Size(148, 19);
             this.ratingStart3.TabIndex = 3;
+            this.ratingStart3.Tag = "12345694";
             this.ratingStart3.Value = 3;
             this.ratingStart3.Click += new System.EventHandler(this.ratingStart1_Click);
             // 
@@ -174,6 +177,7 @@
             this.ratingStart4.Name = "ratingStart4";
             this.ratingStart4.Size = new System.Drawing.Size(148, 19);
             this.ratingStart4.TabIndex = 2;
+            this.ratingStart4.Tag = "12345694";
             this.ratingStart4.Value = 4;
             this.ratingStart4.Click += new System.EventHandler(this.ratingStart1_Click);
             // 
@@ -234,6 +238,7 @@
             this.btnFindPrice.Name = "btnFindPrice";
             this.btnFindPrice.Size = new System.Drawing.Size(105, 40);
             this.btnFindPrice.TabIndex = 15;
+            this.btnFindPrice.Tag = "12345695";
             this.btnFindPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnFindPrice.Click += new System.EventHandler(this.findPrice_Click);
             // 
@@ -259,6 +264,7 @@
             // 
             // txtRangeTo
             // 
+            this.txtRangeTo.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRangeTo.Location = new System.Drawing.Point(149, 77);
             this.txtRangeTo.Multiline = true;
             this.txtRangeTo.Name = "txtRangeTo";
@@ -267,6 +273,7 @@
             // 
             // txtRangeFrom
             // 
+            this.txtRangeFrom.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRangeFrom.Location = new System.Drawing.Point(19, 77);
             this.txtRangeFrom.Multiline = true;
             this.txtRangeFrom.Name = "txtRangeFrom";

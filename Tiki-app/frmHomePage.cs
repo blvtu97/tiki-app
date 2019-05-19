@@ -71,6 +71,7 @@ namespace Tiki_app
             tabInfoCustomer.setOnClickListener(this);
             tabChoosePayMethod.setOnClickListener(this);
             tabInfoUser.setOnClickListener(this);
+            tabFilterProducts.setOnClickListener(this);
 
         }
 
@@ -143,6 +144,41 @@ namespace Tiki_app
             else if (view.getID() == R.id.REQUEST_UPDATE_INFO_USER)
             {
                 handleUpdateCustomer(((tabInfoUser)view.obj).customer);
+            }
+
+
+            //Đoạn này cần xử lý với dữ liệu, tao bắt sự kiện sẵn rồi
+            else if (view.getID() == R.id.FILTER_FOLLOW_RATE)
+            {
+                FilterProduct filterProduct = ((tabFilterProducts)view.obj).filterProduct;
+                //Xử lý lọc theo sao tại đây
+                int rate = filterProduct.rate;
+            }
+            else if (view.getID() == R.id.FILTER_FOLLOW_ABOUT_PRICE)
+            {
+                FilterProduct filterProduct = ((tabFilterProducts)view.obj).filterProduct;
+                //Xử lý lọc theo khoảng giá tại đây
+                double from = filterProduct.price1;
+                double to = filterProduct.price2;
+            }
+            else if (view.getID() == R.id.FILTER_FOLLOW_TEXT)
+            {
+                FilterProduct filterProduct = ((pageProducts)view.obj).filterProduct;
+                string content = filterProduct.Content;
+                //Xử lý lọc theo hàng theo nội dung tìm kiếm tại đây với nôi dung
+                //là biến content ở trên
+            }
+            else if (view.getID() == R.id.FILTER_FOLLOW_HOT_PRODUCT)
+            {
+                //Xử lý lọc theo hàng bán chạy tại đây
+            }
+            else if (view.getID() == R.id.FILTER_FOLLOW_NEW_PRODUCT)
+            {
+                //Xử lý lọc theo hàng mới tại đây
+            }
+            else if (view.getID() == R.id.FILTER_FOLLOW_SALE_PRODUCT)
+            {
+                //Xử lý lọc theo hàng giảm giá nhiều tại đây
             }
         }
 

@@ -17,6 +17,8 @@ namespace Tiki_app
     {
         private VIEW.OnClickListener view;
 
+        public FilterProduct filterProduct = new FilterProduct();
+
         public pageProducts()
         {
             InitializeComponent();
@@ -80,6 +82,16 @@ namespace Tiki_app
             { 
                 obj = lb,
                 Tag = Convert.ToInt32(lb.Tag)
+            });
+        }
+
+        private void btnFindProduct_Click(object sender, EventArgs e)
+        {
+            filterProduct.Content = edtFindProduct.Text;
+            view.onClick(new VIEW
+            {
+                obj=this,
+                Tag =Convert.ToInt32(btnFindProduct.Tag)
             });
         }
     }

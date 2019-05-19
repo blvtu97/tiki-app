@@ -60,6 +60,7 @@
     <Compile Include="DTO\DanhMucSanPham.cs" />
     <Compile Include="DTO\DataManager.cs" />
     <Compile Include="DTO\DienThoai.cs" />
+    <Compile Include="DTO\FilterProduct.cs" />
     <Compile Include="DTO\R.cs" />
     <Compile Include="DTO\SanPham.cs" />
     <Compile Include="frmRegister.cs">

@@ -162,7 +162,7 @@
             this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.SeaGreen;
             this.bunifuThinButton24.BackColor = System.Drawing.Color.White;
             this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.ButtonText = "Đăng nhập";
+            this.bunifuThinButton24.ButtonText = "Đăng nhập bằng zalo";
             this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton24.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuThinButton24.ForeColor = System.Drawing.Color.White;

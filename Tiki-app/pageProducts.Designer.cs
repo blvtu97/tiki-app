@@ -100,8 +100,9 @@
             this.btnFindProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnFindProduct.TabIndex = 31;
             this.btnFindProduct.TabStop = false;
-            this.btnFindProduct.Tag = "FILTER_FOLLOW_KEYWORD";
+            this.btnFindProduct.Tag = "12345696";
             this.btnFindProduct.Zoom = 10;
+            this.btnFindProduct.Click += new System.EventHandler(this.btnFindProduct_Click);
             // 
             // edtFindProduct
             // 
@@ -137,7 +138,6 @@
             this.lbSelective.TabIndex = 29;
             this.lbSelective.Tag = "5";
             this.lbSelective.Text = "CHỌN LỌC";
-            this.lbSelective.Click += new System.EventHandler(this.filter_Click);
             // 
             // lbHighPrice
             // 
@@ -174,7 +174,7 @@
             this.lbPromotion.Name = "lbPromotion";
             this.lbPromotion.Size = new System.Drawing.Size(125, 20);
             this.lbPromotion.TabIndex = 26;
-            this.lbPromotion.Tag = "2";
+            this.lbPromotion.Tag = "12345699";
             this.lbPromotion.Text = "GIẢM GIÁ NHIỀU";
             this.lbPromotion.Click += new System.EventHandler(this.filter_Click);
             // 
@@ -187,7 +187,7 @@
             this.lbSelling.Name = "lbSelling";
             this.lbSelling.Size = new System.Drawing.Size(83, 20);
             this.lbSelling.TabIndex = 25;
-            this.lbSelling.Tag = "1";
+            this.lbSelling.Tag = "12345697";
             this.lbSelling.Text = "BÁN CHẠY";
             this.lbSelling.Click += new System.EventHandler(this.filter_Click);
             // 
@@ -211,7 +211,7 @@
             this.lbNewProduct.Name = "lbNewProduct";
             this.lbNewProduct.Size = new System.Drawing.Size(86, 20);
             this.lbNewProduct.TabIndex = 23;
-            this.lbNewProduct.Tag = "0";
+            this.lbNewProduct.Tag = "12345698";
             this.lbNewProduct.Text = "HÀNG MỚI";
             this.lbNewProduct.Click += new System.EventHandler(this.filter_Click);
             // 

@@ -74,6 +74,36 @@ namespace Tiki_app.DTO
             public static int FILTER_FOLLOW_KEYWORD = 12345690;
 
             /// <summary>
+            /// id = 12345694
+            /// </summary>
+            public static int FILTER_FOLLOW_RATE = 12345694;
+
+            /// <summary>
+            /// id = 12345695
+            /// </summary>
+            public static int FILTER_FOLLOW_ABOUT_PRICE= 12345695;
+
+            /// <summary>
+            /// id = 12345696
+            /// </summary>
+            public static int FILTER_FOLLOW_TEXT= 12345696;
+
+            /// <summary>
+            /// id = 12345697
+            /// </summary>
+            public static int FILTER_FOLLOW_HOT_PRODUCT = 12345697;
+
+            /// <summary>
+            /// id = 12345698
+            /// </summary>
+            public static int FILTER_FOLLOW_NEW_PRODUCT = 12345698;
+
+            /// <summary>
+            /// id = 12345699
+            /// </summary>
+            public static int FILTER_FOLLOW_SALE_PRODUCT = 12345699;
+
+            /// <summary>
             /// id = 12345691
             /// </summary>
             public static int REGISTER_USER = 12345691;
@@ -87,7 +117,6 @@ namespace Tiki_app.DTO
             /// id = 12345693
             /// </summary>
             public static int REQUEST_UPDATE_INFO_USER = 12345693;
-
 
         }
         
