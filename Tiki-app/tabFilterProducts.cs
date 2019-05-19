@@ -54,5 +54,28 @@ namespace Tiki_app
 
         }
 
+        private void ratingStart4_MouseHover(object sender, EventArgs e)
+        {
+            Bunifu.Framework.UI.BunifuRating rate = sender as Bunifu.Framework.UI.BunifuRating;
+            rate.ForeColor = Color.Green;
+        }
+
+        private void ratingStart4_MouseLeave(object sender, EventArgs e)
+        {
+            Bunifu.Framework.UI.BunifuRating rate = sender as Bunifu.Framework.UI.BunifuRating;
+        }
+
+        private void label26_MouseHover(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            label.BackColor = Color.Green;
+        }
+
+        private void label26_MouseLeave(object sender, EventArgs e)
+        {
+            Label label = sender as Label;
+            label.BackColor = Color.Transparent;
+        }
+
     }
 }

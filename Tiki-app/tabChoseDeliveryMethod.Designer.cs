@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tabChoseDeliveryMethod));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rdGiaoHangTieuChuan = new System.Windows.Forms.RadioButton();
+            this.rdGiaoHangNhanh = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.rdThanhToanCash = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.rdThanhToanZalo = new System.Windows.Forms.RadioButton();
+            this.rdThanhToanMomo = new System.Windows.Forms.RadioButton();
+            this.rdThanhToanATM = new System.Windows.Forms.RadioButton();
+            this.rdThanhToanTienMat = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.cbRules = new Bunifu.Framework.UI.BunifuCheckbox();
+            this.cbConfirm = new Bunifu.Framework.UI.BunifuCheckbox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnBack = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnBuyProduct = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -56,36 +56,36 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.radioButton2);
-            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Controls.Add(this.rdGiaoHangTieuChuan);
+            this.panel1.Controls.Add(this.rdGiaoHangNhanh);
             this.panel1.Location = new System.Drawing.Point(196, 63);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(613, 149);
             this.panel1.TabIndex = 0;
             // 
-            // radioButton2
+            // rdGiaoHangTieuChuan
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 15.25F);
-            this.radioButton2.Location = new System.Drawing.Point(45, 84);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(342, 34);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Giao hàng tiêu chuẩn ( Miễn phí )";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdGiaoHangTieuChuan.AutoSize = true;
+            this.rdGiaoHangTieuChuan.Font = new System.Drawing.Font("Segoe UI", 15.25F);
+            this.rdGiaoHangTieuChuan.Location = new System.Drawing.Point(45, 84);
+            this.rdGiaoHangTieuChuan.Name = "rdGiaoHangTieuChuan";
+            this.rdGiaoHangTieuChuan.Size = new System.Drawing.Size(342, 34);
+            this.rdGiaoHangTieuChuan.TabIndex = 1;
+            this.rdGiaoHangTieuChuan.Text = "Giao hàng tiêu chuẩn ( Miễn phí )";
+            this.rdGiaoHangTieuChuan.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rdGiaoHangNhanh
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 15.25F);
-            this.radioButton1.Location = new System.Drawing.Point(45, 24);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(281, 34);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Giao hàng nhanh ( Có phí )";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdGiaoHangNhanh.AutoSize = true;
+            this.rdGiaoHangNhanh.Checked = true;
+            this.rdGiaoHangNhanh.Font = new System.Drawing.Font("Segoe UI", 15.25F);
+            this.rdGiaoHangNhanh.Location = new System.Drawing.Point(45, 24);
+            this.rdGiaoHangNhanh.Name = "rdGiaoHangNhanh";
+            this.rdGiaoHangNhanh.Size = new System.Drawing.Size(281, 34);
+            this.rdGiaoHangNhanh.TabIndex = 0;
+            this.rdGiaoHangNhanh.TabStop = true;
+            this.rdGiaoHangNhanh.Text = "Giao hàng nhanh ( Có phí )";
+            this.rdGiaoHangNhanh.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -100,23 +100,23 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.checkBox1);
+            this.panel2.Controls.Add(this.rdThanhToanCash);
             this.panel2.Location = new System.Drawing.Point(196, 270);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(613, 103);
             this.panel2.TabIndex = 2;
             // 
-            // checkBox1
+            // rdThanhToanCash
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Enabled = false;
-            this.checkBox1.Font = new System.Drawing.Font("Segoe UI", 15.25F);
-            this.checkBox1.Location = new System.Drawing.Point(45, 32);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(356, 34);
-            this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "Thanh toán bằng Tiki cash (Sắp có)";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.rdThanhToanCash.AutoSize = true;
+            this.rdThanhToanCash.Enabled = false;
+            this.rdThanhToanCash.Font = new System.Drawing.Font("Segoe UI", 15.25F);
+            this.rdThanhToanCash.Location = new System.Drawing.Point(45, 32);
+            this.rdThanhToanCash.Name = "rdThanhToanCash";
+            this.rdThanhToanCash.Size = new System.Drawing.Size(356, 34);
+            this.rdThanhToanCash.TabIndex = 2;
+            this.rdThanhToanCash.Text = "Thanh toán bằng Tiki cash (Sắp có)";
+            this.rdThanhToanCash.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -141,65 +141,63 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.radioButton5);
-            this.panel3.Controls.Add(this.radioButton6);
-            this.panel3.Controls.Add(this.radioButton3);
-            this.panel3.Controls.Add(this.radioButton4);
+            this.panel3.Controls.Add(this.rdThanhToanZalo);
+            this.panel3.Controls.Add(this.rdThanhToanMomo);
+            this.panel3.Controls.Add(this.rdThanhToanATM);
+            this.panel3.Controls.Add(this.rdThanhToanTienMat);
             this.panel3.Location = new System.Drawing.Point(196, 451);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(613, 260);
             this.panel3.TabIndex = 3;
             // 
-            // radioButton5
+            // rdThanhToanZalo
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Enabled = false;
-            this.radioButton5.Font = new System.Drawing.Font("Segoe UI", 15.25F);
-            this.radioButton5.Location = new System.Drawing.Point(45, 188);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(348, 34);
-            this.radioButton5.TabIndex = 5;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Thanh toán bằng ZaloPay (Sắp có)";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rdThanhToanZalo.AutoSize = true;
+            this.rdThanhToanZalo.Enabled = false;
+            this.rdThanhToanZalo.Font = new System.Drawing.Font("Segoe UI", 15.25F);
+            this.rdThanhToanZalo.Location = new System.Drawing.Point(45, 188);
+            this.rdThanhToanZalo.Name = "rdThanhToanZalo";
+            this.rdThanhToanZalo.Size = new System.Drawing.Size(348, 34);
+            this.rdThanhToanZalo.TabIndex = 5;
+            this.rdThanhToanZalo.Text = "Thanh toán bằng ZaloPay (Sắp có)";
+            this.rdThanhToanZalo.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rdThanhToanMomo
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Enabled = false;
-            this.radioButton6.Font = new System.Drawing.Font("Segoe UI", 15.25F);
-            this.radioButton6.Location = new System.Drawing.Point(45, 134);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(337, 34);
-            this.radioButton6.TabIndex = 4;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Thanh toán bằng Momo (Sắp có)";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rdThanhToanMomo.AutoSize = true;
+            this.rdThanhToanMomo.Enabled = false;
+            this.rdThanhToanMomo.Font = new System.Drawing.Font("Segoe UI", 15.25F);
+            this.rdThanhToanMomo.Location = new System.Drawing.Point(45, 134);
+            this.rdThanhToanMomo.Name = "rdThanhToanMomo";
+            this.rdThanhToanMomo.Size = new System.Drawing.Size(337, 34);
+            this.rdThanhToanMomo.TabIndex = 4;
+            this.rdThanhToanMomo.Text = "Thanh toán bằng Momo (Sắp có)";
+            this.rdThanhToanMomo.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rdThanhToanATM
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Enabled = false;
-            this.radioButton3.Font = new System.Drawing.Font("Segoe UI", 15.25F);
-            this.radioButton3.Location = new System.Drawing.Point(45, 80);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(318, 34);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Thanh toán bằng ATM (Sắp có)";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rdThanhToanATM.AutoSize = true;
+            this.rdThanhToanATM.Enabled = false;
+            this.rdThanhToanATM.Font = new System.Drawing.Font("Segoe UI", 15.25F);
+            this.rdThanhToanATM.Location = new System.Drawing.Point(45, 80);
+            this.rdThanhToanATM.Name = "rdThanhToanATM";
+            this.rdThanhToanATM.Size = new System.Drawing.Size(318, 34);
+            this.rdThanhToanATM.TabIndex = 3;
+            this.rdThanhToanATM.Text = "Thanh toán bằng ATM (Sắp có)";
+            this.rdThanhToanATM.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rdThanhToanTienMat
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Segoe UI", 15.25F);
-            this.radioButton4.Location = new System.Drawing.Point(45, 26);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(359, 34);
-            this.radioButton4.TabIndex = 2;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Thanh toán tiền mặt khi nhận hàng";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rdThanhToanTienMat.AutoSize = true;
+            this.rdThanhToanTienMat.Checked = true;
+            this.rdThanhToanTienMat.Font = new System.Drawing.Font("Segoe UI", 15.25F);
+            this.rdThanhToanTienMat.Location = new System.Drawing.Point(45, 26);
+            this.rdThanhToanTienMat.Name = "rdThanhToanTienMat";
+            this.rdThanhToanTienMat.Size = new System.Drawing.Size(359, 34);
+            this.rdThanhToanTienMat.TabIndex = 2;
+            this.rdThanhToanTienMat.TabStop = true;
+            this.rdThanhToanTienMat.Text = "Thanh toán tiền mặt khi nhận hàng";
+            this.rdThanhToanTienMat.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -211,17 +209,17 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Thông tin người mua";
             // 
-            // cbRules
+            // cbConfirm
             // 
-            this.cbRules.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.cbRules.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
-            this.cbRules.Checked = true;
-            this.cbRules.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
-            this.cbRules.ForeColor = System.Drawing.Color.White;
-            this.cbRules.Location = new System.Drawing.Point(196, 785);
-            this.cbRules.Name = "cbRules";
-            this.cbRules.Size = new System.Drawing.Size(20, 20);
-            this.cbRules.TabIndex = 6;
+            this.cbConfirm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.cbConfirm.ChechedOffColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(135)))), ((int)(((byte)(140)))));
+            this.cbConfirm.Checked = true;
+            this.cbConfirm.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
+            this.cbConfirm.ForeColor = System.Drawing.Color.White;
+            this.cbConfirm.Location = new System.Drawing.Point(196, 785);
+            this.cbConfirm.Name = "cbConfirm";
+            this.cbConfirm.Size = new System.Drawing.Size(20, 20);
+            this.cbConfirm.TabIndex = 6;
             // 
             // label5
             // 
@@ -305,7 +303,7 @@
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnBuyProduct);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.cbRules);
+            this.Controls.Add(this.cbConfirm);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label3);
@@ -329,20 +327,20 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rdGiaoHangTieuChuan;
+        private System.Windows.Forms.RadioButton rdGiaoHangNhanh;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox rdThanhToanCash;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton rdThanhToanZalo;
+        private System.Windows.Forms.RadioButton rdThanhToanMomo;
+        private System.Windows.Forms.RadioButton rdThanhToanATM;
+        private System.Windows.Forms.RadioButton rdThanhToanTienMat;
         private System.Windows.Forms.Label label4;
-        private Bunifu.Framework.UI.BunifuCheckbox cbRules;
+        private Bunifu.Framework.UI.BunifuCheckbox cbConfirm;
         private System.Windows.Forms.Label label5;
         private Bunifu.Framework.UI.BunifuThinButton2 btnBack;
         private Bunifu.Framework.UI.BunifuThinButton2 btnBuyProduct;

@@ -72,6 +72,7 @@ namespace Tiki_app
             tabChoosePayMethod.setOnClickListener(this);
             tabInfoUser.setOnClickListener(this);
             tabFilterProducts.setOnClickListener(this);
+            
 
         }
 
@@ -115,6 +116,8 @@ namespace Tiki_app
             }
             else if (view.getID() == R.id.CHOOSE_PAY_METHOD_BUY)
             {
+                //Xử lý thanh toán đơn hàng khi nhấn vào button đặt mua tại đây
+                PayMethod payMethod = ((tabChoseDeliveryMethod)view.obj).payMethod;
                 tabThankyou1.BringToFront();
             }
             else if (view.getID() == R.id.CHOOSE_HOME_PAGE)

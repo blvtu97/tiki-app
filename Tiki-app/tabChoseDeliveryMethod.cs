@@ -9,12 +9,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using Tiki_app.GUI;
+using Tiki_app.DTO;
 
 namespace Tiki_app
 {
     public partial class tabChoseDeliveryMethod : UserControl
     {
         private VIEW.OnClickListener view;
+
+        public PayMethod payMethod = new PayMethod();
 
         public Bunifu.Framework.UI.BunifuThinButton2 ButtonBack
         {
@@ -44,9 +47,20 @@ namespace Tiki_app
 
         private void btnBuyProduct_Click(object sender, EventArgs e)
         {
+            if (!cbConfirm.Checked)
+            {
+                MessageBox.Show("Vui lòng chấp nhận điều khoản", "Thông báo",
+                    MessageBoxButtons.OK);
+                return;
+            }
+            payMethod.GiaoHangNhanh = rdGiaoHangNhanh.Checked;
+            payMethod.ThanhToanBangATM = rdThanhToanATM.Checked;
+            payMethod.ThanhToanTienMat = rdThanhToanTienMat.Checked;
+            payMethod.ThanhToanBoiTikiCash = rdThanhToanCash.Checked;
+            payMethod.ThanhToanBangZaloPay = rdThanhToanZalo.Checked;
             view.onClick(new VIEW
             {
-                obj = btnBuyProduct,
+                obj = this,
                 Tag = Convert.ToInt32(btnBuyProduct.Tag)
             });
         }
