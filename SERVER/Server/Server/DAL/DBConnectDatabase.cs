@@ -9,7 +9,7 @@ namespace Server.DAL
 {
     class DBConnectDatabase
     {
-        string ConnStr = "Data Source=DESKTOP-BSUQ8EF;" +
+        string ConnStr = "Data Source=DESKTOP-Q3LNBO2\\SQLEXPRESS;" +
             "Initial Catalog=DBTIKI;" +
             "Integrated Security=True";
         public SqlConnection conn = null;

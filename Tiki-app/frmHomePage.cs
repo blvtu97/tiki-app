@@ -591,7 +591,8 @@ namespace Tiki_app
         /// </summary>
         private void handleLogin(string userName, string password)
         {
-            customer = blLogin.LoginSuccess(userName, password);
+            bool flag = false;
+            customer = blLogin.LoginSuccess(userName, password, ref flag);
 
             if (customer!=null)
             {

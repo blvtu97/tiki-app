@@ -61,6 +61,24 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>C:\Users\quanl\Downloads\Compressed\Bunifu .NET UI Framework 1.5.3\Crack\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -82,7 +100,9 @@
     <Compile Include="BLL\CATEGORY\BLCategory_Fashion.cs" />
     <Compile Include="BLL\CATEGORY\BLCategory_Laptop.cs" />
     <Compile Include="BLL\CATEGORY\BLCategory_Smartphone_Tablet.cs" />
-    <Compile Include="BLL\BLCustomer.cs" />
+    <Compile Include="BLL\CUSTOMER\BLComment.cs" />
+    <Compile Include="BLL\CUSTOMER\BLCustomer.cs" />
+    <Compile Include="BLL\CUSTOMER\BLDetailBill.cs" />
     <Compile Include="BLL\DETAIL\BLDetailBook.cs" />
     <Compile Include="BLL\DETAIL\BLDetailCar.cs" />
     <Compile Include="BLL\DETAIL\BLDetailFashion.cs" />
@@ -99,7 +119,12 @@
     <Compile Include="BLL\PRODUCT\BLProductSmart.cs" />
     <Compile Include="BLL\IMAGE\BLImageSmartPhone.cs" />
     <Compile Include="DAL\DBConnectDatabase.cs" />
-    <Compile Include="DTO\HinhAnhSanPham.cs" />
+    <Compile Include="DBTIKIDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBTIKIDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\ProcessManager.cs" />
     <Compile Include="ENUMS.cs" />
     <Compile Include="FormBook_Manager.cs">
       <SubType>Form</SubType>
@@ -143,9 +168,16 @@
     <Compile Include="FormUser_Manager.Designer.cs">
       <DependentUpon>FormUser_Manager.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\OnClickListener.cs" />
+    <Compile Include="DTO\OnClickListener.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportView.Designer.cs">
+      <DependentUpon>ReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="FormBook_Manager.resx">
       <DependentUpon>FormBook_Manager.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +196,12 @@
     <EmbeddedResource Include="FormServer.resx">
       <DependentUpon>FormServer.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormUser_Manager.resx">
+      <DependentUpon>FormUser_Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ReportBill.rdlc" />
+    <EmbeddedResource Include="GUI\ReportComment.rdlc" />
+    <EmbeddedResource Include="GUI\ReportCustomer.rdlc" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -174,6 +212,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportView.resx">
+      <DependentUpon>ReportView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DBTIKIDataSet.xsc">
+      <DependentUpon>DBTIKIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBTIKIDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBTIKIDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBTIKIDataSet.xss">
+      <DependentUpon>DBTIKIDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -189,6 +242,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\noimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
